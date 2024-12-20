@@ -33,6 +33,26 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 - **[LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle)** - Symfony bundle for seamless integration of the LLM Chain library.
 - **[LLM Chain](https://github.com/php-llm/llm-chain)** - Comprehensive PHP library for building LLM-powered applications.
 - **[EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP)** - EasyAI-PHP is an open-source initiative designed to significantly simplify the entry into artificial intelligence for PHP-developers (so basically Lang-Chain for PHP). Based on PHP 8.1+, this project integrates advanced AI models and utilities, allowing developers to incorporate complex AI functionalities with minimal coding.
+- **[mcp-php](https://github.com/garyblankenship/mcp-php)** - Setting Up a Model Context Protocol (MCP) Server in Laravel
+- **[transformers-php](https://github.com/CodeWithKyrian/transformers-php)** - Transformers PHP is a toolkit for PHP developers to add machine learning magic to their projects easily.
+- **[LLM Agents](https://github.com/llm-agents-php/agents)** - LLM Agents is a PHP library for building and managing Language Model (LLM) based agents. It provides a framework for creating autonomous agents that can perform complex tasks, make decisions, and interact with various tools and APIs.
+- **[langchain-php](https://github.com/kambo-1st/langchain-php)** - Building applications with LLMs through composability in PHP
+- **[Lugha](https://github.com/devscast/lugha)** - Lugha is a PHP Generative AI Framework to build chatbot, RAG systems and AI-powered applications
+- **[laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt)** - laravel-llm-prompt manager
+- **[LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel)** - Wrapper around the most popular LLMs that allows drop-in replacement of large language models in Laravel.
+- **[ai-team](https://github.com/sarfraznawaz2005/ai-team)** - A package allowing to create team of AI members that can work and collaborate together to achieve a common goal.
+- **[laravel-prompt-alchemist](https://github.com/moe-mizrak/laravel-prompt-alchemist)** - Versatile LLM Tool Use (Function Calling) package for Laravel, compatible with all LLMs, enabling LLM to execute actual code functions (unlike LLMs' built-in capabilities).
+- **[mulagent](https://github.com/FunkyOz/mulagent)** - The orchestration of multiple agents involves the use of routines and handoffs. Simplifying, a routine is a series of steps to follow to achieve a goal, and a handoff is the transition from one agent to another, like a switchboard transferring a phone call.
+- **[prompt-generator](https://github.com/llm-agents-php/prompt-generator)** - Prompt generator for LLM agents with interceptors
+- **[instructrice](https://github.com/adrienbrault/instructrice)** - Typed LLM Outputs in PHP. Supports GPT, Claude, Gemini or any OpenAI compatible provider!
+- **[llm](https://github.com/artisan-build/llm)** - Provides Laravel integrations for various LLM providers
+- **[php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter)** - When using LLMs from the system, you often expect to get output results in JSON: OpenAPI's GPT API has a mechanism called Function Calling, which can return JSON, but Google's Gemini does not seem to have that functionality.
+- **[LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext)** - Artisan Command to Generate LLM Context for a Laravel Project
+- **[llm-magic](https://github.com/Capevace/llm-magic)** - LLM-agnostic AI toolkit for Laravel
+- **[php-llm-documents](https://github.com/thojou/php-llm-documents)** - PHP LLM Documents is a powerful PHP library that brings LLM (Large Language Model) functionality into the PHP ecosystem.
+- **[fireworksai-adapter](https://github.com/modelflow-ai/fireworksai-adapter)** - The adapter integrates open-source models hosted by fireworks.ai into Modelflow AI.
+- **[Taskallama](https://github.com/coding-wisely/taskallama)** - Taskallama is a Laravel package that provides seamless integration with Ollama's LLM API. It simplifies generating AI-powered content, from professional task writing to conversational agents, with minimal effort. Whether you're building a task management system, an HR assistant for job posts, or blog content generation, Taskallama has you covered.
+- **[fabric-pattern](https://github.com/php-llm/fabric-pattern)** - Slim PHP wrapper for Daniel Miessler's fabric pattern
 - **[aipi-php](https://github.com/skito/aipi-php)** - Universal API client for common AI models
 - **[Sidekick](https://github.com/PapaRascal2020/sidekick)** - Say hello to Sidekick! A Laravel package that provides a common syntax for using Claude, Mistral, Cohere and OpenAi APIs.
 - **[Laravel OpenRouter](https://github.com/moe-mizrak/laravel-openrouter)** - Laravel integration for OpenRouter's unified LLM API interface.
@@ -50,6 +70,7 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 - **[brick/math](https://github.com/brick/math)** - Handles arbitrary precision mathematics in PHP.
 - **[php-ai/php-ds](https://github.com/php-ds)** - PHP data structures extension for performance.
+- **[redis-vector-php](https://github.com/redis-applied-ai/redis-vector-php)** - Redis Vector Library (RedisVL) enables Redis as a real-time database for LLM applications, based on Predis PHP client
 
 ### Command Line Tools
 
@@ -70,6 +91,9 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 ## Learning Resources
 
 - **[PHP LLMs Book](https://github.com/alnutile/php-llms)** - Practical guide for PHP developers on integrating LLMs into projects.
+- **[Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel)** - Fun With OpenAI and Laravel
+In this series, you'll get your feet wet with a variety of fun examples that demonstrate how to interact with OpenAI using PHP and Laravel. We'll begin by assuming that you know nothing, and then slowly work our way up one episode at a time!
+- **[elasticsearch-chatgpt-php](https://github.com/elastic/elasticsearch-chatgpt-php)** - Use ChatGPT to search in Elasticsearch using natural language
 - **[PHP LLM Examples](https://github.com/ezimuel/php-llm-examples)** - Examples demonstrating GenAI and LLM usage in PHP.
 - **[PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/tutorials/)** - Learn how to use PHP-ML for machine learning.
 - **[Rubix ML Docs](https://docs.rubixml.com/)** - Comprehensive documentation for Rubix ML.
