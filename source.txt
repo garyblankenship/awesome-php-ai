@@ -1,3 +1,4 @@
 # Natural Language Processing & LLMs
 
 https://github.com/echolabsdev/prism - A unified interface for working with LLMs in Laravel
+https://github.com/cognesy/instructor-php - Structured data outputs with LLMs, in PHP. Designed for simplicity, transparency, and control.
