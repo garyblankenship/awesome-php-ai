@@ -81,6 +81,10 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 - **[Subvert](https://github.com/aschmelyun/subvert)** - Generate subtitles, summaries, and chapters from videos in seconds
 
+### Vector Storage
+
+- **[vector-storage](https://github.com/llm-agents-php/vector-storage)** - LLM Agents Vector Storage
+
 ## API Clients
 
 - **[OpenAI PHP](https://github.com/openai-php/client)** - OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.
