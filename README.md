@@ -18,6 +18,7 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 ### Natural Language Processing
 
+- **[LLPhant](https://github.com/theodo-group/llphant)** - A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.
 - **[EleLLM](https://github.com/wpai-inc/EleLLM)** - A PHP framework that makes working with LLMs more pleasurable and accessible.
 - **[php-llms](https://github.com/alnutile/php-llms)** - A practical guide and toolkit for PHP developers integrating LLMs into existing projects.
 - **[php-ml](https://github.com/jorgecasas/php-ml)** - A PHP machine learning library.
