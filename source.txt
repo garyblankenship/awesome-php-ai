@@ -1,0 +1,3 @@
+# Natural Language Processing & LLMs
+
+https://github.com/echolabsdev/prism - A unified interface for working with LLMs in Laravel
