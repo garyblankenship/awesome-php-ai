@@ -10,7 +10,9 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
   - [Deep Learning](#deep-learning)
   - [Computer Vision](#computer-vision)
   - [Data Manipulation](#data-manipulation)
-- [APIs](#apis)
+  - [Command Line Tools](#command-line-tools)
+  - [Video Processing](#video-processing)
+- [API Clients](#api-clients)
 - [Learning Resources](#learning-resources)
 - [Contributing](#contributing)
 
@@ -30,6 +32,9 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 - **[Ollama PHP](https://github.com/ArdaGnsrn/ollama-php)** - PHP client for Ollama, enabling local LLM deployment and interaction.
 - **[LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle)** - Symfony bundle for seamless integration of the LLM Chain library.
 - **[LLM Chain](https://github.com/php-llm/llm-chain)** - Comprehensive PHP library for building LLM-powered applications.
+- **[EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP)** - EasyAI-PHP is an open-source initiative designed to significantly simplify the entry into artificial intelligence for PHP-developers (so basically Lang-Chain for PHP). Based on PHP 8.1+, this project integrates advanced AI models and utilities, allowing developers to incorporate complex AI functionalities with minimal coding.
+- **[aipi-php](https://github.com/skito/aipi-php)** - Universal API client for common AI models
+- **[Sidekick](https://github.com/PapaRascal2020/sidekick)** - Say hello to Sidekick! A Laravel package that provides a common syntax for using Claude, Mistral, Cohere and OpenAi APIs.
 - **[Laravel OpenRouter](https://github.com/moe-mizrak/laravel-openrouter)** - Laravel integration for OpenRouter's unified LLM API interface.
 
 ### Machine Learning
@@ -47,9 +52,19 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 - **[brick/math](https://github.com/brick/math)** - Handles arbitrary precision mathematics in PHP.
 - **[php-ai/php-ds](https://github.com/php-ds)** - PHP data structures extension for performance.
 
-## APIs
+### Command Line Tools
 
-- **[OpenAI PHP](https://github.com/orhanerday/open-ai)** - OpenAI GPT-3 integration for PHP.
+- **[ai-commit](https://github.com/guanguans/ai-commit)** - Automagically generate conventional git commit messages with AI. - 使用 AI 自动生成约定式 git 提交信息。
+- **[Laragenie](https://github.com/joshembling/laragenie)** - An AI bot made for the command line that can read and understand any codebase from your Laravel app.
+
+### Video Processing
+
+- **[Subvert](https://github.com/aschmelyun/subvert)** - Generate subtitles, summaries, and chapters from videos in seconds
+
+## API Clients
+
+- **[OpenAI PHP](https://github.com/openai-php/client)** - OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.
+- **[OpenAI PHP SDK](https://github.com/orhanerday/open-ai)** - OpenAI PHP SDK : Most downloaded, forked, contributed, huge community supported, and used PHP (Laravel , Symfony, Yii, Cake PHP or any PHP framework) SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming. (ChatGPT AI is supported)
 - **[Google Cloud AI](https://github.com/googleapis/google-cloud-php)** - Google Cloud AI services in PHP.
 - **[AWS Rekognition](https://aws.amazon.com/rekognition/)** - Amazon Rekognition API for image and video analysis.
 
