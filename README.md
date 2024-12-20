@@ -18,7 +18,7 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 ### Natural Language Processing
 
-- **[php-ai/php-ml](https://github.com/php-ai/php-ml)** - A PHP machine learning library.
+- **[php-ml](https://github.com/jorgecasas/php-ml)** - A PHP machine learning library.
 - **[cocur/slugify](https://github.com/cocur/slugify)** - Converts a string into a slug (NLP utility).
 
 ### Machine Learning
