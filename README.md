@@ -20,15 +20,19 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 - **[php-ml](https://github.com/jorgecasas/php-ml)** - A PHP machine learning library.
 - **[cocur/slugify](https://github.com/cocur/slugify)** - Converts a string into a slug (NLP utility).
+- **[Prism](https://github.com/echolabsdev/prism)** - A unified interface for working with LLMs in Laravel applications.
+- **[Instructor PHP](https://github.com/cognesy/instructor-php)** - Extract structured data from LLM outputs with type safety and validation.
+- **[Resonance](https://github.com/distantmagic/resonance)** - High-performance PHP framework optimized for IO-intensive LLM applications.
+- **[Ollama PHP](https://github.com/ArdaGnsrn/ollama-php)** - PHP client for Ollama, enabling local LLM deployment and interaction.
+- **[LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle)** - Symfony bundle for seamless integration of the LLM Chain library.
+- **[LLM Chain](https://github.com/php-llm/llm-chain)** - Comprehensive PHP library for building LLM-powered applications.
+- **[Laravel OpenRouter](https://github.com/moe-mizrak/laravel-openrouter)** - Laravel integration for OpenRouter's unified LLM API interface.
 
 ### Machine Learning
 
 - **[Rubix ML](https://github.com/RubixML/ML)** - Machine learning library for building algorithms and models.
 - **[TensorFlow PHP](https://github.com/tensorflow/tfjs)** - PHP bindings for TensorFlow.
 
-### Deep Learning
-
-- **[deeplearning-php](https://github.com/deeplearning-php/)** - A PHP deep learning library (experimental).
 
 ### Computer Vision
 
