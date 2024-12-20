@@ -1,4 +1,4 @@
-# Awesome AI PHP [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome PHP AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of awesome PHP libraries and tools for integrating AI, Machine Learning, and Natural Language Processing into your PHP applications. Contributions are welcome!
 
@@ -41,7 +41,6 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 - **[Rubix ML](https://github.com/RubixML/ML)** - Machine learning library for building algorithms and models.
 - **[TensorFlow PHP](https://github.com/tensorflow/tfjs)** - PHP bindings for TensorFlow.
-
 
 ### Computer Vision
 
