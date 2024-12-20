@@ -5,3 +5,4 @@ https://github.com/cognesy/instructor-php - Structured data outputs with LLMs, i
 https://github.com/distantmagic/resonance - PHP Framework designed to build IO-intensive web applications.
 https://github.com/ArdaGnsrn/ollama-php - This is a PHP library for Ollama. Ollama is an open-source project that serves as a powerful and user-friendly platform for running LLMs on your local machine. It acts as a bridge between the complexities of LLM technology and the desire for an accessible and customizable AI experience.
 https://github.com/php-llm/llm-chain-bundle - Symfony integration bundle for php-llm/llm-chain library.
+https://github.com/php-llm/llm-chain - PHP library for building LLM-based features and applications.
