@@ -18,7 +18,10 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 ### Natural Language Processing
 
+- **[EleLLM](https://github.com/wpai-inc/EleLLM)** - A PHP framework that makes working with LLMs more pleasurable and accessible.
+- **[php-llms](https://github.com/alnutile/php-llms)** - A practical guide and toolkit for PHP developers integrating LLMs into existing projects.
 - **[php-ml](https://github.com/jorgecasas/php-ml)** - A PHP machine learning library.
+- **[php-rag](https://github.com/rzarno/php-rag)** - Application using LLM (Llama3/GPT-4) for text generation with database-backed retrieval.
 - **[cocur/slugify](https://github.com/cocur/slugify)** - Converts a string into a slug (NLP utility).
 - **[Prism](https://github.com/echolabsdev/prism)** - A unified interface for working with LLMs in Laravel applications.
 - **[Instructor PHP](https://github.com/cognesy/instructor-php)** - Extract structured data from LLM outputs with type safety and validation.
@@ -51,6 +54,8 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 ## Learning Resources
 
+- **[PHP LLMs Book](https://github.com/alnutile/php-llms)** - Practical guide for PHP developers on integrating LLMs into projects.
+- **[PHP LLM Examples](https://github.com/ezimuel/php-llm-examples)** - Examples demonstrating GenAI and LLM usage in PHP.
 - **[PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/tutorials/)** - Learn how to use PHP-ML for machine learning.
 - **[Rubix ML Docs](https://docs.rubixml.com/)** - Comprehensive documentation for Rubix ML.
 
