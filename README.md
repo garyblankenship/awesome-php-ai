@@ -1,7 +1,3 @@
-Here’s a concise GitHub README for your "Awesome AI PHP" awesome list, following the typical awesome list format:
-
----
-
 # Awesome AI PHP [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of awesome PHP libraries and tools for integrating AI, Machine Learning, and Natural Language Processing into your PHP applications. Contributions are welcome!
@@ -57,7 +53,3 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 ## Contributing
 
 Have a PHP AI library, tool, or resource to share? Feel free to submit a PR!
-
----
-
-This README structure follows the typical awesome list format with sections that can be easily expanded as new entries are added.
