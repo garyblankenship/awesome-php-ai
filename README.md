@@ -91,6 +91,8 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 - **[OpenAI PHP SDK](https://github.com/orhanerday/open-ai)** - OpenAI PHP SDK : Most downloaded, forked, contributed, huge community supported, and used PHP (Laravel , Symfony, Yii, Cake PHP or any PHP framework) SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming. (ChatGPT AI is supported)
 - **[Google Cloud AI](https://github.com/googleapis/google-cloud-php)** - Google Cloud AI services in PHP.
 - **[AWS Rekognition](https://aws.amazon.com/rekognition/)** - Amazon Rekognition API for image and video analysis.
+- **[DeepL PHP](https://github.com/DeepLcom/deepl-php)** - Official PHP library for the DeepL language translation API.
+- **[Deepseek PHP Client](https://github.com/deepseek-php/deepseek-php-client)** - ⚡️ supercharged community-maintained PHP API client that allows you to interact with deepseek API.
 
 ## Learning Resources
 
