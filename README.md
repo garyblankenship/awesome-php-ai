@@ -35,6 +35,7 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 - **[EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP)** - EasyAI-PHP is an open-source initiative designed to significantly simplify the entry into artificial intelligence for PHP-developers (so basically Lang-Chain for PHP). Based on PHP 8.1+, this project integrates advanced AI models and utilities, allowing developers to incorporate complex AI functionalities with minimal coding.
 - **[mcp-php](https://github.com/garyblankenship/mcp-php)** - Setting Up a Model Context Protocol (MCP) Server in Laravel
 - **[transformers-php](https://github.com/CodeWithKyrian/transformers-php)** - Transformers PHP is a toolkit for PHP developers to add machine learning magic to their projects easily.
+- **[Elasticsearch ChatGPT PHP](https://github.com/elastic/elasticsearch-chatgpt-php)** - Use ChatGPT to search in Elasticsearch using natural language
 - **[LLM Agents](https://github.com/llm-agents-php/agents)** - LLM Agents is a PHP library for building and managing Language Model (LLM) based agents. It provides a framework for creating autonomous agents that can perform complex tasks, make decisions, and interact with various tools and APIs.
 - **[langchain-php](https://github.com/kambo-1st/langchain-php)** - Building applications with LLMs through composability in PHP
 - **[Lugha](https://github.com/devscast/lugha)** - Lugha is a PHP Generative AI Framework to build chatbot, RAG systems and AI-powered applications
@@ -95,11 +96,8 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 - **[Deepseek PHP Client](https://github.com/deepseek-php/deepseek-php-client)** - ⚡️ supercharged community-maintained PHP API client that allows you to interact with deepseek API.
 
 ## Learning Resources
-
-- **[PHP LLMs Book](https://github.com/alnutile/php-llms)** - Practical guide for PHP developers on integrating LLMs into projects.
 - **[Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel)** - Fun With OpenAI and Laravel
 In this series, you'll get your feet wet with a variety of fun examples that demonstrate how to interact with OpenAI using PHP and Laravel. We'll begin by assuming that you know nothing, and then slowly work our way up one episode at a time!
-- **[elasticsearch-chatgpt-php](https://github.com/elastic/elasticsearch-chatgpt-php)** - Use ChatGPT to search in Elasticsearch using natural language
 - **[PHP LLM Examples](https://github.com/ezimuel/php-llm-examples)** - Examples demonstrating GenAI and LLM usage in PHP.
 - **[PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/tutorials/)** - Learn how to use PHP-ML for machine learning.
 - **[Rubix ML Docs](https://docs.rubixml.com/)** - Comprehensive documentation for Rubix ML.
