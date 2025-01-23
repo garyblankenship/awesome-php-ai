@@ -12,6 +12,11 @@
         "description": "A PHP framework that makes working with LLMs more pleasurable and accessible."
       },
       {
+        "name": "PHP LLMs Book",
+        "url": "https://github.com/alnutile/php-llms",
+        "description": "Practical guide for PHP developers on integrating LLMs into projects."
+      },
+      {
         "name": "php-llms",
         "url": "https://github.com/alnutile/php-llms",
         "description": "A practical guide and toolkit for PHP developers integrating LLMs into existing projects."
@@ -25,6 +30,16 @@
         "name": "php-rag",
         "url": "https://github.com/rzarno/php-rag",
         "description": "Application using LLM (Llama3/GPT-4) for text generation with database-backed retrieval."
+      },
+      {
+        "name": "JPMorgan Chase - Zemanta-PHP-ML",
+        "url": "https://github.com/jpmorganchase/Zemanta-PHP-ML",
+        "description": "A general-purpose machine learning library for PHP. Implements many different algorithms for classification, regression, and clustering."
+      },
+      {
+        "name": "NlpTools",
+        "url": "https://github.com/angeloskath/php-nlp-tools",
+        "description": "NlpTools is a collection of Natural Language Processing tools written in PHP. It provides a set of APIs to work with text easily."
       },
       {
         "name": "cocur/slugify",
@@ -70,6 +85,11 @@
         "name": "mcp-php",
         "url": "https://github.com/garyblankenship/mcp-php",
         "description": "Setting Up a Model Context Protocol (MCP) Server in Laravel"
+      },
+      {
+        "name": "Elasticsearch ChatGPT PHP",
+        "url": "https://github.com/elastic/elasticsearch-chatgpt-php",
+        "description": "Use ChatGPT to search in Elasticsearch using natural language"
       },
       {
         "name": "transformers-php",
@@ -268,11 +288,6 @@
     }
   ],
   "learning_resources": [
-    {
-      "name": "PHP LLMs Book",
-      "url": "https://github.com/alnutile/php-llms",
-      "description": "Practical guide for PHP developers on integrating LLMs into projects."
-    },
     {
       "name": "Fun With OpenAI and Laravel",
       "url": "https://laracasts.com/series/fun-with-openai-and-laravel",
