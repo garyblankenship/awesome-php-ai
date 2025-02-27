@@ -1,317 +1,462 @@
 {
-  "libraries": {
-    "natural_language_processing": [
-      {
-        "name": "LLPhant",
-        "url": "https://github.com/theodo-group/llphant",
-        "description": "A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain."
-      },
-      {
-        "name": "EleLLM",
-        "url": "https://github.com/wpai-inc/EleLLM", 
-        "description": "A PHP framework that makes working with LLMs more pleasurable and accessible."
-      },
-      {
-        "name": "PHP LLMs Book",
-        "url": "https://github.com/alnutile/php-llms",
-        "description": "Practical guide for PHP developers on integrating LLMs into projects."
-      },
-      {
-        "name": "php-llms",
-        "url": "https://github.com/alnutile/php-llms",
-        "description": "A practical guide and toolkit for PHP developers integrating LLMs into existing projects."
-      },
-      {
-        "name": "php-ml",
-        "url": "https://github.com/jorgecasas/php-ml",
-        "description": "A PHP machine learning library."
-      },
-      {
-        "name": "php-rag",
-        "url": "https://github.com/rzarno/php-rag",
-        "description": "Application using LLM (Llama3/GPT-4) for text generation with database-backed retrieval."
-      },
-      {
-        "name": "JPMorgan Chase - Zemanta-PHP-ML",
-        "url": "https://github.com/jpmorganchase/Zemanta-PHP-ML",
-        "description": "A general-purpose machine learning library for PHP. Implements many different algorithms for classification, regression, and clustering."
-      },
-      {
-        "name": "NlpTools",
-        "url": "https://github.com/angeloskath/php-nlp-tools",
-        "description": "NlpTools is a collection of Natural Language Processing tools written in PHP. It provides a set of APIs to work with text easily."
-      },
-      {
-        "name": "cocur/slugify",
-        "url": "https://github.com/cocur/slugify",
-        "description": "Converts a string into a slug (NLP utility)."
-      },
-      {
-        "name": "Prism",
-        "url": "https://github.com/echolabsdev/prism",
-        "description": "A unified interface for working with LLMs in Laravel applications."
-      },
-      {
-        "name": "Instructor PHP",
-        "url": "https://github.com/cognesy/instructor-php",
-        "description": "Extract structured data from LLM outputs with type safety and validation."
-      },
-      {
-        "name": "Resonance",
-        "url": "https://github.com/distantmagic/resonance",
-        "description": "High-performance PHP framework optimized for IO-intensive LLM applications."
-      },
-      {
-        "name": "Ollama PHP",
-        "url": "https://github.com/ArdaGnsrn/ollama-php",
-        "description": "PHP client for Ollama, enabling local LLM deployment and interaction."
-      },
-      {
-        "name": "LLM Chain Bundle",
-        "url": "https://github.com/php-llm/llm-chain-bundle",
-        "description": "Symfony bundle for seamless integration of the LLM Chain library."
-      },
-      {
-        "name": "LLM Chain",
-        "url": "https://github.com/php-llm/llm-chain",
-        "description": "Comprehensive PHP library for building LLM-powered applications."
-      },
-      {
-        "name": "EasyAI-PHP",
-        "url": "https://github.com/HosonoDE/EasyAI-PHP",
-        "description": "EasyAI-PHP is an open-source initiative designed to significantly simplify the entry into artificial intelligence for PHP-developers (so basically Lang-Chain for PHP). Based on PHP 8.1+, this project integrates advanced AI models and utilities, allowing developers to incorporate complex AI functionalities with minimal coding."
-      },
-      {
-        "name": "mcp-php",
-        "url": "https://github.com/garyblankenship/mcp-php",
-        "description": "Setting Up a Model Context Protocol (MCP) Server in Laravel"
-      },
-      {
-        "name": "Elasticsearch ChatGPT PHP",
-        "url": "https://github.com/elastic/elasticsearch-chatgpt-php",
-        "description": "Use ChatGPT to search in Elasticsearch using natural language"
-      },
-      {
-        "name": "transformers-php",
-        "url": "https://github.com/CodeWithKyrian/transformers-php",
-        "description": "Transformers PHP is a toolkit for PHP developers to add machine learning magic to their projects easily."
-      },
-      {
-        "name": "LLM Agents",
-        "url": "https://github.com/llm-agents-php/agents",
-        "description": "LLM Agents is a PHP library for building and managing Language Model (LLM) based agents. It provides a framework for creating autonomous agents that can perform complex tasks, make decisions, and interact with various tools and APIs."
-      },
-      {
-        "name": "langchain-php",
-        "url": "https://github.com/kambo-1st/langchain-php",
-        "description": "Building applications with LLMs through composability in PHP"
-      },
-      {
-        "name": "Lugha",
-        "url": "https://github.com/devscast/lugha",
-        "description": "Lugha is a PHP Generative AI Framework to build chatbot, RAG systems and AI-powered applications"
-      },
-      {
-        "name": "laravel-llm-prompt",
-        "url": "https://github.com/SabatinoMasala/laravel-llm-prompt",
-        "description": "laravel-llm-prompt manager"
-      },
-      {
-        "name": "LLM-Port-Laravel",
-        "url": "https://github.com/BorahLabs/LLM-Port-Laravel",
-        "description": "Wrapper around the most popular LLMs that allows drop-in replacement of large language models in Laravel."
-      },
-      {
-        "name": "ai-team",
-        "url": "https://github.com/sarfraznawaz2005/ai-team",
-        "description": "A package allowing to create team of AI members that can work and collaborate together to achieve a common goal."
-      },
-      {
-        "name": "laravel-prompt-alchemist",
-        "url": "https://github.com/moe-mizrak/laravel-prompt-alchemist",
-        "description": "Versatile LLM Tool Use (Function Calling) package for Laravel, compatible with all LLMs, enabling LLM to execute actual code functions (unlike LLMs' built-in capabilities)."
-      },
-      {
-        "name": "mulagent",
-        "url": "https://github.com/FunkyOz/mulagent",
-        "description": "The orchestration of multiple agents involves the use of routines and handoffs. Simplifying, a routine is a series of steps to follow to achieve a goal, and a handoff is the transition from one agent to another, like a switchboard transferring a phone call."
-      },
-      {
-        "name": "prompt-generator",
-        "url": "https://github.com/llm-agents-php/prompt-generator",
-        "description": "Prompt generator for LLM agents with interceptors"
-      },
-      {
-        "name": "instructrice",
-        "url": "https://github.com/adrienbrault/instructrice",
-        "description": "Typed LLM Outputs in PHP. Supports GPT, Claude, Gemini or any OpenAI compatible provider!"
-      },
-      {
-        "name": "llm",
-        "url": "https://github.com/artisan-build/llm",
-        "description": "Provides Laravel integrations for various LLM providers"
-      },
-      {
-        "name": "php-llm-json-adapter",
-        "url": "https://github.com/takaaki-mizuno/php-llm-json-adapter",
-        "description": "When using LLMs from the system, you often expect to get output results in JSON: OpenAPI's GPT API has a mechanism called Function Calling, which can return JSON, but Google's Gemini does not seem to have that functionality."
-      },
-      {
-        "name": "LaravelLLMContext",
-        "url": "https://github.com/jeremysalmon/LaravelLLMContext",
-        "description": "Artisan Command to Generate LLM Context for a Laravel Project"
-      },
-      {
-        "name": "llm-magic",
-        "url": "https://github.com/Capevace/llm-magic",
-        "description": "LLM-agnostic AI toolkit for Laravel"
-      },
-      {
-        "name": "php-llm-documents",
-        "url": "https://github.com/thojou/php-llm-documents",
-        "description": "PHP LLM Documents is a powerful PHP library that brings LLM (Large Language Model) functionality into the PHP ecosystem."
-      },
-      {
-        "name": "fireworksai-adapter",
-        "url": "https://github.com/modelflow-ai/fireworksai-adapter",
-        "description": "The adapter integrates open-source models hosted by fireworks.ai into Modelflow AI."
-      },
-      {
-        "name": "Taskallama",
-        "url": "https://github.com/coding-wisely/taskallama",
-        "description": "Taskallama is a Laravel package that provides seamless integration with Ollama's LLM API. It simplifies generating AI-powered content, from professional task writing to conversational agents, with minimal effort. Whether you're building a task management system, an HR assistant for job posts, or blog content generation, Taskallama has you covered."
-      },
-      {
-        "name": "fabric-pattern",
-        "url": "https://github.com/php-llm/fabric-pattern",
-        "description": "Slim PHP wrapper for Daniel Miessler's fabric pattern"
-      },
-      {
-        "name": "aipi-php",
-        "url": "https://github.com/skito/aipi-php",
-        "description": "Universal API client for common AI models"
-      },
-      {
-        "name": "Sidekick",
-        "url": "https://github.com/PapaRascal2020/sidekick",
-        "description": "Say hello to Sidekick! A Laravel package that provides a common syntax for using Claude, Mistral, Cohere and OpenAi APIs."
-      },
-      {
-        "name": "Laravel OpenRouter",
-        "url": "https://github.com/moe-mizrak/laravel-openrouter",
-        "description": "Laravel integration for OpenRouter's unified LLM API interface."
-      }
+    "libraries": {
+        "natural_language_processing": [
+            {
+                "name": "LLPhant",
+                "url": "https://github.com/theodo-group/llphant",
+                "description": "A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.",
+                "stars": 1035,
+                "last_commit": "2025-02-23T12:52:06Z"
+            },
+            {
+                "name": "EleLLM",
+                "url": "https://github.com/wpai-inc/EleLLM",
+                "description": "A PHP framework that makes working with LLMs more pleasurable and accessible.",
+                "stars": 3,
+                "last_commit": "2024-08-12T18:16:42Z"
+            },
+            {
+                "name": "PHP LLMs Book",
+                "url": "https://github.com/alnutile/php-llms",
+                "description": "Practical guide for PHP developers on integrating LLMs into projects.",
+                "stars": 23,
+                "last_commit": "2024-09-21T01:18:14Z"
+            },
+            {
+                "name": "php-llms",
+                "url": "https://github.com/alnutile/php-llms",
+                "description": "A practical guide and toolkit for PHP developers integrating LLMs into existing projects.",
+                "stars": 23,
+                "last_commit": "2024-09-21T01:18:14Z"
+            },
+            {
+                "name": "php-ml",
+                "url": "https://github.com/jorgecasas/php-ml",
+                "description": "A PHP machine learning library.",
+                "stars": 304,
+                "last_commit": "2023-01-26T08:29:08Z"
+            },
+            {
+                "name": "php-rag",
+                "url": "https://github.com/rzarno/php-rag",
+                "description": "Application using LLM (Llama3/GPT-4) for text generation with database-backed retrieval.",
+                "stars": 33,
+                "last_commit": "2025-02-24T14:24:59Z"
+            },
+            {
+                "name": "NlpTools",
+                "url": "https://github.com/angeloskath/php-nlp-tools",
+                "description": "NlpTools is a collection of Natural Language Processing tools written in PHP. It provides a set of APIs to work with text easily.",
+                "stars": 756,
+                "last_commit": "2024-07-22T11:11:32Z"
+            },
+            {
+                "name": "cocur/slugify",
+                "url": "https://github.com/cocur/slugify",
+                "description": "Converts a string into a slug (NLP utility).",
+                "stars": 2891,
+                "last_commit": "2024-09-10T14:11:09Z"
+            },
+            {
+                "name": "Prism",
+                "url": "https://github.com/echolabsdev/prism",
+                "description": "A unified interface for working with LLMs in Laravel applications.",
+                "stars": 972,
+                "last_commit": "2025-02-26T22:08:30Z"
+            },
+            {
+                "name": "Instructor PHP",
+                "url": "https://github.com/cognesy/instructor-php",
+                "description": "Extract structured data from LLM outputs with type safety and validation.",
+                "stars": 238,
+                "last_commit": "2025-02-26T21:01:41Z"
+            },
+            {
+                "name": "Resonance",
+                "url": "https://github.com/distantmagic/resonance",
+                "description": "High-performance PHP framework optimized for IO-intensive LLM applications.",
+                "stars": 214,
+                "last_commit": "2024-12-12T17:24:02Z"
+            },
+            {
+                "name": "Ollama PHP",
+                "url": "https://github.com/ArdaGnsrn/ollama-php",
+                "description": "PHP client for Ollama, enabling local LLM deployment and interaction.",
+                "stars": 117,
+                "last_commit": "2024-12-25T22:34:25Z"
+            },
+            {
+                "name": "LLM Chain Bundle",
+                "url": "https://github.com/php-llm/llm-chain-bundle",
+                "description": "Symfony bundle for seamless integration of the LLM Chain library.",
+                "stars": 12,
+                "last_commit": "2025-02-22T00:50:23Z"
+            },
+            {
+                "name": "LLM Chain",
+                "url": "https://github.com/php-llm/llm-chain",
+                "description": "Comprehensive PHP library for building LLM-powered applications.",
+                "stars": 45,
+                "last_commit": "2025-02-25T20:04:15Z"
+            },
+            {
+                "name": "EasyAI-PHP",
+                "url": "https://github.com/HosonoDE/EasyAI-PHP",
+                "description": "EasyAI-PHP is an open-source initiative designed to significantly simplify the entry into artificial intelligence for PHP-developers (so basically Lang-Chain for PHP). Based on PHP 8.1+, this project integrates advanced AI models and utilities, allowing developers to incorporate complex AI functionalities with minimal coding.",
+                "stars": 10,
+                "last_commit": "2025-01-31T07:01:21Z"
+            },
+            {
+                "name": "mcp-php",
+                "url": "https://github.com/garyblankenship/mcp-php",
+                "description": "Setting Up a Model Context Protocol (MCP) Server in Laravel",
+                "stars": 2,
+                "last_commit": "2024-12-02T03:12:43Z"
+            },
+            {
+                "name": "Elasticsearch ChatGPT PHP",
+                "url": "https://github.com/elastic/elasticsearch-chatgpt-php",
+                "description": "Use ChatGPT to search in Elasticsearch using natural language",
+                "stars": 26,
+                "last_commit": "2024-08-09T06:34:07Z"
+            },
+            {
+                "name": "transformers-php",
+                "url": "https://github.com/CodeWithKyrian/transformers-php",
+                "description": "Transformers PHP is a toolkit for PHP developers to add machine learning magic to their projects easily.",
+                "stars": 615,
+                "last_commit": "2025-01-11T17:58:59Z"
+            },
+            {
+                "name": "LLM Agents",
+                "url": "https://github.com/llm-agents-php/agents",
+                "description": "LLM Agents is a PHP library for building and managing Language Model (LLM) based agents. It provides a framework for creating autonomous agents that can perform complex tasks, make decisions, and interact with various tools and APIs.",
+                "stars": 85,
+                "last_commit": "2024-09-15T18:44:39Z"
+            },
+            {
+                "name": "langchain-php",
+                "url": "https://github.com/kambo-1st/langchain-php",
+                "description": "Building applications with LLMs through composability in PHP",
+                "stars": 282,
+                "last_commit": "2023-06-20T07:02:33Z"
+            },
+            {
+                "name": "Lugha",
+                "url": "https://github.com/devscast/lugha",
+                "description": "Lugha is a PHP Generative AI Framework to build chatbot, RAG systems and AI-powered applications",
+                "stars": 25,
+                "last_commit": "2025-02-22T00:08:00Z"
+            },
+            {
+                "name": "laravel-llm-prompt",
+                "url": "https://github.com/SabatinoMasala/laravel-llm-prompt",
+                "description": "laravel-llm-prompt manager",
+                "stars": 5,
+                "last_commit": "2024-08-13T12:01:50Z"
+            },
+            {
+                "name": "LLM-Port-Laravel",
+                "url": "https://github.com/BorahLabs/LLM-Port-Laravel",
+                "description": "Wrapper around the most popular LLMs that allows drop-in replacement of large language models in Laravel.",
+                "stars": 2,
+                "last_commit": "2024-11-26T11:38:21Z"
+            },
+            {
+                "name": "ai-team",
+                "url": "https://github.com/sarfraznawaz2005/ai-team",
+                "description": "A package allowing to create team of AI members that can work and collaborate together to achieve a common goal.",
+                "stars": 11,
+                "last_commit": "2024-03-25T06:46:12Z"
+            },
+            {
+                "name": "laravel-prompt-alchemist",
+                "url": "https://github.com/moe-mizrak/laravel-prompt-alchemist",
+                "description": "Versatile LLM Tool Use (Function Calling) package for Laravel, compatible with all LLMs, enabling LLM to execute actual code functions (unlike LLMs' built-in capabilities).",
+                "stars": 6,
+                "last_commit": "2024-06-28T20:23:23Z"
+            },
+            {
+                "name": "mulagent",
+                "url": "https://github.com/FunkyOz/mulagent",
+                "description": "The orchestration of multiple agents involves the use of routines and handoffs. Simplifying, a routine is a series of steps to follow to achieve a goal, and a handoff is the transition from one agent to another, like a switchboard transferring a phone call.",
+                "stars": 6,
+                "last_commit": "2025-02-07T11:00:56Z"
+            },
+            {
+                "name": "prompt-generator",
+                "url": "https://github.com/llm-agents-php/prompt-generator",
+                "description": "Prompt generator for LLM agents with interceptors",
+                "stars": 7,
+                "last_commit": "2024-09-15T18:48:50Z"
+            },
+            {
+                "name": "instructrice",
+                "url": "https://github.com/adrienbrault/instructrice",
+                "description": "Typed LLM Outputs in PHP. Supports GPT, Claude, Gemini or any OpenAI compatible provider!",
+                "stars": 30,
+                "last_commit": "2024-07-23T21:15:52Z"
+            },
+            {
+                "name": "llm",
+                "url": "https://github.com/artisan-build/llm",
+                "description": "Provides Laravel integrations for various LLM providers",
+                "stars": 0,
+                "last_commit": "2024-06-06T21:50:47Z"
+            },
+            {
+                "name": "php-llm-json-adapter",
+                "url": "https://github.com/takaaki-mizuno/php-llm-json-adapter",
+                "description": "When using LLMs from the system, you often expect to get output results in JSON: OpenAPI's GPT API has a mechanism called Function Calling, which can return JSON, but Google's Gemini does not seem to have that functionality.",
+                "stars": 1,
+                "last_commit": "2024-04-28T03:41:41Z"
+            },
+            {
+                "name": "LaravelLLMContext",
+                "url": "https://github.com/jeremysalmon/LaravelLLMContext",
+                "description": "Artisan Command to Generate LLM Context for a Laravel Project",
+                "stars": 0,
+                "last_commit": "2024-11-11T16:31:30Z"
+            },
+            {
+                "name": "llm-magic",
+                "url": "https://github.com/Capevace/llm-magic",
+                "description": "LLM-agnostic AI toolkit for Laravel",
+                "stars": 3,
+                "last_commit": "2025-02-11T22:57:32Z"
+            },
+            {
+                "name": "php-llm-documents",
+                "url": "https://github.com/thojou/php-llm-documents",
+                "description": "PHP LLM Documents is a powerful PHP library that brings LLM (Large Language Model) functionality into the PHP ecosystem.",
+                "stars": 7,
+                "last_commit": "2023-10-09T08:17:54Z"
+            },
+            {
+                "name": "fireworksai-adapter",
+                "url": "https://github.com/modelflow-ai/fireworksai-adapter",
+                "description": "The adapter integrates open-source models hosted by fireworks.ai into Modelflow AI.",
+                "stars": 0,
+                "last_commit": "2025-01-30T14:08:08Z"
+            },
+            {
+                "name": "Taskallama",
+                "url": "https://github.com/coding-wisely/taskallama",
+                "description": "Taskallama is a Laravel package that provides seamless integration with Ollama's LLM API. It simplifies generating AI-powered content, from professional task writing to conversational agents, with minimal effort. Whether you're building a task management system, an HR assistant for job posts, or blog content generation, Taskallama has you covered.",
+                "stars": 10,
+                "last_commit": "2025-02-03T16:35:38Z"
+            },
+            {
+                "name": "fabric-pattern",
+                "url": "https://github.com/php-llm/fabric-pattern",
+                "description": "Slim PHP wrapper for Daniel Miessler's fabric pattern",
+                "stars": 0,
+                "last_commit": "2024-10-05T18:20:29Z"
+            },
+            {
+                "name": "aipi-php",
+                "url": "https://github.com/skito/aipi-php",
+                "description": "Universal API client for common AI models",
+                "stars": 31,
+                "last_commit": "2025-01-04T19:19:04Z"
+            },
+            {
+                "name": "Sidekick",
+                "url": "https://github.com/PapaRascal2020/sidekick",
+                "description": "Say hello to Sidekick! A Laravel package that provides a common syntax for using Claude, Mistral, Cohere and OpenAi APIs.",
+                "stars": 24,
+                "last_commit": "2024-10-02T18:48:46Z"
+            },
+            {
+                "name": "Laravel OpenRouter",
+                "url": "https://github.com/moe-mizrak/laravel-openrouter",
+                "description": "Laravel integration for OpenRouter's unified LLM API interface.",
+                "stars": 32,
+                "last_commit": "2025-02-24T21:17:45Z"
+            },
+            {
+                "name": "grok-php/laravel",
+                "url": "https://github.com/grok-php/laravel",
+                "description": "Seamlessly integrate Grok AI into Laravel applications with an elegant, developer-friendly package. Leverage powerful AI models for chat, automation, and NLP, while maintaining Laravel's expressive simplicity.",
+                "stars": 113,
+                "last_commit": "2025-02-25T11:07:50Z"
+            }
+        ],
+        "machine_learning": [
+            {
+                "name": "Rubix ML",
+                "url": "https://github.com/RubixML/ML",
+                "description": "Machine learning library for building algorithms and models.",
+                "stars": 2091,
+                "last_commit": "2025-02-10T03:50:17Z"
+            },
+            {
+                "name": "TensorFlow PHP",
+                "url": "https://github.com/tensorflow/tfjs",
+                "description": "PHP bindings for TensorFlow.",
+                "stars": 18682,
+                "last_commit": "2025-02-18T03:43:20Z"
+            }
+        ],
+        "deep_learning": [],
+        "search": [],
+        "computer_vision": [
+            {
+                "name": "opencv/opencv-php",
+                "url": "https://github.com/php-opencv/php-opencv",
+                "description": "OpenCV bindings for PHP for image processing and computer vision.",
+                "stars": 352,
+                "last_commit": "2023-12-08T22:30:57Z"
+            }
+        ],
+        "data_manipulation": [
+            {
+                "name": "brick/math",
+                "url": "https://github.com/brick/math",
+                "description": "Handles arbitrary precision mathematics in PHP.",
+                "stars": 1907,
+                "last_commit": "2025-02-26T10:24:08Z"
+            },
+            {
+                "name": "php-ai/php-ds",
+                "url": "https://github.com/php-ds",
+                "description": "PHP data structures extension for performance."
+            },
+            {
+                "name": "redis-vector-php",
+                "url": "https://github.com/redis-applied-ai/redis-vector-php",
+                "description": "Redis Vector Library (RedisVL) enables Redis as a real-time database for LLM applications, based on Predis PHP client",
+                "stars": 11,
+                "last_commit": "2024-02-29T15:33:39Z"
+            }
+        ],
+        "command_line_tools": [
+            {
+                "name": "ai-commit",
+                "url": "https://github.com/guanguans/ai-commit",
+                "description": "Automagically generate conventional git commit messages with AI.",
+                "stars": 377,
+                "last_commit": "2025-02-25T22:04:13Z"
+            },
+            {
+                "name": "Laragenie",
+                "url": "https://github.com/joshembling/laragenie",
+                "description": "An AI bot made for the command line that can read and understand any codebase from your Laravel app.",
+                "stars": 149,
+                "last_commit": "2024-08-05T13:16:03Z"
+            }
+        ],
+        "video_processing": [
+            {
+                "name": "Subvert",
+                "url": "https://github.com/aschmelyun/subvert",
+                "description": "Generate subtitles, summaries, and chapters from videos in seconds",
+                "stars": 824,
+                "last_commit": "2025-01-31T05:56:54Z"
+            }
+        ],
+        "vector_storage": [
+            {
+                "name": "vector-storage",
+                "url": "https://github.com/llm-agents-php/vector-storage",
+                "description": "LLM Agents Vector Storage",
+                "stars": 2,
+                "last_commit": "2025-01-19T15:24:21Z"
+            }
+        ]
+    },
+    "api_clients": [
+        {
+            "name": "Gemini PHP",
+            "url": "https://github.com/google-gemini-php/client",
+            "description": "\u26a1\ufe0f Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API.",
+            "stars": 216,
+            "last_commit": "2025-01-08T05:56:44Z"
+        },
+        {
+            "name": "OpenAI PHP",
+            "url": "https://github.com/openai-php/client",
+            "description": "OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.",
+            "stars": 5179,
+            "last_commit": "2024-12-22T14:38:20Z"
+        },
+        {
+            "name": "OpenAI PHP SDK",
+            "url": "https://github.com/orhanerday/open-ai",
+            "description": "OpenAI PHP SDK : Most downloaded, forked, contributed, huge community supported, and used PHP (Laravel , Symfony, Yii, Cake PHP or any PHP framework) SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming. (ChatGPT AI is supported)",
+            "stars": 2305,
+            "last_commit": "2025-01-04T19:06:08Z"
+        },
+        {
+            "name": "DeepL PHP",
+            "url": "https://github.com/DeepLcom/deepl-php",
+            "description": "Official PHP library for the DeepL language translation API.",
+            "stars": 224,
+            "last_commit": "2025-01-17T09:44:50Z"
+        },
+        {
+            "name": "Google Cloud AI",
+            "url": "https://github.com/googleapis/google-cloud-php",
+            "description": "Google Cloud AI services in PHP.",
+            "stars": 1107,
+            "last_commit": "2025-02-27T03:04:36Z"
+        },
+        {
+            "name": "AWS Rekognition",
+            "url": "https://aws.amazon.com/rekognition/",
+            "description": "Amazon Rekognition API for image and video analysis."
+        }
     ],
-    "machine_learning": [
-      {
-        "name": "Rubix ML",
-        "url": "https://github.com/RubixML/ML",
-        "description": "Machine learning library for building algorithms and models."
-      },
-      {
-        "name": "TensorFlow PHP",
-        "url": "https://github.com/tensorflow/tfjs",
-        "description": "PHP bindings for TensorFlow."
-      }
-    ],
-    "computer_vision": [
-      {
-        "name": "opencv/opencv-php",
-        "url": "https://github.com/php-opencv/php-opencv",
-        "description": "OpenCV bindings for PHP for image processing and computer vision."
-      }
-    ],
-    "data_manipulation": [
-      {
-        "name": "brick/math",
-        "url": "https://github.com/brick/math",
-        "description": "Handles arbitrary precision mathematics in PHP."
-      },
-      {
-        "name": "php-ai/php-ds",
-        "url": "https://github.com/php-ds",
-        "description": "PHP data structures extension for performance."
-      },
-      {
-        "name": "redis-vector-php",
-        "url": "https://github.com/redis-applied-ai/redis-vector-php",
-        "description": "Redis Vector Library (RedisVL) enables Redis as a real-time database for LLM applications, based on Predis PHP client"
-      }
-    ],
-    "command_line_tools": [
-      {
-        "name": "ai-commit",
-        "url": "https://github.com/guanguans/ai-commit",
-        "description": "Automagically generate conventional git commit messages with AI."
-      },
-      {
-        "name": "Laragenie",
-        "url": "https://github.com/joshembling/laragenie",
-        "description": "An AI bot made for the command line that can read and understand any codebase from your Laravel app."
-      }
-    ],
-    "video_processing": [
-      {
-        "name": "Subvert",
-        "url": "https://github.com/aschmelyun/subvert",
-        "description": "Generate subtitles, summaries, and chapters from videos in seconds"
-      }
-    ],
-    "vector_storage": [
-      {
-        "name": "vector-storage",
-        "url": "https://github.com/llm-agents-php/vector-storage",
-        "description": "LLM Agents Vector Storage"
-      }
+    "learning_resources": [
+        {
+            "name": "Fun With OpenAI and Laravel",
+            "url": "https://laracasts.com/series/fun-with-openai-and-laravel",
+            "description": "Fun With OpenAI and Laravel In this series, you'll get your feet wet with a variety of fun examples that demonstrate how to interact with OpenAI using PHP and Laravel. We'll begin by assuming that you know nothing, and then slowly work our way up one episode at a time!"
+        },
+        {
+            "name": "elasticsearch-chatgpt-php",
+            "url": "https://github.com/elastic/elasticsearch-chatgpt-php",
+            "description": "Use ChatGPT to search in Elasticsearch using natural language",
+            "stars": 26,
+            "last_commit": "2024-08-09T06:34:07Z"
+        },
+        {
+            "name": "PHP LLM Examples",
+            "url": "https://github.com/ezimuel/php-llm-examples",
+            "description": "Examples demonstrating GenAI and LLM usage in PHP.",
+            "stars": 12,
+            "last_commit": "2024-08-14T17:03:45Z"
+        },
+        {
+            "name": "SearchAugmentedLLM",
+            "url": "https://github.com/EliasPereirah/SearchAugmentedLLM",
+            "description": "SearchAugmentedLLM empowers LLMs with information from the web",
+            "stars": 8,
+            "last_commit": "2025-02-26T14:55:26Z"
+        },
+        {
+            "name": "neuranotes-api",
+            "url": "https://github.com/waponix/neuranotes-api",
+            "description": "A note-taking app showcasing LLM, RAG integration, scalable architecture, and intuitive UI/UX design.",
+            "stars": 1,
+            "last_commit": "2025-02-13T08:32:50Z"
+        },
+        {
+            "name": "PHP-ML Tutorials",
+            "url": "https://php-ml.readthedocs.io/en/latest/tutorials/",
+            "description": "Learn how to use PHP-ML for machine learning."
+        },
+        {
+            "name": "onnxruntime-php",
+            "url": "https://github.com/ankane/onnxruntime-php",
+            "description": "\ud83d\udd25 ONNX Runtime - the high performance scoring engine for ML models - for PHP",
+            "stars": 72,
+            "last_commit": "2024-11-01T18:42:45Z"
+        },
+        {
+            "name": "Rubix ML Docs",
+            "url": "https://docs.rubixml.com/",
+            "description": "Comprehensive documentation for Rubix ML."
+        }
     ]
-  },
-  "api_clients": [
-    {
-      "name": "OpenAI PHP",
-      "url": "https://github.com/openai-php/client",
-      "description": "OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API."
-    },
-    {
-      "name": "OpenAI PHP SDK",
-      "url": "https://github.com/orhanerday/open-ai",
-      "description": "OpenAI PHP SDK : Most downloaded, forked, contributed, huge community supported, and used PHP (Laravel , Symfony, Yii, Cake PHP or any PHP framework) SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming. (ChatGPT AI is supported)"
-    },
-    {
-      "name": "Google Cloud AI",
-      "url": "https://github.com/googleapis/google-cloud-php",
-      "description": "Google Cloud AI services in PHP."
-    },
-    {
-      "name": "AWS Rekognition",
-      "url": "https://aws.amazon.com/rekognition/",
-      "description": "Amazon Rekognition API for image and video analysis."
-    }
-  ],
-  "learning_resources": [
-    {
-      "name": "Fun With OpenAI and Laravel",
-      "url": "https://laracasts.com/series/fun-with-openai-and-laravel",
-      "description": "Fun With OpenAI and Laravel In this series, you'll get your feet wet with a variety of fun examples that demonstrate how to interact with OpenAI using PHP and Laravel. We'll begin by assuming that you know nothing, and then slowly work our way up one episode at a time!"
-    },
-    {
-      "name": "elasticsearch-chatgpt-php",
-      "url": "https://github.com/elastic/elasticsearch-chatgpt-php",
-      "description": "Use ChatGPT to search in Elasticsearch using natural language"
-    },
-    {
-      "name": "PHP LLM Examples",
-      "url": "https://github.com/ezimuel/php-llm-examples",
-      "description": "Examples demonstrating GenAI and LLM usage in PHP."
-    },
-    {
-      "name": "PHP-ML Tutorials",
-      "url": "https://php-ml.readthedocs.io/en/latest/tutorials/",
-      "description": "Learn how to use PHP-ML for machine learning."
-    },
-    {
-      "name": "Rubix ML Docs",
-      "url": "https://docs.rubixml.com/",
-      "description": "Comprehensive documentation for Rubix ML."
-    }
-  ]
 }
