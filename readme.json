@@ -2,6 +2,13 @@
     "libraries": {
         "natural_language_processing": [
             {
+                "name": "Neuron AI",
+                "url": "https://github.com/inspector-apm/neuron-ai",
+                "description": "Open source framework to create full featured AI Agents in PHP.",
+                "stars": 633,
+                "last_commit": "2025-05-27T12:52:06Z"
+            },
+            {
                 "name": "LLPhant",
                 "url": "https://github.com/theodo-group/llphant",
                 "description": "A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.",
