@@ -21,6 +21,7 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 ### Natural Language Processing
 
 -   [**Prism**](https://github.com/echolabsdev/prism) ⭐ 972 - A unified interface for working with LLMs in Laravel applications.
+-   [**Neuron AI**]([https://github.com/echolabsdev/prism](https://github.com/inspector-apm/neuron-ai)) ⭐ 633 - Open source framework to create full featured AI Agents in PHP.
 -   [**Instructor PHP**](https://github.com/cognesy/instructor-php) ⭐ 238 - Extract structured data from LLM outputs with type safety and validation.
 -   [**LLM Chain**](https://github.com/php-llm/llm-chain) ⭐ 45 - Comprehensive PHP library for building LLM-powered applications.
 -   [**grok-php/laravel**](https://github.com/grok-php/laravel) ⭐ 113 - Seamlessly integrate Grok AI into Laravel applications with an elegant, developer-friendly package. Leverage powerful AI models for chat, automation, and NLP, while maintaining Laravel&#039;s expressive simplicity.
