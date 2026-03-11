@@ -92,6 +92,7 @@ A curated list of awesome PHP libraries and tools for integrating AI, Machine Le
 
 ## API Clients
 
+-   [**Anthropic PHP**](https://github.com/mozex/anthropic-php) ⭐ 45 - Community-maintained PHP API client for the Anthropic AI API, supporting messages, streaming, tool use, and batch processing.
 -   [**Google Cloud AI**](https://github.com/googleapis/google-cloud-php) ⭐ 1107 - Google Cloud AI services in PHP.
 -   [**DeepL PHP**](https://github.com/DeepLcom/deepl-php) ⭐ 224 - Official PHP library for the DeepL language translation API.
 -   [**Gemini PHP**](https://github.com/google-gemini-php/client) ⭐ 216 - ⚡️ Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API.
