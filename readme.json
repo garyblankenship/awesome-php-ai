@@ -375,12 +375,6 @@
   ],
   "machine_learning": [
     {
-      "name": "TensorFlow PHP",
-      "url": "https://github.com/tensorflow/tfjs",
-      "description": "PHP bindings for TensorFlow.",
-      "stars": 18682
-    },
-    {
       "name": "Rubix ML",
       "url": "https://github.com/RubixML/ML",
       "description": "Machine learning library for building algorithms and models.",
