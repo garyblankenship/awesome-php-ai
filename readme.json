@@ -7,12 +7,6 @@
       "stars": 4484
     },
     {
-      "name": "LLPhant",
-      "url": "https://github.com/theodo-group/llphant",
-      "description": "Comprehensive PHP Generative AI Framework using OpenAI GPT-4. Inspired by Langchain.",
-      "stars": 1035
-    },
-    {
       "name": "Prism",
       "url": "https://github.com/prism-php/prism",
       "description": "Unified interface for working with LLMs in Laravel applications.",
@@ -22,7 +16,31 @@
       "name": "Neuron AI",
       "url": "https://github.com/neuron-core/neuron-ai",
       "description": "PHP Agentic Framework for production-ready AI applications with RAG and multi-agent workflows.",
-      "stars": 1771
+      "stars": 1770
+    },
+    {
+      "name": "LLPhant",
+      "url": "https://github.com/theodo-group/llphant",
+      "description": "Comprehensive PHP Generative AI Framework using OpenAI GPT-4. Inspired by Langchain.",
+      "stars": 1443
+    },
+    {
+      "name": "langchain-php",
+      "url": "https://github.com/kambo-1st/langchain-php",
+      "description": "Building applications with LLMs through composability in PHP.",
+      "stars": 321
+    },
+    {
+      "name": "Vizra ADK",
+      "url": "https://github.com/vizra-ai/vizra-adk",
+      "description": "Build, test, and deploy intelligent AI agents the Laravel way.",
+      "stars": 291
+    },
+    {
+      "name": "Resonance",
+      "url": "https://github.com/distantmagic/resonance",
+      "description": "High-performance PHP framework optimized for IO-intensive LLM applications.",
+      "stars": 229
     },
     {
       "name": "LLM Chain",
@@ -34,13 +52,7 @@
       "name": "Lugha",
       "url": "https://github.com/devscast/lugha",
       "description": "PHP Generative AI Framework to build chatbots, RAG systems and AI-powered applications.",
-      "stars": 25
-    },
-    {
-      "name": "langchain-php",
-      "url": "https://github.com/kambo-1st/langchain-php",
-      "description": "Building applications with LLMs through composability in PHP.",
-      "stars": 282
+      "stars": 30
     },
     {
       "name": "EasyAI-PHP",
@@ -52,19 +64,7 @@
       "name": "EleLLM",
       "url": "https://github.com/wpai-inc/EleLLM",
       "description": "A PHP framework that makes working with LLMs more pleasurable and accessible.",
-      "stars": 3
-    },
-    {
-      "name": "Resonance",
-      "url": "https://github.com/distantmagic/resonance",
-      "description": "High-performance PHP framework optimized for IO-intensive LLM applications.",
-      "stars": 229
-    },
-    {
-      "name": "Vizra ADK",
-      "url": "https://github.com/vizra-ai/vizra-adk",
-      "description": "Build, test, and deploy intelligent AI agents the Laravel way.",
-      "stars": 291
+      "stars": 5
     }
   ],
   "llm_clients_adapters": [
@@ -72,13 +72,25 @@
       "name": "OpenAI PHP",
       "url": "https://github.com/openai-php/client",
       "description": "Supercharged community-maintained PHP API client for OpenAI.",
-      "stars": 5179
+      "stars": 5744
     },
     {
       "name": "OpenAI PHP SDK",
       "url": "https://github.com/orhanerday/open-ai",
       "description": "Most downloaded PHP SDK for OpenAI GPT-3, DALL-E, and ChatGPT with streaming support.",
-      "stars": 2305
+      "stars": 2368
+    },
+    {
+      "name": "Gemini PHP",
+      "url": "https://github.com/google-gemini-php/client",
+      "description": "Community-maintained PHP API client for Gemini AI.",
+      "stars": 396
+    },
+    {
+      "name": "WordPress PHP AI Client",
+      "url": "https://github.com/WordPress/php-ai-client",
+      "description": "Provider-agnostic PHP AI client SDK for any generative AI model.",
+      "stars": 251
     },
     {
       "name": "Ollama PHP",
@@ -87,46 +99,16 @@
       "stars": 207
     },
     {
-      "name": "Gemini PHP",
-      "url": "https://github.com/google-gemini-php/client",
-      "description": "Community-maintained PHP API client for Gemini AI.",
-      "stars": 216
-    },
-    {
       "name": "grok-php/laravel",
       "url": "https://github.com/grok-php/laravel",
       "description": "Integrate Grok AI into Laravel with an elegant, developer-friendly package.",
-      "stars": 113
+      "stars": 163
     },
     {
       "name": "Laravel OpenRouter",
       "url": "https://github.com/moe-mizrak/laravel-openrouter",
       "description": "Laravel integration for OpenRouter's unified LLM API interface.",
       "stars": 153
-    },
-    {
-      "name": "Sidekick",
-      "url": "https://github.com/PapaRascal2020/sidekick",
-      "description": "Laravel package with common syntax for Claude, Mistral, Cohere and OpenAI APIs.",
-      "stars": 24
-    },
-    {
-      "name": "aipi-php",
-      "url": "https://github.com/skito/aipi-php",
-      "description": "Universal API client for common AI models.",
-      "stars": 31
-    },
-    {
-      "name": "LLM-Port-Laravel",
-      "url": "https://github.com/BorahLabs/LLM-Port-Laravel",
-      "description": "Drop-in replacement wrapper for popular LLMs in Laravel.",
-      "stars": 2
-    },
-    {
-      "name": "WordPress PHP AI Client",
-      "url": "https://github.com/WordPress/php-ai-client",
-      "description": "Provider-agnostic PHP AI client SDK for any generative AI model.",
-      "stars": 251
     },
     {
       "name": "AI Access",
@@ -139,6 +121,24 @@
       "url": "https://github.com/mozex/anthropic-php",
       "description": "Community-maintained PHP API client for Anthropic (Claude) API with streaming, tool use, and batch processing.",
       "stars": 45
+    },
+    {
+      "name": "aipi-php",
+      "url": "https://github.com/skito/aipi-php",
+      "description": "Universal API client for common AI models.",
+      "stars": 39
+    },
+    {
+      "name": "Sidekick",
+      "url": "https://github.com/PapaRascal2020/sidekick",
+      "description": "Laravel package with common syntax for Claude, Mistral, Cohere and OpenAI APIs.",
+      "stars": 31
+    },
+    {
+      "name": "LLM-Port-Laravel",
+      "url": "https://github.com/BorahLabs/LLM-Port-Laravel",
+      "description": "Drop-in replacement wrapper for popular LLMs in Laravel.",
+      "stars": 2
     }
   ],
   "structured_output": [
@@ -160,19 +160,19 @@
       "name": "LLM Agents",
       "url": "https://github.com/llm-agents-php/agents",
       "description": "Build and manage LLM-based autonomous agents that perform complex tasks.",
-      "stars": 85
-    },
-    {
-      "name": "mulagent",
-      "url": "https://github.com/FunkyOz/mulagent",
-      "description": "Multi-agent orchestration with routines and handoffs.",
-      "stars": 6
+      "stars": 165
     },
     {
       "name": "ai-team",
       "url": "https://github.com/sarfraznawaz2005/ai-team",
       "description": "Create teams of AI members that collaborate to achieve common goals.",
-      "stars": 11
+      "stars": 10
+    },
+    {
+      "name": "mulagent",
+      "url": "https://github.com/FunkyOz/mulagent",
+      "description": "Multi-agent orchestration with routines and handoffs.",
+      "stars": 8
     }
   ],
   "laravel_integrations": [
@@ -180,13 +180,7 @@
       "name": "Laravel AI",
       "url": "https://github.com/laravel/ai",
       "description": "Official Laravel package for AI integration.",
-      "stars": 0
-    },
-    {
-      "name": "Neuron Laravel",
-      "url": "https://github.com/neuron-core/neuron-laravel",
-      "description": "Official Neuron AI Laravel SDK.",
-      "stars": 106
+      "stars": 674
     },
     {
       "name": "Laravel MCP Server",
@@ -195,10 +189,10 @@
       "stars": 331
     },
     {
-      "name": "MCP Client Laravel",
-      "url": "https://github.com/RedberryProducts/mcp-client-laravel",
-      "description": "Laravel-native client for MCP servers.",
-      "stars": 13
+      "name": "Neuron Laravel",
+      "url": "https://github.com/neuron-core/neuron-laravel",
+      "description": "Official Neuron AI Laravel SDK.",
+      "stars": 106
     },
     {
       "name": "Laravel AI Guard",
@@ -207,40 +201,16 @@
       "stars": 24
     },
     {
-      "name": "llm-magic",
-      "url": "https://github.com/Capevace/llm-magic",
-      "description": "LLM-agnostic AI toolkit for Laravel.",
-      "stars": 3
+      "name": "MCP Client Laravel",
+      "url": "https://github.com/RedberryProducts/mcp-client-laravel",
+      "description": "Laravel-native client for MCP servers.",
+      "stars": 13
     },
     {
       "name": "Taskallama",
       "url": "https://github.com/coding-wisely/taskallama",
       "description": "Laravel integration with Ollama's LLM API for content generation.",
-      "stars": 10
-    },
-    {
-      "name": "laravel-llm-prompt",
-      "url": "https://github.com/SabatinoMasala/laravel-llm-prompt",
-      "description": "Laravel LLM prompt manager.",
-      "stars": 5
-    },
-    {
-      "name": "laravel-prompt-alchemist",
-      "url": "https://github.com/moe-mizrak/laravel-prompt-alchemist",
-      "description": "Versatile LLM Tool Use (Function Calling) for Laravel, compatible with all LLMs.",
-      "stars": 6
-    },
-    {
-      "name": "LaravelLLMContext",
-      "url": "https://github.com/jeremysalmon/LaravelLLMContext",
-      "description": "Artisan command to generate LLM context for a Laravel project.",
-      "stars": 0
-    },
-    {
-      "name": "llm",
-      "url": "https://github.com/artisan-build/llm",
-      "description": "Laravel integrations for various LLM providers.",
-      "stars": 0
+      "stars": 11
     },
     {
       "name": "ai-translations-for-laravel",
@@ -253,6 +223,36 @@
       "url": "https://github.com/prismaticoder/laravel-prompt-manager",
       "description": "Simplify prompt management for AI engineers using Laravel.",
       "stars": 7
+    },
+    {
+      "name": "llm-magic",
+      "url": "https://github.com/Capevace/llm-magic",
+      "description": "LLM-agnostic AI toolkit for Laravel.",
+      "stars": 5
+    },
+    {
+      "name": "laravel-llm-prompt",
+      "url": "https://github.com/SabatinoMasala/laravel-llm-prompt",
+      "description": "Laravel LLM prompt manager.",
+      "stars": 5
+    },
+    {
+      "name": "laravel-prompt-alchemist",
+      "url": "https://github.com/moe-mizrak/laravel-prompt-alchemist",
+      "description": "Versatile LLM Tool Use (Function Calling) for Laravel, compatible with all LLMs.",
+      "stars": 5
+    },
+    {
+      "name": "LaravelLLMContext",
+      "url": "https://github.com/jeremysalmon/LaravelLLMContext",
+      "description": "Artisan command to generate LLM context for a Laravel project.",
+      "stars": 1
+    },
+    {
+      "name": "llm",
+      "url": "https://github.com/artisan-build/llm",
+      "description": "Laravel integrations for various LLM providers.",
+      "stars": 0
     }
   ],
   "symfony_integrations": [
@@ -261,6 +261,24 @@
       "url": "https://github.com/symfony/ai-platform",
       "description": "PHP library for interacting with AI platform providers.",
       "stars": 51
+    },
+    {
+      "name": "Symfony MCP SDK",
+      "url": "https://github.com/symfony/mcp-sdk",
+      "description": "Model Context Protocol SDK for Client and Server applications in PHP.",
+      "stars": 45
+    },
+    {
+      "name": "LLM Chain Bundle",
+      "url": "https://github.com/php-llm/llm-chain-bundle",
+      "description": "Symfony bundle for seamless integration of the LLM Chain library.",
+      "stars": 37
+    },
+    {
+      "name": "Symfony MCP Bundle",
+      "url": "https://github.com/symfony/mcp-bundle",
+      "description": "Official Symfony integration bundle for Model Context Protocol.",
+      "stars": 36
     },
     {
       "name": "Symfony AI Agent",
@@ -273,92 +291,32 @@
       "url": "https://github.com/symfony/ai-bundle",
       "description": "Integration bundle for Symfony AI components.",
       "stars": 29
-    },
-    {
-      "name": "Symfony MCP SDK",
-      "url": "https://github.com/symfony/mcp-sdk",
-      "description": "Model Context Protocol SDK for Client and Server applications in PHP.",
-      "stars": 45
-    },
-    {
-      "name": "Symfony MCP Bundle",
-      "url": "https://github.com/symfony/mcp-bundle",
-      "description": "Official Symfony integration bundle for Model Context Protocol.",
-      "stars": 36
-    },
-    {
-      "name": "LLM Chain Bundle",
-      "url": "https://github.com/php-llm/llm-chain-bundle",
-      "description": "Symfony bundle for seamless integration of the LLM Chain library.",
-      "stars": 37
     }
   ],
   "utilities_tools": [
     {
-      "name": "transformers-php",
-      "url": "https://github.com/CodeWithKyrian/transformers-php",
-      "description": "Toolkit for PHP developers to add machine learning magic easily.",
-      "stars": 615
+      "name": "cocur/slugify",
+      "url": "https://github.com/cocur/slugify",
+      "description": "Converts strings into slugs.",
+      "stars": 2904
     },
     {
       "name": "NlpTools",
       "url": "https://github.com/angeloskath/php-nlp-tools",
       "description": "Collection of NLP tools and APIs for working with text.",
-      "stars": 756
+      "stars": 763
     },
     {
-      "name": "cocur/slugify",
-      "url": "https://github.com/cocur/slugify",
-      "description": "Converts strings into slugs.",
-      "stars": 2891
+      "name": "transformers-php",
+      "url": "https://github.com/CodeWithKyrian/transformers-php",
+      "description": "Toolkit for PHP developers to add machine learning magic easily.",
+      "stars": 743
     },
     {
-      "name": "prompt-generator",
-      "url": "https://github.com/llm-agents-php/prompt-generator",
-      "description": "Prompt generator for LLM agents with interceptors.",
-      "stars": 7
-    },
-    {
-      "name": "fabric-pattern",
-      "url": "https://github.com/php-llm/fabric-pattern",
-      "description": "Slim PHP wrapper for Daniel Miessler's fabric pattern.",
-      "stars": 0
-    },
-    {
-      "name": "php-llm-json-adapter",
-      "url": "https://github.com/takaaki-mizuno/php-llm-json-adapter",
-      "description": "JSON output adapter for LLMs that lack native function calling.",
-      "stars": 1
-    },
-    {
-      "name": "php-llm-documents",
-      "url": "https://github.com/thojou/php-llm-documents",
-      "description": "Brings LLM functionality for document processing.",
-      "stars": 7
-    },
-    {
-      "name": "mcp-php",
-      "url": "https://github.com/garyblankenship/mcp-php",
-      "description": "Setting up a Model Context Protocol (MCP) Server in Laravel.",
-      "stars": 2
-    },
-    {
-      "name": "fireworksai-adapter",
-      "url": "https://github.com/modelflow-ai/fireworksai-adapter",
-      "description": "Adapter for open-source models hosted by fireworks.ai.",
-      "stars": 0
-    },
-    {
-      "name": "single-file-php-ai",
-      "url": "https://github.com/mariorazo97/single-file-php-ai",
-      "description": "Drop-in, single-file PHP chat interface for Ollama/OpenAI. No Node.js, no Docker.",
-      "stars": 49
-    },
-    {
-      "name": "php-ai-tool-bridge",
-      "url": "https://github.com/manuelkiessling/php-ai-tool-bridge",
-      "description": "AI integration to interact with your own code and services.",
-      "stars": 75
+      "name": "CTX Generator",
+      "url": "https://github.com/context-hub/generator",
+      "description": "Tool that solves context management when working with LLMs - organizes codebase info for AI assistants.",
+      "stars": 310
     },
     {
       "name": "TOON PHP",
@@ -367,10 +325,52 @@
       "stars": 115
     },
     {
-      "name": "CTX Generator",
-      "url": "https://github.com/context-hub/generator",
-      "description": "Tool that solves context management when working with LLMs - organizes codebase info for AI assistants.",
-      "stars": 310
+      "name": "php-ai-tool-bridge",
+      "url": "https://github.com/manuelkiessling/php-ai-tool-bridge",
+      "description": "AI integration to interact with your own code and services.",
+      "stars": 75
+    },
+    {
+      "name": "single-file-php-ai",
+      "url": "https://github.com/mariorazo97/single-file-php-ai",
+      "description": "Drop-in, single-file PHP chat interface for Ollama/OpenAI. No Node.js, no Docker.",
+      "stars": 49
+    },
+    {
+      "name": "mcp-php",
+      "url": "https://github.com/garyblankenship/mcp-php",
+      "description": "Setting up a Model Context Protocol (MCP) Server in Laravel.",
+      "stars": 25
+    },
+    {
+      "name": "prompt-generator",
+      "url": "https://github.com/llm-agents-php/prompt-generator",
+      "description": "Prompt generator for LLM agents with interceptors.",
+      "stars": 7
+    },
+    {
+      "name": "php-llm-documents",
+      "url": "https://github.com/thojou/php-llm-documents",
+      "description": "Brings LLM functionality for document processing.",
+      "stars": 7
+    },
+    {
+      "name": "fabric-pattern",
+      "url": "https://github.com/php-llm/fabric-pattern",
+      "description": "Slim PHP wrapper for Daniel Miessler's fabric pattern.",
+      "stars": 1
+    },
+    {
+      "name": "php-llm-json-adapter",
+      "url": "https://github.com/takaaki-mizuno/php-llm-json-adapter",
+      "description": "JSON output adapter for LLMs that lack native function calling.",
+      "stars": 1
+    },
+    {
+      "name": "fireworksai-adapter",
+      "url": "https://github.com/modelflow-ai/fireworksai-adapter",
+      "description": "Adapter for open-source models hosted by fireworks.ai.",
+      "stars": 1
     }
   ],
   "machine_learning": [
@@ -378,13 +378,13 @@
       "name": "Rubix ML",
       "url": "https://github.com/RubixML/ML",
       "description": "Machine learning library for building algorithms and models.",
-      "stars": 2091
+      "stars": 2190
     },
     {
       "name": "php-ml",
       "url": "https://github.com/jorgecasas/php-ml",
       "description": "A PHP machine learning library.",
-      "stars": 304
+      "stars": 321
     }
   ],
   "computer_vision": [
@@ -392,7 +392,7 @@
       "name": "opencv/opencv-php",
       "url": "https://github.com/php-opencv/php-opencv",
       "description": "OpenCV bindings for PHP for image processing and computer vision.",
-      "stars": 352
+      "stars": 366
     }
   ],
   "vector_storage_rag": [
@@ -400,13 +400,13 @@
       "name": "php-rag",
       "url": "https://github.com/rzarno/php-rag",
       "description": "LLM-powered text generation with database-backed retrieval.",
-      "stars": 33
+      "stars": 62
     },
     {
       "name": "redis-vector-php",
       "url": "https://github.com/redis-applied-ai/redis-vector-php",
       "description": "Redis Vector Library for LLM applications, based on Predis.",
-      "stars": 11
+      "stars": 12
     },
     {
       "name": "vector-storage",
@@ -420,13 +420,13 @@
       "name": "ai-commit",
       "url": "https://github.com/guanguans/ai-commit",
       "description": "Automagically generate conventional git commit messages with AI.",
-      "stars": 377
+      "stars": 392
     },
     {
       "name": "Laragenie",
       "url": "https://github.com/joshembling/laragenie",
       "description": "AI bot for the command line that reads and understands Laravel codebases.",
-      "stars": 149
+      "stars": 150
     }
   ],
   "video_processing": [
@@ -434,7 +434,7 @@
       "name": "Subvert",
       "url": "https://github.com/aschmelyun/subvert",
       "description": "Generate subtitles, summaries, and chapters from videos in seconds.",
-      "stars": 824
+      "stars": 857
     }
   ],
   "api_clients": [
@@ -442,13 +442,13 @@
       "name": "Google Cloud AI",
       "url": "https://github.com/googleapis/google-cloud-php",
       "description": "Google Cloud AI services in PHP.",
-      "stars": 1107
+      "stars": 1170
     },
     {
       "name": "DeepL PHP",
       "url": "https://github.com/DeepLcom/deepl-php",
       "description": "Official PHP library for the DeepL language translation API.",
-      "stars": 224
+      "stars": 261
     },
     {
       "name": "AWS Rekognition",
@@ -459,40 +459,16 @@
   ],
   "learning_resources": [
     {
-      "name": "PHP LLMs Book",
-      "url": "https://github.com/alnutile/php-llms",
-      "description": "Practical guide for PHP developers on integrating LLMs into projects.",
-      "stars": 24
-    },
-    {
       "name": "onnxruntime-php",
       "url": "https://github.com/ankane/onnxruntime-php",
       "description": "ONNX Runtime - high performance scoring engine for ML models - for PHP.",
-      "stars": 72
-    },
-    {
-      "name": "PHP LLM Examples",
-      "url": "https://github.com/ezimuel/php-llm-examples",
-      "description": "Examples demonstrating GenAI and LLM usage in PHP.",
-      "stars": 17
+      "stars": 137
     },
     {
       "name": "Elasticsearch ChatGPT PHP",
       "url": "https://github.com/elastic/elasticsearch-chatgpt-php",
       "description": "Use ChatGPT to search in Elasticsearch using natural language.",
-      "stars": 26
-    },
-    {
-      "name": "SearchAugmentedLLM",
-      "url": "https://github.com/EliasPereirah/SearchAugmentedLLM",
-      "description": "Empowers LLMs with information from the web.",
-      "stars": 8
-    },
-    {
-      "name": "neuranotes-api",
-      "url": "https://github.com/waponix/neuranotes-api",
-      "description": "Note-taking app showcasing LLM, RAG integration, and scalable architecture.",
-      "stars": 1
+      "stars": 29
     },
     {
       "name": "YouTube AI Agent",
@@ -501,10 +477,34 @@
       "stars": 29
     },
     {
+      "name": "PHP LLMs Book",
+      "url": "https://github.com/alnutile/php-llms",
+      "description": "Practical guide for PHP developers on integrating LLMs into projects.",
+      "stars": 24
+    },
+    {
       "name": "Deep Research Agent",
       "url": "https://github.com/neuron-core/deep-research-agent",
       "description": "Deep research agent built with Neuron PHP AI framework.",
       "stars": 18
+    },
+    {
+      "name": "PHP LLM Examples",
+      "url": "https://github.com/ezimuel/php-llm-examples",
+      "description": "Examples demonstrating GenAI and LLM usage in PHP.",
+      "stars": 17
+    },
+    {
+      "name": "SearchAugmentedLLM",
+      "url": "https://github.com/EliasPereirah/SearchAugmentedLLM",
+      "description": "Empowers LLMs with information from the web.",
+      "stars": 9
+    },
+    {
+      "name": "neuranotes-api",
+      "url": "https://github.com/waponix/neuranotes-api",
+      "description": "Note-taking app showcasing LLM, RAG integration, and scalable architecture.",
+      "stars": 1
     }
   ],
   "data_manipulation": [
@@ -512,7 +512,7 @@
       "name": "brick/math",
       "url": "https://github.com/brick/math",
       "description": "Arbitrary precision mathematics in PHP.",
-      "stars": 1907
+      "stars": 2127
     },
     {
       "name": "php-ai/php-ds",
