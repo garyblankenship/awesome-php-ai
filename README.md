@@ -1,115 +1,235 @@
 # Awesome PHP AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of awesome PHP libraries and tools for integrating AI, Machine Learning, and Natural Language Processing into your PHP applications. Contributions are welcome!
+> A curated list of awesome PHP libraries and tools for AI, Machine Learning, and Natural Language Processing.
+
+Contributions welcome! Read the [contributing guidelines](#contributing) to get started.
+
+---
 
 ## Table of Contents
 
-- [Libraries](#libraries)
-  - [Natural Language Processing](#natural-language-processing)
-  - [Machine Learning](#machine-learning)
-  - [Computer Vision](#computer-vision)
-  - [Data Manipulation](#data-manipulation)
-  - [Command Line Tools](#command-line-tools)
-  - [Video Processing](#video-processing)
-  - [Vector Storage](#vector-storage)
+- [LLM Frameworks](#llm-frameworks)
+- [LLM Clients & Adapters](#llm-clients--adapters)
+- [Natural Language Processing](#natural-language-processing)
+- [Machine Learning](#machine-learning)
+- [Computer Vision](#computer-vision)
+- [Vector Storage & RAG](#vector-storage--rag)
+- [Command Line Tools](#command-line-tools)
+- [Video Processing](#video-processing)
 - [API Clients](#api-clients)
 - [Learning Resources](#learning-resources)
-- [Contributing](#contributing)
 
-## Libraries
+---
 
-### Natural Language Processing
+## LLM Frameworks
 
--   [**Prism**](https://github.com/echolabsdev/prism) ⭐ 972 - A unified interface for working with LLMs in Laravel applications.
--   [**Neuron AI**]([https://github.com/echolabsdev/prism](https://github.com/inspector-apm/neuron-ai)) ⭐ 633 - Open source framework to create full featured AI Agents in PHP.
--   [**Instructor PHP**](https://github.com/cognesy/instructor-php) ⭐ 238 - Extract structured data from LLM outputs with type safety and validation.
--   [**LLM Chain**](https://github.com/php-llm/llm-chain) ⭐ 45 - Comprehensive PHP library for building LLM-powered applications.
--   [**grok-php/laravel**](https://github.com/grok-php/laravel) ⭐ 113 - Seamlessly integrate Grok AI into Laravel applications with an elegant, developer-friendly package. Leverage powerful AI models for chat, automation, and NLP, while maintaining Laravel&#039;s expressive simplicity.
--   [**Laravel OpenRouter**](https://github.com/moe-mizrak/laravel-openrouter) ⭐ 32 - Laravel integration for OpenRouter&#039;s unified LLM API interface.
--   [**php-rag**](https://github.com/rzarno/php-rag) ⭐ 33 - Application using LLM (Llama3/GPT-4) for text generation with database-backed retrieval.
--   [**LLPhant**](https://github.com/theodo-group/llphant) ⭐ 1035 - A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.
--   [**LLM Chain Bundle**](https://github.com/php-llm/llm-chain-bundle) ⭐ 12 - Symfony bundle for seamless integration of the LLM Chain library.
--   [**Lugha**](https://github.com/devscast/lugha) ⭐ 25 - Lugha is a PHP Generative AI Framework to build chatbot, RAG systems and AI-powered applications
--   [**llm-magic**](https://github.com/Capevace/llm-magic) ⭐ 3 - LLM-agnostic AI toolkit for Laravel
--   [**mulagent**](https://github.com/FunkyOz/mulagent) ⭐ 6 - The orchestration of multiple agents involves the use of routines and handoffs. Simplifying, a routine is a series of steps to follow to achieve a goal, and a handoff is the transition from one agent to another, like a switchboard transferring a phone call.
--   [**Taskallama**](https://github.com/coding-wisely/taskallama) ⭐ 10 - Taskallama is a Laravel package that provides seamless integration with Ollama&#039;s LLM API. It simplifies generating AI-powered content, from professional task writing to conversational agents, with minimal effort. Whether you&#039;re building a task management system, an HR assistant for job posts, or blog content generation, Taskallama has you covered.
--   [**EasyAI-PHP**](https://github.com/HosonoDE/EasyAI-PHP) ⭐ 10 - EasyAI-PHP is an open-source initiative designed to significantly simplify the entry into artificial intelligence for PHP-developers (so basically Lang-Chain for PHP). Based on PHP 8.1+, this project integrates advanced AI models and utilities, allowing developers to incorporate complex AI functionalities with minimal coding.
--   [**fireworksai-adapter**](https://github.com/modelflow-ai/fireworksai-adapter) ⭐ 0 - The adapter integrates open-source models hosted by fireworks.ai into Modelflow AI.
--   [**transformers-php**](https://github.com/CodeWithKyrian/transformers-php) ⭐ 615 - Transformers PHP is a toolkit for PHP developers to add machine learning magic to their projects easily.
--   [**aipi-php**](https://github.com/skito/aipi-php) ⭐ 31 - Universal API client for common AI models
--   [**Ollama PHP**](https://github.com/ArdaGnsrn/ollama-php) ⭐ 117 - PHP client for Ollama, enabling local LLM deployment and interaction.
--   [**Resonance**](https://github.com/distantmagic/resonance) ⭐ 214 - High-performance PHP framework optimized for IO-intensive LLM applications.
--   [**mcp-php**](https://github.com/garyblankenship/mcp-php) ⭐ 2 - Setting Up a Model Context Protocol (MCP) Server in Laravel
--   [**LLM-Port-Laravel**](https://github.com/BorahLabs/LLM-Port-Laravel) ⭐ 2 - Wrapper around the most popular LLMs that allows drop-in replacement of large language models in Laravel.
--   [**LaravelLLMContext**](https://github.com/jeremysalmon/LaravelLLMContext) ⭐ 0 - Artisan Command to Generate LLM Context for a Laravel Project
--   [**fabric-pattern**](https://github.com/php-llm/fabric-pattern) ⭐ 0 - Slim PHP wrapper for Daniel Miessler&#039;s fabric pattern
--   [**Sidekick**](https://github.com/PapaRascal2020/sidekick) ⭐ 24 - Say hello to Sidekick! A Laravel package that provides a common syntax for using Claude, Mistral, Cohere and OpenAi APIs.
--   [**PHP LLMs Book**](https://github.com/alnutile/php-llms) ⭐ 23 - Practical guide for PHP developers on integrating LLMs into projects.
--   [**php-llms**](https://github.com/alnutile/php-llms) ⭐ 23 - A practical guide and toolkit for PHP developers integrating LLMs into existing projects.
--   [**prompt-generator**](https://github.com/llm-agents-php/prompt-generator) ⭐ 7 - Prompt generator for LLM agents with interceptors
--   [**LLM Agents**](https://github.com/llm-agents-php/agents) ⭐ 85 - LLM Agents is a PHP library for building and managing Language Model (LLM) based agents. It provides a framework for creating autonomous agents that can perform complex tasks, make decisions, and interact with various tools and APIs.
--   [**cocur/slugify**](https://github.com/cocur/slugify) ⭐ 2891 - Converts a string into a slug (NLP utility).
--   [**laravel-llm-prompt**](https://github.com/SabatinoMasala/laravel-llm-prompt) ⭐ 5 - laravel-llm-prompt manager
--   [**EleLLM**](https://github.com/wpai-inc/EleLLM) ⭐ 3 - A PHP framework that makes working with LLMs more pleasurable and accessible.
--   [**Elasticsearch ChatGPT PHP**](https://github.com/elastic/elasticsearch-chatgpt-php) ⭐ 26 - Use ChatGPT to search in Elasticsearch using natural language
--   [**instructrice**](https://github.com/adrienbrault/instructrice) ⭐ 30 - Typed LLM Outputs in PHP. Supports GPT, Claude, Gemini or any OpenAI compatible provider!
--   [**NlpTools**](https://github.com/angeloskath/php-nlp-tools) ⭐ 756 - NlpTools is a collection of Natural Language Processing tools written in PHP. It provides a set of APIs to work with text easily.
--   [**laravel-prompt-alchemist**](https://github.com/moe-mizrak/laravel-prompt-alchemist) ⭐ 6 - Versatile LLM Tool Use (Function Calling) package for Laravel, compatible with all LLMs, enabling LLM to execute actual code functions (unlike LLMs&#039; built-in capabilities).
--   [**llm**](https://github.com/artisan-build/llm) ⭐ 0 - Provides Laravel integrations for various LLM providers
--   [**php-llm-json-adapter**](https://github.com/takaaki-mizuno/php-llm-json-adapter) ⭐ 1 - When using LLMs from the system, you often expect to get output results in JSON: OpenAPI&#039;s GPT API has a mechanism called Function Calling, which can return JSON, but Google&#039;s Gemini does not seem to have that functionality.
--   [**ai-team**](https://github.com/sarfraznawaz2005/ai-team) ⭐ 11 - A package allowing to create team of AI members that can work and collaborate together to achieve a common goal.
--   [**php-llm-documents**](https://github.com/thojou/php-llm-documents) ⭐ 7 - PHP LLM Documents is a powerful PHP library that brings LLM (Large Language Model) functionality into the PHP ecosystem.
--   [**langchain-php**](https://github.com/kambo-1st/langchain-php) ⭐ 282 - Building applications with LLMs through composability in PHP
--   [**php-ml**](https://github.com/jorgecasas/php-ml) ⭐ 304 - A PHP machine learning library.
+Full-featured frameworks for building LLM-powered applications.
 
-### Machine Learning
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [Magic](https://github.com/dtyq/magic) | ![GitHub Repo stars](https://img.shields.io/github/stars/dtyq/magic?style=social) | Open-source all-in-one AI productivity platform with agents, workflows, and collaboration. |
+| [LLPhant](https://github.com/theodo-group/llphant) | ![GitHub Repo stars](https://img.shields.io/github/stars/theodo-group/llphant?style=social) | Comprehensive PHP Generative AI Framework using OpenAI GPT-4. Inspired by Langchain. |
+| [Prism](https://github.com/prism-php/prism) | ![GitHub Repo stars](https://img.shields.io/github/stars/prism-php/prism?style=social) | Unified interface for working with LLMs in Laravel applications. |
+| [Neuron AI](https://github.com/neuron-core/neuron-ai) | ![GitHub Repo stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) | PHP Agentic Framework for production-ready AI applications with RAG and multi-agent workflows. |
+| [LLM Chain](https://github.com/php-llm/llm-chain) | ![GitHub Repo stars](https://img.shields.io/github/stars/php-llm/llm-chain?style=social) | Comprehensive PHP library for building LLM-powered applications. |
+| [Vizra ADK](https://github.com/vizra-ai/vizra-adk) | ![GitHub Repo stars](https://img.shields.io/github/stars/vizra-ai/vizra-adk?style=social) | Build, test, and deploy intelligent AI agents the Laravel way. |
+| [Lugha](https://github.com/devscast/lugha) | ![GitHub Repo stars](https://img.shields.io/github/stars/devscast/lugha?style=social) | PHP Generative AI Framework to build chatbots, RAG systems and AI-powered applications. |
+| [langchain-php](https://github.com/kambo-1st/langchain-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/kambo-1st/langchain-php?style=social) | Building applications with LLMs through composability in PHP. |
+| [EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) | ![GitHub Repo stars](https://img.shields.io/github/stars/HosonoDE/EasyAI-PHP?style=social) | Simplifies AI entry for PHP developers (LangChain-style). Based on PHP 8.1+. |
+| [EleLLM](https://github.com/wpai-inc/EleLLM) | ![GitHub Repo stars](https://img.shields.io/github/stars/wpai-inc/EleLLM?style=social) | A PHP framework that makes working with LLMs more pleasurable and accessible. |
+| [Resonance](https://github.com/distantmagic/resonance) | ![GitHub Repo stars](https://img.shields.io/github/stars/distantmagic/resonance?style=social) | High-performance PHP framework optimized for IO-intensive LLM applications. |
 
--   [**TensorFlow PHP**](https://github.com/tensorflow/tfjs) ⭐ 18682 - PHP bindings for TensorFlow.
--   [**Rubix ML**](https://github.com/RubixML/ML) ⭐ 2091 - Machine learning library for building algorithms and models.
+---
 
-### Computer Vision
+## LLM Clients & Adapters
 
--   [**opencv/opencv-php**](https://github.com/php-opencv/php-opencv) ⭐ 352 - OpenCV bindings for PHP for image processing and computer vision.
+Client libraries and provider integrations.
 
-### Data Manipulation
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [OpenAI PHP](https://github.com/openai-php/client) | ![GitHub Repo stars](https://img.shields.io/github/stars/openai-php/client?style=social) | Supercharged community-maintained PHP API client for OpenAI. |
+| [OpenAI PHP SDK](https://github.com/orhanerday/open-ai) | ![GitHub Repo stars](https://img.shields.io/github/stars/orhanerday/open-ai?style=social) | Most downloaded PHP SDK for OpenAI GPT-3, DALL-E, and ChatGPT with streaming support. |
+| [Ollama PHP](https://github.com/ArdaGnsrn/ollama-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/ArdaGnsrn/ollama-php?style=social) | PHP client for Ollama, enabling local LLM deployment and interaction. |
+| [Gemini PHP](https://github.com/google-gemini-php/client) | ![GitHub Repo stars](https://img.shields.io/github/stars/google-gemini-php/client?style=social) | Community-maintained PHP API client for Gemini AI. |
+| [grok-php/laravel](https://github.com/grok-php/laravel) | ![GitHub Repo stars](https://img.shields.io/github/stars/grok-php/laravel?style=social) | Integrate Grok AI into Laravel with an elegant, developer-friendly package. |
+| [AI Access](https://github.com/aiaccess/ai-access) | ![GitHub Repo stars](https://img.shields.io/github/stars/aiaccess/ai-access?style=social) | Flexible PHP library for Gemini, OpenAI, Anthropic, DeepSeek, Grok via consistent interface. |
+| [Laravel OpenRouter](https://github.com/moe-mizrak/laravel-openrouter) | ![GitHub Repo stars](https://img.shields.io/github/stars/moe-mizrak/laravel-openrouter?style=social) | Laravel integration for OpenRouter's unified LLM API interface. |
+| [Sidekick](https://github.com/PapaRascal2020/sidekick) | ![GitHub Repo stars](https://img.shields.io/github/stars/PapaRascal2020/sidekick?style=social) | Laravel package with common syntax for Claude, Mistral, Cohere and OpenAI APIs. |
+| [aipi-php](https://github.com/skito/aipi-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/skito/aipi-php?style=social) | Universal API client for common AI models. |
+| [LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel) | ![GitHub Repo stars](https://img.shields.io/github/stars/BorahLabs/LLM-Port-Laravel?style=social) | Drop-in replacement wrapper for popular LLMs in Laravel. |
+| [WordPress PHP AI Client](https://github.com/WordPress/php-ai-client) | ![GitHub Repo stars](https://img.shields.io/github/stars/WordPress/php-ai-client?style=social) | Provider-agnostic PHP AI client SDK for any generative AI model. |
 
--   [**brick/math**](https://github.com/brick/math) ⭐ 1907 - Handles arbitrary precision mathematics in PHP.
--   [**redis-vector-php**](https://github.com/redis-applied-ai/redis-vector-php) ⭐ 11 - Redis Vector Library (RedisVL) enables Redis as a real-time database for LLM applications, based on Predis PHP client
--   [**php-ai/php-ds**](https://github.com/php-ds) - PHP data structures extension for performance.
+---
 
-### Command Line Tools
+## Natural Language Processing
 
--   [**ai-commit**](https://github.com/guanguans/ai-commit) ⭐ 377 - Automagically generate conventional git commit messages with AI.
--   [**Laragenie**](https://github.com/joshembling/laragenie) ⭐ 149 - An AI bot made for the command line that can read and understand any codebase from your Laravel app.
+### Structured Output & Validation
 
-### Video Processing
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [Instructor PHP](https://github.com/cognesy/instructor-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/cognesy/instructor-php?style=social) | Extract structured data from LLM outputs with type safety and validation. |
+| [instructrice](https://github.com/adrienbrault/instructrice) | ![GitHub Repo stars](https://img.shields.io/github/stars/adrienbrault/instructrice?style=social) | Typed LLM outputs in PHP. Supports GPT, Claude, Gemini or any OpenAI-compatible provider. |
 
--   [**Subvert**](https://github.com/aschmelyun/subvert) ⭐ 824 - Generate subtitles, summaries, and chapters from videos in seconds
+### AI Agents & Orchestration
 
-### Vector Storage
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [LLM Agents](https://github.com/llm-agents-php/agents) | ![GitHub Repo stars](https://img.shields.io/github/stars/llm-agents-php/agents?style=social) | Build and manage LLM-based autonomous agents that perform complex tasks. |
+| [mulagent](https://github.com/FunkyOz/mulagent) | ![GitHub Repo stars](https://img.shields.io/github/stars/FunkyOz/mulagent?style=social) | Multi-agent orchestration with routines and handoffs. |
+| [ai-team](https://github.com/sarfraznawaz2005/ai-team) | ![GitHub Repo stars](https://img.shields.io/github/stars/sarfraznawaz2005/ai-team?style=social) | Create teams of AI members that collaborate to achieve common goals. |
 
--   [**vector-storage**](https://github.com/llm-agents-php/vector-storage) ⭐ 2 - LLM Agents Vector Storage
+### Laravel Integrations
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [Laravel AI](https://github.com/laravel/ai) | ![GitHub Repo stars](https://img.shields.io/github/stars/laravel/ai?style=social) | Official Laravel package for AI integration. |
+| [Neuron Laravel](https://github.com/neuron-core/neuron-laravel) | ![GitHub Repo stars](https://img.shields.io/github/stars/neuron-core/neuron-laravel?style=social) | Official Neuron AI Laravel SDK. |
+| [Laravel MCP Server](https://github.com/opgginc/laravel-mcp-server) | ![GitHub Repo stars](https://img.shields.io/github/stars/opgginc/laravel-mcp-server?style=social) | Laravel package for implementing Model Context Protocol servers. |
+| [MCP Client Laravel](https://github.com/RedberryProducts/mcp-client-laravel) | ![GitHub Repo stars](https://img.shields.io/github/stars/RedberryProducts/mcp-client-laravel?style=social) | Laravel-native client for MCP servers. |
+| [Laravel AI Guard](https://github.com/subhashladumor1/laravel-ai-guard) | ![GitHub Repo stars](https://img.shields.io/github/stars/subhashladumor1/laravel-ai-guard?style=social) | Control and optimize AI costs in Laravel - track token usage, enforce budgets. |
+| [llm-magic](https://github.com/Capevace/llm-magic) | ![GitHub Repo stars](https://img.shields.io/github/stars/Capevace/llm-magic?style=social) | LLM-agnostic AI toolkit for Laravel. |
+| [Taskallama](https://github.com/coding-wisely/taskallama) | ![GitHub Repo stars](https://img.shields.io/github/stars/coding-wisely/taskallama?style=social) | Laravel integration with Ollama's LLM API for content generation. |
+| [laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt) | ![GitHub Repo stars](https://img.shields.io/github/stars/SabatinoMasala/laravel-llm-prompt?style=social) | Laravel LLM prompt manager. |
+| [laravel-prompt-alchemist](https://github.com/moe-mizrak/laravel-prompt-alchemist) | ![GitHub Repo stars](https://img.shields.io/github/stars/moe-mizrak/laravel-prompt-alchemist?style=social) | Versatile LLM Tool Use (Function Calling) for Laravel, compatible with all LLMs. |
+| [LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext) | ![GitHub Repo stars](https://img.shields.io/github/stars/jeremysalmon/LaravelLLMContext?style=social) | Artisan command to generate LLM context for a Laravel project. |
+| [llm](https://github.com/artisan-build/llm) | ![GitHub Repo stars](https://img.shields.io/github/stars/artisan-build/llm?style=social) | Laravel integrations for various LLM providers. |
+| [ai-translations-for-laravel](https://github.com/Capevace/ai-translations-for-laravel) | ![GitHub Repo stars](https://img.shields.io/github/stars/Capevace/ai-translations-for-laravel?style=social) | Automatically translate Laravel language files using LLMs. |
+| [laravel-prompt-manager](https://github.com/prismaticoder/laravel-prompt-manager) | ![GitHub Repo stars](https://img.shields.io/github/stars/prismaticoder/laravel-prompt-manager?style=social) | Simplify prompt management for AI engineers using Laravel. |
+
+### Symfony Integrations
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [Symfony AI Platform](https://github.com/symfony/ai-platform) | ![GitHub Repo stars](https://img.shields.io/github/stars/symfony/ai-platform?style=social) | Official PHP library for interacting with AI platform providers. |
+| [Symfony AI Agent](https://github.com/symfony/ai-agent) | ![GitHub Repo stars](https://img.shields.io/github/stars/symfony/ai-agent?style=social) | Official PHP library for building agentic applications. |
+| [Symfony AI Bundle](https://github.com/symfony/ai-bundle) | ![GitHub Repo stars](https://img.shields.io/github/stars/symfony/ai-bundle?style=social) | Official integration bundle for Symfony AI components. |
+| [Symfony MCP SDK](https://github.com/symfony/mcp-sdk) | ![GitHub Repo stars](https://img.shields.io/github/stars/symfony/mcp-sdk?style=social) | Official Model Context Protocol SDK for Client and Server applications. |
+| [Symfony MCP Bundle](https://github.com/symfony/mcp-bundle) | ![GitHub Repo stars](https://img.shields.io/github/stars/symfony/mcp-bundle?style=social) | Official Symfony integration bundle for Model Context Protocol. |
+| [LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle) | ![GitHub Repo stars](https://img.shields.io/github/stars/php-llm/llm-chain-bundle?style=social) | Symfony bundle for seamless integration of the LLM Chain library. |
+
+### Utilities & Tools
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [transformers-php](https://github.com/CodeWithKyrian/transformers-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/CodeWithKyrian/transformers-php?style=social) | Toolkit for PHP developers to add machine learning magic easily. |
+| [NlpTools](https://github.com/angeloskath/php-nlp-tools) | ![GitHub Repo stars](https://img.shields.io/github/stars/angeloskath/php-nlp-tools?style=social) | Collection of NLP tools and APIs for working with text. |
+| [cocur/slugify](https://github.com/cocur/slugify) | ![GitHub Repo stars](https://img.shields.io/github/stars/cocur/slugify?style=social) | Converts strings into slugs. |
+| [prompt-generator](https://github.com/llm-agents-php/prompt-generator) | ![GitHub Repo stars](https://img.shields.io/github/stars/llm-agents-php/prompt-generator?style=social) | Prompt generator for LLM agents with interceptors. |
+| [fabric-pattern](https://github.com/php-llm/fabric-pattern) | ![GitHub Repo stars](https://img.shields.io/github/stars/php-llm/fabric-pattern?style=social) | Slim PHP wrapper for Daniel Miessler's fabric pattern. |
+| [php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) | ![GitHub Repo stars](https://img.shields.io/github/stars/takaaki-mizuno/php-llm-json-adapter?style=social) | JSON output adapter for LLMs that lack native function calling. |
+| [php-llm-documents](https://github.com/thojou/php-llm-documents) | ![GitHub Repo stars](https://img.shields.io/github/stars/thojou/php-llm-documents?style=social) | Brings LLM functionality for document processing. |
+| [mcp-php](https://github.com/garyblankenship/mcp-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/garyblankenship/mcp-php?style=social) | Setting up a Model Context Protocol (MCP) Server in Laravel. |
+| [fireworksai-adapter](https://github.com/modelflow-ai/fireworksai-adapter) | ![GitHub Repo stars](https://img.shields.io/github/stars/modelflow-ai/fireworksai-adapter?style=social) | Adapter for open-source models hosted by fireworks.ai. |
+| [single-file-php-ai](https://github.com/mariorazo97/single-file-php-ai) | ![GitHub Repo stars](https://img.shields.io/github/stars/mariorazo97/single-file-php-ai?style=social) | Drop-in, single-file PHP chat interface for Ollama/OpenAI. No Node.js, no Docker. |
+| [php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge) | ![GitHub Repo stars](https://img.shields.io/github/stars/manuelkiessling/php-ai-tool-bridge?style=social) | AI integration to interact with your own code and services. |
+| [TOON PHP](https://github.com/HelgeSverre/toon-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/HelgeSverre/toon-php?style=social) | Token-Oriented Object Notation - compact data format for reducing token consumption with LLMs. |
+| [CTX Generator](https://github.com/context-hub/generator) | ![GitHub Repo stars](https://img.shields.io/github/stars/context-hub/generator?style=social) | Tool that solves context management when working with LLMs - organizes codebase info for AI assistants. |
+| [single-file-php-ai](https://github.com/mariorazo97/single-file-php-ai) | ![GitHub Repo stars](https://img.shields.io/github/stars/mariorazo97/single-file-php-ai?style=social) | Drop-in, single-file PHP chat interface for Ollama/OpenAI. No Node.js, no Docker. |
+| [php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge) | ![GitHub Repo stars](https://img.shields.io/github/stars/manuelkiessling/php-ai-tool-bridge?style=social) | AI integration to interact with your own code and services. |
+
+---
+
+## Machine Learning
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [TensorFlow PHP](https://github.com/tensorflow/tfjs) | ![GitHub Repo stars](https://img.shields.io/github/stars/tensorflow/tfjs?style=social) | PHP bindings for TensorFlow. |
+| [Rubix ML](https://github.com/RubixML/ML) | ![GitHub Repo stars](https://img.shields.io/github/stars/RubixML/ML?style=social) | Machine learning library for building algorithms and models. |
+| [php-ml](https://github.com/jorgecasas/php-ml) | ![GitHub Repo stars](https://img.shields.io/github/stars/jorgecasas/php-ml?style=social) | A PHP machine learning library. |
+
+---
+
+## Computer Vision
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [opencv/opencv-php](https://github.com/php-opencv/php-opencv) | ![GitHub Repo stars](https://img.shields.io/github/stars/php-opencv/php-opencv?style=social) | OpenCV bindings for PHP for image processing and computer vision. |
+
+---
+
+## Vector Storage & RAG
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [php-rag](https://github.com/rzarno/php-rag) | ![GitHub Repo stars](https://img.shields.io/github/stars/rzarno/php-rag?style=social) | LLM-powered text generation with database-backed retrieval. |
+| [redis-vector-php](https://github.com/redis-applied-ai/redis-vector-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/redis-applied-ai/redis-vector-php?style=social) | Redis Vector Library for LLM applications, based on Predis. |
+| [vector-storage](https://github.com/llm-agents-php/vector-storage) | ![GitHub Repo stars](https://img.shields.io/github/stars/llm-agents-php/vector-storage?style=social) | LLM Agents Vector Storage. |
+
+---
+
+## Command Line Tools
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [ai-commit](https://github.com/guanguans/ai-commit) | ![GitHub Repo stars](https://img.shields.io/github/stars/guanguans/ai-commit?style=social) | Automagically generate conventional git commit messages with AI. |
+| [Laragenie](https://github.com/joshembling/laragenie) | ![GitHub Repo stars](https://img.shields.io/github/stars/joshembling/laragenie?style=social) | AI bot for the command line that reads and understands Laravel codebases. |
+
+---
+
+## Video Processing
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [Subvert](https://github.com/aschmelyun/subvert) | ![GitHub Repo stars](https://img.shields.io/github/stars/aschmelyun/subvert?style=social) | Generate subtitles, summaries, and chapters from videos in seconds. |
+
+---
 
 ## API Clients
 
--   [**Google Cloud AI**](https://github.com/googleapis/google-cloud-php) ⭐ 1107 - Google Cloud AI services in PHP.
--   [**DeepL PHP**](https://github.com/DeepLcom/deepl-php) ⭐ 224 - Official PHP library for the DeepL language translation API.
--   [**Gemini PHP**](https://github.com/google-gemini-php/client) ⭐ 216 - ⚡️ Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API.
--   [**OpenAI PHP SDK**](https://github.com/orhanerday/open-ai) ⭐ 2305 - OpenAI PHP SDK : Most downloaded, forked, contributed, huge community supported, and used PHP (Laravel , Symfony, Yii, Cake PHP or any PHP framework) SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming. (ChatGPT AI is supported)
--   [**OpenAI PHP**](https://github.com/openai-php/client) ⭐ 5179 - OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.
--   [**AWS Rekognition**](https://aws.amazon.com/rekognition/) - Amazon Rekognition API for image and video analysis.
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [Google Cloud AI](https://github.com/googleapis/google-cloud-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/googleapis/google-cloud-php?style=social) | Google Cloud AI services in PHP. |
+| [Anthropic PHP](https://github.com/mozex/anthropic-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/mozex/anthropic-php?style=social) | Community-maintained PHP API client for Anthropic (Claude) API with streaming, tool use, and batch processing. |
+| [DeepL PHP](https://github.com/DeepLcom/deepl-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) | Official PHP library for the DeepL language translation API. |
+| [AWS Rekognition](https://aws.amazon.com/rekognition/) | — | Amazon Rekognition API for image and video analysis. |
+
+---
 
 ## Learning Resources
 
--   [**SearchAugmentedLLM**](https://github.com/EliasPereirah/SearchAugmentedLLM) ⭐ 8 - SearchAugmentedLLM empowers LLMs with information from the web
--   [**neuranotes-api**](https://github.com/waponix/neuranotes-api) ⭐ 1 - A note-taking app showcasing LLM, RAG integration, scalable architecture, and intuitive UI/UX design.
--   [**onnxruntime-php**](https://github.com/ankane/onnxruntime-php) ⭐ 72 - 🔥 ONNX Runtime - the high performance scoring engine for ML models - for PHP
--   [**PHP LLM Examples**](https://github.com/ezimuel/php-llm-examples) ⭐ 12 - Examples demonstrating GenAI and LLM usage in PHP.
--   [**elasticsearch-chatgpt-php**](https://github.com/elastic/elasticsearch-chatgpt-php) ⭐ 26 - Use ChatGPT to search in Elasticsearch using natural language
--   [**Fun With OpenAI and Laravel**](https://laracasts.com/series/fun-with-openai-and-laravel) - Fun With OpenAI and Laravel In this series, you&#039;ll get your feet wet with a variety of fun examples that demonstrate how to interact with OpenAI using PHP and Laravel. We&#039;ll begin by assuming that you know nothing, and then slowly work our way up one episode at a time!
--   [**PHP-ML Tutorials**](https://php-ml.readthedocs.io/en/latest/tutorials/) - Learn how to use PHP-ML for machine learning.
--   [**Rubix ML Docs**](https://docs.rubixml.com/) - Comprehensive documentation for Rubix ML.
+| Resource | Stars | Description |
+|----------|-------|-------------|
+| [PHP LLMs Book](https://github.com/alnutile/php-llms) | ![GitHub Repo stars](https://img.shields.io/github/stars/alnutile/php-llms?style=social) | Practical guide for PHP developers on integrating LLMs into projects. |
+| [onnxruntime-php](https://github.com/ankane/onnxruntime-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) | ONNX Runtime - high performance scoring engine for ML models - for PHP. |
+| [PHP LLM Examples](https://github.com/ezimuel/php-llm-examples) | ![GitHub Repo stars](https://img.shields.io/github/stars/ezimuel/php-llm-examples?style=social) | Examples demonstrating GenAI and LLM usage in PHP. |
+| [Elasticsearch ChatGPT PHP](https://github.com/elastic/elasticsearch-chatgpt-php) | ![GitHub Repo stars](https://img.shields.io/github/stars/elastic/elasticsearch-chatgpt-php?style=social) | Use ChatGPT to search in Elasticsearch using natural language. |
+| [SearchAugmentedLLM](https://github.com/EliasPereirah/SearchAugmentedLLM) | ![GitHub Repo stars](https://img.shields.io/github/stars/EliasPereirah/SearchAugmentedLLM?style=social) | Empowers LLMs with information from the web. |
+| [neuranotes-api](https://github.com/waponix/neuranotes-api) | ![GitHub Repo stars](https://img.shields.io/github/stars/waponix/neuranotes-api?style=social) | Note-taking app showcasing LLM, RAG integration, and scalable architecture. |
+| [YouTube AI Agent](https://github.com/neuron-core/youtube-ai-agent) | ![GitHub Repo stars](https://img.shields.io/github/stars/neuron-core/youtube-ai-agent?style=social) | AI agents for YouTube video summarization (Neuron framework example). |
+| [Deep Research Agent](https://github.com/neuron-core/deep-research-agent) | ![GitHub Repo stars](https://img.shields.io/github/stars/neuron-core/deep-research-agent?style=social) | Deep research agent built with Neuron PHP AI framework. |
+
+### Tutorials & Documentation
+
+- [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel) - Laracasts series on OpenAI with PHP and Laravel.
+- [PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/tutorials/) - Learn how to use PHP-ML for machine learning.
+- [Rubix ML Docs](https://docs.rubixml.com/) - Comprehensive documentation for Rubix ML.
+
+---
+
+## Data Manipulation
+
+| Library | Stars | Description |
+|---------|-------|-------------|
+| [brick/math](https://github.com/brick/math) | ![GitHub Repo stars](https://img.shields.io/github/stars/brick/math?style=social) | Arbitrary precision mathematics in PHP. |
+| [php-ai/php-ds](https://github.com/php-ds) | — | PHP data structures extension for performance. |
+
+---
 
 ## Contributing
 
-Have a PHP AI library, tool, or resource to share? Feel free to submit a PR!
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Add your library/tool to the appropriate section
+3. Include the library name, GitHub link, and a brief description
+4. Submit a pull request
+
+Please ensure your submission is relevant to PHP and AI/ML/NLP.
+
+---
+
+## License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, the contributors have waived all copyright and related rights to this work.
