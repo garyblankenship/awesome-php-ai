@@ -120,6 +120,7 @@ Client libraries and provider integrations.
 | [php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge) | AI integration to interact with your own code and services. |
 | [single-file-php-ai](https://github.com/mariorazo97/single-file-php-ai) | Drop-in, single-file PHP chat interface for Ollama/OpenAI. No Node.js, no Docker. |
 | [mcp-php](https://github.com/garyblankenship/mcp-php) | Setting up a Model Context Protocol (MCP) Server in Laravel. |
+| [TWZRD Agent Intel](https://intel.twzrd.xyz) | Trust scoring MCP server for AI agent wallets on Solana. `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}` |
 | [prompt-generator](https://github.com/llm-agents-php/prompt-generator) | Prompt generator for LLM agents with interceptors. |
 | [php-llm-documents](https://github.com/thojou/php-llm-documents) | Brings LLM functionality for document processing. |
 | [fabric-pattern](https://github.com/php-llm/fabric-pattern) | Slim PHP wrapper for Daniel Miessler's fabric pattern. |
