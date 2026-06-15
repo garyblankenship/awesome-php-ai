@@ -94,6 +94,13 @@
       "tags": ["openai", "streaming", "chat", "embeddings", "image-generation", "text-to-speech", "client"]
     },
     {
+      "name": "DeepSeek PHP",
+      "url": "https://github.com/deepseek-php/deepseek-php-client",
+      "description": "Community PHP client for the DeepSeek API.",
+      "stars": 471,
+      "tags": ["deepseek", "chat", "client"]
+    },
+    {
       "name": "Gemini PHP",
       "url": "https://github.com/google-gemini-php/client",
       "description": "Community-maintained PHP API client for Gemini AI.",
@@ -120,6 +127,13 @@
       "description": "Integrate Grok AI into Laravel with an elegant, developer-friendly package.",
       "stars": 163,
       "tags": ["grok", "laravel", "streaming", "chat", "vision", "client"]
+    },
+    {
+      "name": "Anthropic Official SDK",
+      "url": "https://github.com/anthropics/anthropic-sdk-php",
+      "description": "Official PHP SDK for the Anthropic Claude API.",
+      "stars": 158,
+      "tags": ["anthropic", "streaming", "chat", "tool-use", "client"]
     },
     {
       "name": "Laravel OpenRouter",
@@ -203,7 +217,128 @@
       "tags": ["openai", "anthropic", "agents", "tool-use", "library"]
     }
   ],
+  "mcp_agent_tooling": [
+    {
+      "name": "Laravel Boost",
+      "url": "https://github.com/laravel/boost",
+      "description": "Laravel-focused MCP server for augmenting AI-powered local development.",
+      "stars": 3508,
+      "tags": ["mcp", "laravel", "tool"]
+    },
+    {
+      "name": "MCP PHP SDK",
+      "url": "https://github.com/modelcontextprotocol/php-sdk",
+      "description": "Official Model Context Protocol SDK for PHP clients and servers.",
+      "stars": 1531,
+      "tags": ["mcp", "client", "library"]
+    },
+    {
+      "name": "php-mcp/server",
+      "url": "https://github.com/php-mcp/server",
+      "description": "PHP SDK for building Model Context Protocol servers with tools, resources, and prompts.",
+      "stars": 846,
+      "tags": ["mcp", "tool-use", "library"]
+    },
+    {
+      "name": "Laravel MCP",
+      "url": "https://github.com/laravel/mcp",
+      "description": "Build MCP servers for Laravel applications.",
+      "stars": 765,
+      "tags": ["mcp", "laravel", "library"]
+    },
+    {
+      "name": "php-mcp/laravel",
+      "url": "https://github.com/php-mcp/laravel",
+      "description": "Laravel SDK for building Model Context Protocol servers.",
+      "stars": 473,
+      "tags": ["mcp", "laravel", "library"]
+    },
+    {
+      "name": "mcp-sdk-php",
+      "url": "https://github.com/logiscape/mcp-sdk-php",
+      "description": "Model Context Protocol SDK for PHP.",
+      "stars": 367,
+      "tags": ["mcp", "client", "library"]
+    },
+    {
+      "name": "Laravel MCP Server",
+      "url": "https://github.com/opgginc/laravel-mcp-server",
+      "description": "Laravel package for implementing Model Context Protocol servers.",
+      "stars": 331,
+      "tags": ["mcp", "laravel", "library"]
+    },
+    {
+      "name": "CTX Generator",
+      "url": "https://github.com/context-hub/generator",
+      "description": "Tool that solves context management when working with LLMs - organizes codebase info for AI assistants.",
+      "stars": 310,
+      "tags": ["mcp", "tool"]
+    },
+    {
+      "name": "Prism Relay",
+      "url": "https://github.com/prism-php/relay",
+      "description": "MCP client tool for Prism applications.",
+      "stars": 150,
+      "tags": ["mcp", "laravel", "tool"]
+    },
+    {
+      "name": "Laravel Agent Detector",
+      "url": "https://github.com/laravel/agent-detector",
+      "description": "Detect whether PHP code is running inside an AI agent or automated development environment.",
+      "stars": 75,
+      "tags": ["agents", "tool", "library"]
+    },
+    {
+      "name": "php-mcp/client",
+      "url": "https://github.com/php-mcp/client",
+      "description": "PHP client for the Model Context Protocol.",
+      "stars": 56,
+      "tags": ["mcp", "client", "library"]
+    },
+    {
+      "name": "Xdebug MCP",
+      "url": "https://github.com/koriym/xdebug-mcp",
+      "description": "PHP Xdebug MCP server with AI-optimized debugging support.",
+      "stars": 51,
+      "tags": ["mcp", "tool"]
+    },
+    {
+      "name": "Symfony MCP SDK",
+      "url": "https://github.com/symfony/mcp-sdk",
+      "description": "Model Context Protocol SDK for Client and Server applications in PHP.",
+      "stars": 45,
+      "tags": ["mcp", "symfony", "library"]
+    },
+    {
+      "name": "Symfony MCP Bundle",
+      "url": "https://github.com/symfony/mcp-bundle",
+      "description": "Official Symfony integration bundle for Model Context Protocol.",
+      "stars": 36,
+      "tags": ["mcp", "symfony", "bundle"]
+    },
+    {
+      "name": "mcp-php",
+      "url": "https://github.com/garyblankenship/mcp-php",
+      "description": "Setting up a Model Context Protocol (MCP) Server in Laravel.",
+      "stars": 25,
+      "tags": ["mcp", "laravel", "example"]
+    },
+    {
+      "name": "MCP Client Laravel",
+      "url": "https://github.com/RedberryProducts/mcp-client-laravel",
+      "description": "Laravel-native client for MCP servers.",
+      "stars": 13,
+      "tags": ["mcp", "tool-use", "laravel", "client"]
+    }
+  ],
   "laravel_integrations": [
+    {
+      "name": "OpenAI PHP Laravel",
+      "url": "https://github.com/openai-php/laravel",
+      "description": "Laravel integration for the OpenAI PHP client.",
+      "stars": 3732,
+      "tags": ["openai", "streaming", "chat", "embeddings", "image-generation", "text-to-speech", "tool-use", "laravel", "client"]
+    },
     {
       "name": "Laravel AI",
       "url": "https://github.com/laravel/ai",
@@ -212,11 +347,18 @@
       "tags": ["openai", "anthropic", "google", "ollama", "mistral", "cohere", "deepseek", "openrouter", "agents", "tool-use", "structured-output", "embeddings", "image-generation", "text-to-speech", "laravel", "library"]
     },
     {
-      "name": "Laravel MCP Server",
-      "url": "https://github.com/opgginc/laravel-mcp-server",
-      "description": "Laravel package for implementing Model Context Protocol servers.",
-      "stars": 331,
-      "tags": ["mcp", "laravel", "library"]
+      "name": "LarAgent",
+      "url": "https://github.com/MaestroError/LarAgent",
+      "description": "Build AI agents inside Laravel applications.",
+      "stars": 639,
+      "tags": ["agents", "tool-use", "rag", "laravel", "library"]
+    },
+    {
+      "name": "Gemini PHP Laravel",
+      "url": "https://github.com/google-gemini-php/laravel",
+      "description": "Laravel integration for the Gemini PHP client.",
+      "stars": 637,
+      "tags": ["google", "streaming", "chat", "embeddings", "structured-output", "vision", "laravel", "client"]
     },
     {
       "name": "Neuron Laravel",
@@ -231,13 +373,6 @@
       "description": "Control and optimize AI costs in Laravel - track token usage, enforce budgets.",
       "stars": 24,
       "tags": ["openai", "anthropic", "laravel", "tool"]
-    },
-    {
-      "name": "MCP Client Laravel",
-      "url": "https://github.com/RedberryProducts/mcp-client-laravel",
-      "description": "Laravel-native client for MCP servers.",
-      "stars": 13,
-      "tags": ["mcp", "tool-use", "laravel", "client"]
     },
     {
       "name": "Taskallama",
@@ -261,13 +396,6 @@
       "tags": ["laravel", "library"]
     },
     {
-      "name": "llm-magic",
-      "url": "https://github.com/Capevace/llm-magic",
-      "description": "LLM-agnostic AI toolkit for Laravel.",
-      "stars": 5,
-      "tags": ["openai", "anthropic", "google", "streaming", "structured-output", "tool-use", "vision", "library"]
-    },
-    {
       "name": "laravel-llm-prompt",
       "url": "https://github.com/SabatinoMasala/laravel-llm-prompt",
       "description": "Laravel LLM prompt manager.",
@@ -280,6 +408,13 @@
       "description": "Versatile LLM Tool Use (Function Calling) for Laravel, compatible with all LLMs.",
       "stars": 5,
       "tags": ["openrouter", "tool-use", "laravel", "library"]
+    },
+    {
+      "name": "llm-magic",
+      "url": "https://github.com/Capevace/llm-magic",
+      "description": "LLM-agnostic AI toolkit for Laravel.",
+      "stars": 5,
+      "tags": ["openai", "anthropic", "google", "streaming", "structured-output", "tool-use", "vision", "library"]
     },
     {
       "name": "LaravelLLMContext",
@@ -305,25 +440,11 @@
       "tags": ["openai", "anthropic", "google", "ollama", "mistral", "deepseek", "openrouter", "streaming", "embeddings", "symfony", "library"]
     },
     {
-      "name": "Symfony MCP SDK",
-      "url": "https://github.com/symfony/mcp-sdk",
-      "description": "Model Context Protocol SDK for Client and Server applications in PHP.",
-      "stars": 45,
-      "tags": ["mcp", "symfony", "library"]
-    },
-    {
       "name": "LLM Chain Bundle",
       "url": "https://github.com/php-llm/llm-chain-bundle",
       "description": "Symfony bundle for seamless integration of the LLM Chain library.",
       "stars": 37,
       "tags": ["openai", "anthropic", "google", "ollama", "tool-use", "chat", "embeddings", "rag", "structured-output", "symfony", "bundle"]
-    },
-    {
-      "name": "Symfony MCP Bundle",
-      "url": "https://github.com/symfony/mcp-bundle",
-      "description": "Official Symfony integration bundle for Model Context Protocol.",
-      "stars": 36,
-      "tags": ["mcp", "symfony", "bundle"]
     },
     {
       "name": "Symfony AI Agent",
@@ -363,11 +484,18 @@
       "tags": ["huggingface", "machine-learning", "nlp", "embeddings", "library"]
     },
     {
-      "name": "CTX Generator",
-      "url": "https://github.com/context-hub/generator",
-      "description": "Tool that solves context management when working with LLMs - organizes codebase info for AI assistants.",
-      "stars": 310,
-      "tags": ["mcp", "tool"]
+      "name": "whisper.php",
+      "url": "https://github.com/CodeWithKyrian/whisper.php",
+      "description": "Local speech-to-text in PHP using Whisper.cpp.",
+      "stars": 406,
+      "tags": ["transcription", "tool", "library"]
+    },
+    {
+      "name": "tiktoken-php",
+      "url": "https://github.com/yethee/tiktoken-php",
+      "description": "PHP implementation of OpenAI token counting with tiktoken.",
+      "stars": 163,
+      "tags": ["openai", "tokenization", "library"]
     },
     {
       "name": "TOON PHP",
@@ -375,6 +503,13 @@
       "description": "Token-Oriented Object Notation - compact data format for reducing token consumption with LLMs.",
       "stars": 115,
       "tags": ["structured-output", "library"]
+    },
+    {
+      "name": "Prompt Deck",
+      "url": "https://github.com/promptphp/deck",
+      "description": "Laravel package for versioned AI prompt management with variables and tracking.",
+      "stars": 98,
+      "tags": ["prompt-management", "laravel", "tool"]
     },
     {
       "name": "php-ai-tool-bridge",
@@ -391,11 +526,11 @@
       "tags": ["openai", "ollama", "streaming", "chat", "tool"]
     },
     {
-      "name": "mcp-php",
-      "url": "https://github.com/garyblankenship/mcp-php",
-      "description": "Setting up a Model Context Protocol (MCP) Server in Laravel.",
-      "stars": 25,
-      "tags": ["mcp", "laravel", "example"]
+      "name": "php-llm-documents",
+      "url": "https://github.com/thojou/php-llm-documents",
+      "description": "Brings LLM functionality for document processing.",
+      "stars": 7,
+      "tags": ["embeddings", "rag", "vector-store", "search", "library"]
     },
     {
       "name": "prompt-generator",
@@ -405,13 +540,6 @@
       "tags": ["agents", "library"]
     },
     {
-      "name": "php-llm-documents",
-      "url": "https://github.com/thojou/php-llm-documents",
-      "description": "Brings LLM functionality for document processing.",
-      "stars": 7,
-      "tags": ["embeddings", "rag", "vector-store", "search", "library"]
-    },
-    {
       "name": "fabric-pattern",
       "url": "https://github.com/php-llm/fabric-pattern",
       "description": "Slim PHP wrapper for Daniel Miessler's fabric pattern.",
@@ -419,18 +547,18 @@
       "tags": ["library"]
     },
     {
-      "name": "php-llm-json-adapter",
-      "url": "https://github.com/takaaki-mizuno/php-llm-json-adapter",
-      "description": "JSON output adapter for LLMs that lack native function calling.",
-      "stars": 1,
-      "tags": ["openai", "google", "anthropic", "ollama", "structured-output", "library"]
-    },
-    {
       "name": "fireworksai-adapter",
       "url": "https://github.com/modelflow-ai/fireworksai-adapter",
       "description": "Adapter for open-source models hosted by fireworks.ai.",
       "stars": 1,
       "tags": ["fireworks", "library"]
+    },
+    {
+      "name": "php-llm-json-adapter",
+      "url": "https://github.com/takaaki-mizuno/php-llm-json-adapter",
+      "description": "JSON output adapter for LLMs that lack native function calling.",
+      "stars": 1,
+      "tags": ["openai", "google", "anthropic", "ollama", "structured-output", "library"]
     }
   ],
   "machine_learning": [
@@ -459,6 +587,20 @@
     }
   ],
   "vector_storage_rag": [
+    {
+      "name": "qdrant-php",
+      "url": "https://github.com/hkulekci/qdrant-php",
+      "description": "PHP client for the Qdrant vector similarity search engine.",
+      "stars": 172,
+      "tags": ["vector-store", "search", "embeddings", "client"]
+    },
+    {
+      "name": "chromadb-php",
+      "url": "https://github.com/CodeWithKyrian/chromadb-php",
+      "description": "PHP client for the Chroma open-source embedding database.",
+      "stars": 83,
+      "tags": ["vector-store", "search", "embeddings", "client"]
+    },
     {
       "name": "php-rag",
       "url": "https://github.com/rzarno/php-rag",

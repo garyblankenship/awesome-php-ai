@@ -1,137 +1,3 @@
-#!/usr/bin/env python3
-"""Generate README.md from readme.json."""
-
-import json
-from pathlib import Path
-
-SECTIONS = [
-    {
-        "key": "llm_frameworks",
-        "title": "LLM Frameworks",
-        "level": 2,
-        "description": "Full-featured frameworks for building LLM-powered applications.",
-        "in_toc": True,
-    },
-    {
-        "key": "llm_clients_adapters",
-        "title": "LLM Clients & Adapters",
-        "level": 2,
-        "description": "Client libraries and provider integrations.",
-        "in_toc": True,
-    },
-    {
-        "key": None,
-        "title": "Natural Language Processing",
-        "level": 2,
-        "in_toc": True,
-        "children": [
-            {
-                "key": "structured_output",
-                "title": "Structured Output & Validation",
-                "level": 3,
-            },
-            {
-                "key": "ai_agents_orchestration",
-                "title": "AI Agents & Orchestration",
-                "level": 3,
-            },
-            {
-                "key": "laravel_integrations",
-                "title": "Laravel Integrations",
-                "level": 3,
-            },
-            {
-                "key": "symfony_integrations",
-                "title": "Symfony Integrations",
-                "level": 3,
-            },
-            {
-                "key": "utilities_tools",
-                "title": "Utilities & Tools",
-                "level": 3,
-            },
-        ],
-    },
-    {
-        "key": "machine_learning",
-        "title": "Machine Learning",
-        "level": 2,
-        "in_toc": True,
-    },
-    {
-        "key": "computer_vision",
-        "title": "Computer Vision",
-        "level": 2,
-        "in_toc": True,
-    },
-    {
-        "key": "vector_storage_rag",
-        "title": "Vector Storage & RAG",
-        "level": 2,
-        "in_toc": True,
-    },
-    {
-        "key": "command_line_tools",
-        "title": "Command Line Tools",
-        "level": 2,
-        "in_toc": True,
-    },
-    {
-        "key": "video_processing",
-        "title": "Video Processing",
-        "level": 2,
-        "in_toc": True,
-    },
-    {
-        "key": "api_clients",
-        "title": "API Clients",
-        "level": 2,
-        "in_toc": True,
-    },
-    {
-        "key": "learning_resources",
-        "title": "Learning Resources",
-        "level": 2,
-        "in_toc": True,
-        "suffix": "\n### Tutorials & Documentation\n\n- [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel) - Laracasts series on OpenAI with PHP and Laravel.\n- [PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/tutorials/) - Learn how to use PHP-ML for machine learning.\n- [Rubix ML Docs](https://docs.rubixml.com/) - Comprehensive documentation for Rubix ML.",
-    },
-    {
-        "key": "data_manipulation",
-        "title": "Data Manipulation",
-        "level": 2,
-        "in_toc": False,
-    },
-]
-
-HEADER = """\
-# Awesome PHP AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-
-> A curated list of awesome PHP libraries and tools for AI, Machine Learning, and Natural Language Processing.
-
-Contributions welcome! Read the [contributing guidelines](#contributing) to get started."""
-
-FOOTER = """\
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Add your library/tool to the appropriate section
-3. Include the library name, GitHub link, and a brief description
-4. Submit a pull request
-
-Please ensure your submission is relevant to PHP and AI/ML/NLP.
-
----
-
-## License
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, the contributors have waived all copyright and related rights to this work."""
-
-
-SITE_TEMPLATE = """\
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
@@ -283,6 +149,7 @@ const CATEGORIES = {
     llm_clients_adapters: "LLM Clients & Adapters",
     structured_output: "Structured Output",
     ai_agents_orchestration: "AI Agents & Orchestration",
+    mcp_agent_tooling: "MCP & Agent Tooling",
     laravel_integrations: "Laravel Integrations",
     symfony_integrations: "Symfony Integrations",
     utilities_tools: "Utilities & Tools",
@@ -298,7 +165,7 @@ const CATEGORIES = {
 
 const TAG_GROUPS = {
     Providers: ["openai","anthropic","google","ollama","mistral","cohere","deepseek","grok","fireworks","openrouter","huggingface"],
-    Features: ["streaming","tool-use","embeddings","rag","agents","structured-output","image-generation","vision","text-to-speech","chat","mcp","nlp","machine-learning","search","translation","video","subtitles","slugify"],
+    Features: ["streaming","tool-use","embeddings","rag","agents","structured-output","image-generation","vision","text-to-speech","transcription","chat","mcp","nlp","machine-learning","vector-store","search","translation","video","subtitles","slugify","tokenization","prompt-management"],
     Frameworks: ["laravel","symfony"],
     Types: ["framework","client","library","tool","cli","example","book","bundle"]
 };
@@ -374,28 +241,49 @@ function starIcon() {
     return '<svg class="inline w-3.5 h-3.5 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
 }
 
+function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+    }[ch]));
+}
+
+function safeHref(value) {
+    const href = String(value ?? '');
+    try {
+        const parsed = new URL(href, window.location.href);
+        if (parsed.protocol === 'http:' || parsed.protocol === 'https:') return escapeHtml(parsed.href);
+    } catch (_) {
+        // Fall through to an inert URL.
+    }
+    return '#';
+}
+
 function categoryBadge(catKey) {
     const label = CATEGORIES[catKey] || catKey;
-    return `<span class="text-xs px-2 py-0.5 rounded-full bg-gray-800 text-gray-400 border border-gray-700">${label}</span>`;
+    return `<span class="text-xs px-2 py-0.5 rounded-full bg-gray-800 text-gray-400 border border-gray-700">${escapeHtml(label)}</span>`;
 }
 
 function renderCard(e) {
     const tagPills = (e.tags || []).map(t =>
-        `<span class="tag-chip text-xs px-1.5 py-0.5 rounded border ${tagClass(t, false)}">${t}</span>`
+        `<span class="tag-chip text-xs px-1.5 py-0.5 rounded border ${tagClass(t, false)}">${escapeHtml(t)}</span>`
     ).join(' ');
 
     return `<div class="card bg-gray-900 border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 flex flex-col gap-3">
         <div class="flex items-start justify-between gap-2">
             <div class="flex flex-col gap-1.5">
                 ${categoryBadge(e.category)}
-                <a href="${e.url}" target="_blank" class="text-blue-400 font-semibold text-lg hover:underline leading-tight">${e.name}</a>
+                <a href="${safeHref(e.url)}" target="_blank" rel="noopener noreferrer" class="text-blue-400 font-semibold text-lg hover:underline leading-tight">${escapeHtml(e.name)}</a>
             </div>
             <span class="text-yellow-400 text-sm whitespace-nowrap font-medium flex items-center gap-0.5 mt-1 shrink-0">
                 ${starIcon()}
                 ${(e.stars || 0).toLocaleString()}
             </span>
         </div>
-        <p class="text-gray-400 text-sm leading-relaxed flex-1">${e.description || ''}</p>
+        <p class="text-gray-400 text-sm leading-relaxed flex-1">${escapeHtml(e.description)}</p>
         <div class="flex flex-wrap gap-1">${tagPills}</div>
     </div>`;
 }
@@ -530,86 +418,3 @@ render();
 </script>
 </body>
 </html>
-"""
-
-
-def build_toc(sections: list[dict]) -> str:
-    lines = []
-    for section in sections:
-        if section.get("in_toc"):
-            anchor = section["title"].lower().replace("&", "").replace(" ", "-")
-            lines.append(f"- [{section['title']}](#{anchor})")
-    return "## Table of Contents\n\n" + "\n".join(lines)
-
-
-def render_table(entries: list[dict]) -> str:
-    lines = [
-        "| Repo | Description |",
-        "|---------|-------------|",
-    ]
-    for entry in entries:
-        lines.append(
-            f"| [{entry['name']}]({entry['url']}) | {entry['description']} |"
-        )
-    return "\n".join(lines)
-
-
-def render_section(section: dict, data: dict) -> str:
-    parts = []
-    heading = "#" * section["level"]
-    parts.append(f"{heading} {section['title']}")
-
-    if "description" in section:
-        parts.append("")
-        parts.append(section["description"])
-
-    if section.get("key") and section["key"] in data:
-        parts.append("")
-        parts.append(render_table(data[section["key"]]))
-
-    if "suffix" in section:
-        parts.append(section["suffix"])
-
-    if "children" in section:
-        for child in section["children"]:
-            parts.append("")
-            parts.append(render_section(child, data))
-
-    return "\n".join(parts)
-
-
-def generate() -> str:
-    root = Path(__file__).parent
-    with open(root / "readme.json", encoding="utf-8") as f:
-        data = json.load(f)
-
-    parts = [HEADER, "---", build_toc(SECTIONS), "---"]
-
-    for section in SECTIONS:
-        parts.append(render_section(section, data))
-        parts.append("---")
-
-    parts.append(FOOTER)
-
-    return "\n\n".join(parts) + "\n"
-
-
-def generate_site() -> None:
-    root = Path(__file__).parent
-    with open(root / "readme.json", encoding="utf-8") as f:
-        raw_json = f.read()
-    docs_dir = root / "docs"
-    docs_dir.mkdir(exist_ok=True)
-    html = SITE_TEMPLATE.replace("{{ENTRIES_JSON}}", raw_json)
-    site = docs_dir / "index.html"
-    site.write_text(html, encoding="utf-8")
-    print(f"Generated {site}")
-
-
-if __name__ == "__main__":
-    root = Path(__file__).parent
-    readme = root / "README.md"
-    content = generate()
-    readme.write_text(content, encoding="utf-8")
-    print(f"Generated {readme}")
-    generate_site()

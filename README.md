@@ -49,10 +49,12 @@ Client libraries and provider integrations.
 |---------|-------------|
 | [OpenAI PHP](https://github.com/openai-php/client) | Supercharged community-maintained PHP API client for OpenAI. |
 | [OpenAI PHP SDK](https://github.com/orhanerday/open-ai) | Most downloaded PHP SDK for OpenAI GPT-3, DALL-E, and ChatGPT with streaming support. |
+| [DeepSeek PHP](https://github.com/deepseek-php/deepseek-php-client) | Community PHP client for the DeepSeek API. |
 | [Gemini PHP](https://github.com/google-gemini-php/client) | Community-maintained PHP API client for Gemini AI. |
 | [WordPress PHP AI Client](https://github.com/WordPress/php-ai-client) | Provider-agnostic PHP AI client SDK for any generative AI model. |
 | [Ollama PHP](https://github.com/ArdaGnsrn/ollama-php) | PHP client for Ollama, enabling local LLM deployment and interaction. |
 | [grok-php/laravel](https://github.com/grok-php/laravel) | Integrate Grok AI into Laravel with an elegant, developer-friendly package. |
+| [Anthropic Official SDK](https://github.com/anthropics/anthropic-sdk-php) | Official PHP SDK for the Anthropic Claude API. |
 | [Laravel OpenRouter](https://github.com/moe-mizrak/laravel-openrouter) | Laravel integration for OpenRouter's unified LLM API interface. |
 | [AI Access](https://github.com/aiaccess/ai-access) | Flexible PHP library for Gemini, OpenAI, Anthropic, DeepSeek, Grok via consistent interface. |
 | [Anthropic PHP](https://github.com/mozex/anthropic-php) | Community-maintained PHP API client for Anthropic (Claude) API with streaming, tool use, and batch processing. |
@@ -79,21 +81,43 @@ Client libraries and provider integrations.
 | [ai-team](https://github.com/sarfraznawaz2005/ai-team) | Create teams of AI members that collaborate to achieve common goals. |
 | [mulagent](https://github.com/FunkyOz/mulagent) | Multi-agent orchestration with routines and handoffs. |
 
+### MCP & Agent Tooling
+
+| Repo | Description |
+|---------|-------------|
+| [Laravel Boost](https://github.com/laravel/boost) | Laravel-focused MCP server for augmenting AI-powered local development. |
+| [MCP PHP SDK](https://github.com/modelcontextprotocol/php-sdk) | Official Model Context Protocol SDK for PHP clients and servers. |
+| [php-mcp/server](https://github.com/php-mcp/server) | PHP SDK for building Model Context Protocol servers with tools, resources, and prompts. |
+| [Laravel MCP](https://github.com/laravel/mcp) | Build MCP servers for Laravel applications. |
+| [php-mcp/laravel](https://github.com/php-mcp/laravel) | Laravel SDK for building Model Context Protocol servers. |
+| [mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php) | Model Context Protocol SDK for PHP. |
+| [Laravel MCP Server](https://github.com/opgginc/laravel-mcp-server) | Laravel package for implementing Model Context Protocol servers. |
+| [CTX Generator](https://github.com/context-hub/generator) | Tool that solves context management when working with LLMs - organizes codebase info for AI assistants. |
+| [Prism Relay](https://github.com/prism-php/relay) | MCP client tool for Prism applications. |
+| [Laravel Agent Detector](https://github.com/laravel/agent-detector) | Detect whether PHP code is running inside an AI agent or automated development environment. |
+| [php-mcp/client](https://github.com/php-mcp/client) | PHP client for the Model Context Protocol. |
+| [Xdebug MCP](https://github.com/koriym/xdebug-mcp) | PHP Xdebug MCP server with AI-optimized debugging support. |
+| [Symfony MCP SDK](https://github.com/symfony/mcp-sdk) | Model Context Protocol SDK for Client and Server applications in PHP. |
+| [Symfony MCP Bundle](https://github.com/symfony/mcp-bundle) | Official Symfony integration bundle for Model Context Protocol. |
+| [mcp-php](https://github.com/garyblankenship/mcp-php) | Setting up a Model Context Protocol (MCP) Server in Laravel. |
+| [MCP Client Laravel](https://github.com/RedberryProducts/mcp-client-laravel) | Laravel-native client for MCP servers. |
+
 ### Laravel Integrations
 
 | Repo | Description |
 |---------|-------------|
+| [OpenAI PHP Laravel](https://github.com/openai-php/laravel) | Laravel integration for the OpenAI PHP client. |
 | [Laravel AI](https://github.com/laravel/ai) | Official Laravel package for AI integration. |
-| [Laravel MCP Server](https://github.com/opgginc/laravel-mcp-server) | Laravel package for implementing Model Context Protocol servers. |
+| [LarAgent](https://github.com/MaestroError/LarAgent) | Build AI agents inside Laravel applications. |
+| [Gemini PHP Laravel](https://github.com/google-gemini-php/laravel) | Laravel integration for the Gemini PHP client. |
 | [Neuron Laravel](https://github.com/neuron-core/neuron-laravel) | Official Neuron AI Laravel SDK. |
 | [Laravel AI Guard](https://github.com/subhashladumor1/laravel-ai-guard) | Control and optimize AI costs in Laravel - track token usage, enforce budgets. |
-| [MCP Client Laravel](https://github.com/RedberryProducts/mcp-client-laravel) | Laravel-native client for MCP servers. |
 | [Taskallama](https://github.com/coding-wisely/taskallama) | Laravel integration with Ollama's LLM API for content generation. |
 | [ai-translations-for-laravel](https://github.com/Capevace/ai-translations-for-laravel) | Automatically translate Laravel language files using LLMs. |
 | [laravel-prompt-manager](https://github.com/prismaticoder/laravel-prompt-manager) | Simplify prompt management for AI engineers using Laravel. |
-| [llm-magic](https://github.com/Capevace/llm-magic) | LLM-agnostic AI toolkit for Laravel. |
 | [laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt) | Laravel LLM prompt manager. |
 | [laravel-prompt-alchemist](https://github.com/moe-mizrak/laravel-prompt-alchemist) | Versatile LLM Tool Use (Function Calling) for Laravel, compatible with all LLMs. |
+| [llm-magic](https://github.com/Capevace/llm-magic) | LLM-agnostic AI toolkit for Laravel. |
 | [LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext) | Artisan command to generate LLM context for a Laravel project. |
 | [llm](https://github.com/artisan-build/llm) | Laravel integrations for various LLM providers. |
 
@@ -102,9 +126,7 @@ Client libraries and provider integrations.
 | Repo | Description |
 |---------|-------------|
 | [Symfony AI Platform](https://github.com/symfony/ai-platform) | PHP library for interacting with AI platform providers. |
-| [Symfony MCP SDK](https://github.com/symfony/mcp-sdk) | Model Context Protocol SDK for Client and Server applications in PHP. |
 | [LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle) | Symfony bundle for seamless integration of the LLM Chain library. |
-| [Symfony MCP Bundle](https://github.com/symfony/mcp-bundle) | Official Symfony integration bundle for Model Context Protocol. |
 | [Symfony AI Agent](https://github.com/symfony/ai-agent) | PHP library for building agentic applications. |
 | [Symfony AI Bundle](https://github.com/symfony/ai-bundle) | Integration bundle for Symfony AI components. |
 
@@ -115,16 +137,17 @@ Client libraries and provider integrations.
 | [cocur/slugify](https://github.com/cocur/slugify) | Converts strings into slugs. |
 | [NlpTools](https://github.com/angeloskath/php-nlp-tools) | Collection of NLP tools and APIs for working with text. |
 | [transformers-php](https://github.com/CodeWithKyrian/transformers-php) | Toolkit for PHP developers to add machine learning magic easily. |
-| [CTX Generator](https://github.com/context-hub/generator) | Tool that solves context management when working with LLMs - organizes codebase info for AI assistants. |
+| [whisper.php](https://github.com/CodeWithKyrian/whisper.php) | Local speech-to-text in PHP using Whisper.cpp. |
+| [tiktoken-php](https://github.com/yethee/tiktoken-php) | PHP implementation of OpenAI token counting with tiktoken. |
 | [TOON PHP](https://github.com/HelgeSverre/toon-php) | Token-Oriented Object Notation - compact data format for reducing token consumption with LLMs. |
+| [Prompt Deck](https://github.com/promptphp/deck) | Laravel package for versioned AI prompt management with variables and tracking. |
 | [php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge) | AI integration to interact with your own code and services. |
 | [single-file-php-ai](https://github.com/mariorazo97/single-file-php-ai) | Drop-in, single-file PHP chat interface for Ollama/OpenAI. No Node.js, no Docker. |
-| [mcp-php](https://github.com/garyblankenship/mcp-php) | Setting up a Model Context Protocol (MCP) Server in Laravel. |
-| [prompt-generator](https://github.com/llm-agents-php/prompt-generator) | Prompt generator for LLM agents with interceptors. |
 | [php-llm-documents](https://github.com/thojou/php-llm-documents) | Brings LLM functionality for document processing. |
+| [prompt-generator](https://github.com/llm-agents-php/prompt-generator) | Prompt generator for LLM agents with interceptors. |
 | [fabric-pattern](https://github.com/php-llm/fabric-pattern) | Slim PHP wrapper for Daniel Miessler's fabric pattern. |
-| [php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) | JSON output adapter for LLMs that lack native function calling. |
 | [fireworksai-adapter](https://github.com/modelflow-ai/fireworksai-adapter) | Adapter for open-source models hosted by fireworks.ai. |
+| [php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) | JSON output adapter for LLMs that lack native function calling. |
 
 ---
 
@@ -149,6 +172,8 @@ Client libraries and provider integrations.
 
 | Repo | Description |
 |---------|-------------|
+| [qdrant-php](https://github.com/hkulekci/qdrant-php) | PHP client for the Qdrant vector similarity search engine. |
+| [chromadb-php](https://github.com/CodeWithKyrian/chromadb-php) | PHP client for the Chroma open-source embedding database. |
 | [php-rag](https://github.com/rzarno/php-rag) | LLM-powered text generation with database-backed retrieval. |
 | [redis-vector-php](https://github.com/redis-applied-ai/redis-vector-php) | Redis Vector Library for LLM applications, based on Predis. |
 | [vector-storage](https://github.com/llm-agents-php/vector-storage) | LLM Agents Vector Storage. |
@@ -217,9 +242,11 @@ Client libraries and provider integrations.
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository
-2. Add your library/tool to the appropriate section
-3. Include the library name, GitHub link, and a brief description
-4. Submit a pull request
+2. Add your library/tool to `readme.json`
+3. Include `name`, `url`, `description`, `stars`, and `tags`
+4. Run `php generate-readme.php`
+5. Commit `readme.json`, `README.md`, and `docs/index.html`
+6. Submit a pull request
 
 Please ensure your submission is relevant to PHP and AI/ML/NLP.
 
