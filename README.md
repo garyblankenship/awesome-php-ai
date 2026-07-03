@@ -129,6 +129,7 @@ Client libraries and provider integrations.
 | [LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle) | Symfony bundle for seamless integration of the LLM Chain library. |
 | [Symfony AI Agent](https://github.com/symfony/ai-agent) | PHP library for building agentic applications. |
 | [Symfony AI Bundle](https://github.com/symfony/ai-bundle) | Integration bundle for Symfony AI components. |
+- [Mautic](https://www.mautic.org) - Open-source marketing automation platform built with PHP and Symfony for campaigns, segmentation, and lead management.
 
 ### Utilities & Tools
 
