@@ -1,0 +1,17 @@
+# Awesome PHP AI — prototype gallery route manifest.
+# One absolute .test URL per line. Blank lines and lines starting with '#' are ignored
+# by verify-gallery.sh and capture-gallery.sh. The host (awesome-php-ai.test) is served
+# by your local static server / Valet — these scripts start no server of their own.
+#
+# Selector + ten variants:
+https://awesome-php-ai.test/prototypes/
+https://awesome-php-ai.test/prototypes/examples/variant-01/
+https://awesome-php-ai.test/prototypes/examples/variant-02/
+https://awesome-php-ai.test/prototypes/examples/variant-03/
+https://awesome-php-ai.test/prototypes/examples/variant-04/
+https://awesome-php-ai.test/prototypes/examples/variant-05/
+https://awesome-php-ai.test/prototypes/examples/variant-06/
+https://awesome-php-ai.test/prototypes/examples/variant-07/
+https://awesome-php-ai.test/prototypes/examples/variant-08/
+https://awesome-php-ai.test/prototypes/examples/variant-09/
+https://awesome-php-ai.test/prototypes/examples/variant-10/

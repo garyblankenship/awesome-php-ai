@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Documentation reference concept prototype.">
+<title>Awesome PHP AI — Docs</title>
+<style>
+  :root{--bg:#ffffff;--ink:#18181b;--mut:#71717a;--line:#e4e4e7;--soft:#fafafa;
+    --blue:#2563eb;--code-bg:#f4f4f5;--code-ink:#3f3f46}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .skip{position:absolute;left:-999px;top:0;background:var(--blue);color:#fff;padding:.6rem 1rem;z-index:40}
+  .skip:focus{left:0}
+  a{color:var(--blue);text-decoration:none}
+  a:focus-visible{outline:3px solid var(--blue);outline-offset:1px}
+  .top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:1rem;padding:.7rem clamp(1rem,4vw,1.6rem);background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top .brand{font-weight:800}
+  .top .brand span{color:var(--blue)}
+  .search{margin-left:auto;display:flex;align-items:center;gap:.5rem;border:1px solid var(--line);border-radius:8px;padding:.4rem .7rem;min-height:44px;color:var(--mut);font-size:.85rem;background:var(--soft);width:min(280px,40vw)}
+  .search kbd{border:1px solid var(--line);border-radius:4px;padding:0 .35rem;font-size:.7rem;background:#fff}
+  .layout{display:grid;grid-template-columns:260px minmax(0,1fr) 220px;max-width:1280px;margin:0 auto}
+  .side{border-right:1px solid var(--line);padding:1.4rem .8rem;position:sticky;top:57px;align-self:start;max-height:calc(100vh - 57px);overflow:auto}
+  .toc-r{border-left:1px solid var(--line);padding:1.4rem .8rem;position:sticky;top:57px;align-self:start}
+  .grp{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:1rem .5rem .3rem}
+  .side a,.toc-r a{display:block;padding:.4rem .6rem;border-radius:6px;color:var(--ink);font-size:.88rem;min-height:36px;line-height:1.3}
+  .side a:hover,.toc-r a:hover{background:var(--soft);color:var(--blue)}
+  .side a.active{background:#eff6ff;color:var(--blue);font-weight:600}
+  .toc-r .ttl{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:.4rem}
+  .content{padding:clamp(1.4rem,4vw,2.6rem);min-width:0}
+  .eyebrow{font-size:.74rem;color:var(--blue);font-weight:600;letter-spacing:.04em}
+  h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:.3rem 0 .6rem;letter-spacing:-.02em}
+  .lead{color:var(--mut);max-width:65ch;margin:0 0 1.5rem}
+  .qstart{border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;background:var(--soft);margin-bottom:2rem}
+  .qstart h2{margin:0 0 .6rem;font-size:1rem}
+  pre{background:var(--code-bg);color:var(--code-ink);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;overflow:auto;font-size:.85rem}
+  .qstart .c{color:#9ca3af}
+  h2.sec{font-size:1.25rem;margin:2.2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--line)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:.7rem}
+  .card{border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;min-height:44px}
+  .card h3{margin:0 0 .25rem;font-size:1rem}
+  .card h3 a{color:var(--ink)}
+  .card p{margin:0 0 .4rem;color:var(--mut);font-size:.86rem}
+  .card .meta{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--mut)}
+  .card .stars{color:#ca8a04;font-weight:600}
+  .tag{display:inline-block;background:var(--soft);border:1px solid var(--line);color:var(--mut);font-size:.7rem;padding:.1rem .4rem;border-radius:5px;margin:.1rem .15rem 0 0}
+  .callout{border-left:3px solid var(--blue);background:#eff6ff;padding:.7rem 1rem;border-radius:0 8px 8px 0;font-size:.9rem;margin:1.4rem 0}
+  .foot{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1rem;color:var(--mut);font-size:.82rem;max-width:70ch}
+  .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:8px;background:var(--blue);color:#fff;margin:.3rem .4rem 0 0}
+  @media(max-width:1024px){.layout{grid-template-columns:240px minmax(0,1fr)}.toc-r{display:none}}
+  @media(max-width:760px){.layout{grid-template-columns:1fr}.side{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand">Awesome<span>PHP·AI</span> <span style="color:var(--mut);font-weight:400">Docs</span></div>
+  <div class="search" aria-hidden="true">Search the catalogue… <kbd style="margin-left:auto">⌘K</kbd></div>
+  <a href="../../index.html" style="font-size:.84rem;color:var(--mut)">← Gallery</a>
+</header>
+
+<div class="layout">
+  <aside class="side" aria-label="Catalogue sections">
+    <div class="grp">Getting started</div>
+    <a class="active" href="#overview">Overview</a>
+    <a href="#quickstart">Quickstart</a>
+    <div class="grp">Catalogue</div>
+    <a href="#frameworks">LLM Frameworks</a>
+    <a href="#clients">Clients &amp; Adapters</a>
+    <a href="#mcp">MCP &amp; Tooling</a>
+    <a href="#ml">ML, NLP &amp; Vision</a>
+    <a href="#vector">Vector &amp; RAG</a>
+    <div class="grp">Reference</div>
+    <a href="https://github.com/garyblankenship/awesome-php-ai">Source repo ↗</a>
+  </aside>
+
+  <main class="content" id="main">
+    <p class="eyebrow">Overview</p>
+    <h1>Awesome PHP AI</h1>
+    <p class="lead">A curated reference of PHP libraries and tools for AI, Machine Learning, and Natural Language Processing. This page is a bounded excerpt of the full catalogue —browse by section in the sidebar.</p>
+
+    <div class="qstart" id="quickstart">
+      <h2>Quickstart — pick a client</h2>
+      <pre><span class="c"># most-used community OpenAI client</span>
+composer require openai-php/client</pre>
+      <p style="margin:.6rem 0 0;color:var(--mut);font-size:.86rem">Or a full framework: <a href="https://github.com/prism-php/prism">Prism</a> (Laravel) · <a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a> (framework-agnostic).</p>
+    </div>
+
+    <div class="callout">The full catalogue holds ≈100 entries across 14 categories. Entries below are a bounded representative subset; star counts are a point-in-time snapshot.</div>
+
+    <h2 class="sec" id="frameworks">LLM Frameworks</h2>
+    <div class="cards">
+      <div class="card"><h3><a href="https://github.com/dtyq/magic">Magic</a></h3><p>All-in-one AI productivity platform — agents, workflows, collaboration.</p><div class="meta"><span class="tag">framework</span><span class="stars">4,484 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/prism-php/prism">Prism</a></h3><p>Unified interface for working with LLMs in Laravel.</p><div class="meta"><span class="tag">laravel</span><span class="stars">2,322 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a></h3><p>Agentic framework — RAG, multi-agent workflows, MCP.</p><div class="meta"><span class="tag">framework</span><span class="stars">1,770 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/theodo-group/llphant">LLPhant</a></h3><p>Generative AI framework, LangChain-inspired.</p><div class="meta"><span class="tag">framework</span><span class="stars">1,443 ★</span></div></div>
+    </div>
+
+    <h2 class="sec" id="clients">Clients &amp; Adapters</h2>
+    <div class="cards">
+      <div class="card"><h3><a href="https://github.com/openai-php/client">OpenAI PHP</a></h3><p>Community-maintained PHP client for OpenAI.</p><div class="meta"><span class="tag">client</span><span class="stars">5,744 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/orhanerday/open-ai">OpenAI PHP SDK</a></h3><p>Most-downloaded SDK for GPT, DALL·E, ChatGPT.</p><div class="meta"><span class="tag">client</span><span class="stars">2,368 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/deepseek-php/deepseek-php-client">DeepSeek PHP</a></h3><p>Community client for the DeepSeek API.</p><div class="meta"><span class="tag">client</span><span class="stars">471 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/google-gemini-php/client">Gemini PHP</a></h3><p>Community client for Gemini AI.</p><div class="meta"><span class="tag">client</span><span class="stars">396 ★</span></div></div>
+    </div>
+
+    <h2 class="sec" id="mcp">MCP &amp; Tooling</h2>
+    <div class="cards">
+      <div class="card"><h3><a href="https://github.com/laravel/boost">Laravel Boost</a></h3><p>Laravel-focused MCP server for AI-powered local dev.</p><div class="meta"><span class="tag">mcp</span><span class="stars">3,508 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/modelcontextprotocol/php-sdk">MCP PHP SDK</a></h3><p>Official Model Context Protocol SDK for PHP.</p><div class="meta"><span class="tag">mcp</span><span class="stars">1,531 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/php-mcp/server">php-mcp/server</a></h3><p>SDK for building MCP servers — tools, resources, prompts.</p><div class="meta"><span class="tag">mcp</span><span class="stars">846 ★</span></div></div>
+    </div>
+
+    <h2 class="sec" id="ml">ML, NLP &amp; Vision</h2>
+    <div class="cards">
+      <div class="card"><h3><a href="https://github.com/RubixML/ML">Rubix ML</a></h3><p>ML library for algorithms and models.</p><div class="meta"><span class="tag">machine-learning</span><span class="stars">2,190 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php</a></h3><p>Add Hugging Face ML easily, in PHP.</p><div class="meta"><span class="tag">nlp</span><span class="stars">743 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/CodeWithKyrian/whisper.php">whisper.php</a></h3><p>Local speech-to-text via Whisper.cpp.</p><div class="meta"><span class="tag">transcription</span><span class="stars">406 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/php-opencv/php-opencv">opencv-php</a></h3><p>OpenCV bindings for image &amp; vision.</p><div class="meta"><span class="tag">vision</span><span class="stars">366 ★</span></div></div>
+    </div>
+
+    <h2 class="sec" id="vector">Vector &amp; RAG</h2>
+    <div class="cards">
+      <div class="card"><h3><a href="https://github.com/hkulekci/qdrant-php">qdrant-php</a></h3><p>Client for the Qdrant vector similarity engine.</p><div class="meta"><span class="tag">vector-store</span><span class="stars">172 ★</span></div></div>
+      <div class="card"><h3><a href="https://github.com/cognesy/instructor-php">Instructor PHP</a></h3><p>Typed structured outputs + agent SDK.</p><div class="meta"><span class="tag">structured-output</span><span class="stars">309 ★</span></div></div>
+    </div>
+
+    <footer class="foot">
+      <a class="btn" href="../../index.html">← Back to gallery</a>
+      <a class="btn" href="https://github.com/garyblankenship/awesome-php-ai" style="background:var(--soft);color:var(--ink);border:1px solid var(--line)">Source ↗</a>
+      <p style="margin-top:1.2rem"><strong>Source snapshot.</strong> Bounded excerpt (≈30 of 100+ entries) from read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. Star counts are a point-in-time snapshot — re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · <code>prototype-skill</code>.</p>
+    </footer>
+  </main>
+
+  <aside class="toc-r" aria-label="On this page">
+    <div class="ttl">On this page</div>
+    <a href="#overview">Overview</a>
+    <a href="#quickstart">Quickstart</a>
+    <a href="#frameworks">LLM Frameworks</a>
+    <a href="#clients">Clients &amp; Adapters</a>
+    <a href="#mcp">MCP &amp; Tooling</a>
+    <a href="#ml">ML, NLP &amp; Vision</a>
+    <a href="#vector">Vector &amp; RAG</a>
+  </aside>
+</div>
+</body>
+</html>

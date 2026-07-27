@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Terminal concept prototype.">
+<title>awesome-php-ai // ~ terminal</title>
+<style>
+  :root{--bg:#05080a;--bg-2:#0a0f12;--phosphor:#33ff66;--dim:#1f7a3a;--amber:#ffcf6b;--line:#143020}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--phosphor);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;line-height:1.5}
+  .skip{position:absolute;left:-999px;top:0;background:var(--phosphor);color:#000;padding:.6rem 1rem;z-index:20}
+  .skip:focus{left:0}
+  a{color:var(--amber);text-decoration:none}
+  a:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+  .bar{display:flex;align-items:center;gap:.5rem;padding:.6rem .9rem;background:var(--bg-2);border-bottom:1px solid var(--line)}
+  .dot{width:12px;height:12px;border-radius:50%;background:#ff5f57}
+  .dot.y{background:#febc2e}.dot.g{background:#28c840}
+  .ttl{margin-left:auto;color:var(--dim);font-size:.8rem}
+  .wrap{max-width:1000px;margin:0 auto;padding:1.4rem clamp(1rem,4vw,2rem) 3rem}
+  pre.ascii{color:var(--phosphor);font-size:clamp(.6rem,2.4vw,.8rem);line-height:1.1;margin:0 0 1.2rem;white-space:pre;overflow:auto}
+  .line{white-space:pre-wrap;word-break:break-word}
+  .ps1{color:var(--amber)}
+  .cmd{color:#fff}
+  .out{color:var(--phosphor)}
+  .mut{color:var(--dim)}
+  table.fs{width:100%;border-collapse:collapse;margin:.4rem 0;font-size:.88rem}
+  table.fs th{text-align:left;color:var(--dim);font-weight:400;border-bottom:1px solid var(--line);padding:.4rem .6rem;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
+  table.fs td{padding:.42rem .6rem;border-bottom:1px dashed var(--line);vertical-align:top}
+  table.fs td.n{color:var(--amber)}
+  table.fs td.s{text-align:right;color:var(--dim);white-space:nowrap}
+  .cat{color:#7ad}
+  .cursor{display:inline-block;width:.55rem;height:1.05em;background:var(--phosphor);vertical-align:-2px;animation:blink 1.05s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .grp{margin:1.6rem 0 .3rem;color:var(--amber);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+  .help{color:var(--dim);font-size:.82rem}
+  .btnrow{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0}
+  .btn{min-height:44px;display:inline-flex;align-items:center;padding:.5rem .9rem;border:1px solid var(--phosphor);color:var(--phosphor);border-radius:6px}
+  .btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+  .src{margin-top:2.6rem;border-top:1px solid var(--line);padding-top:1rem;color:var(--dim);font-size:.8rem}
+  .src strong{color:var(--phosphor)}
+  .scan{position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.18) 2px 4px);mix-blend-mode:overlay;opacity:.5}
+  @media (prefers-reduced-motion: reduce){.cursor{animation:none}.scan{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">skip to listing</a>
+<div class="bar" aria-hidden="true">
+  <span class="dot"></span><span class="dot y"></span><span class="dot g"></span>
+  <span class="ttl">vampire@local — zsh — awesome-php-ai</span>
+</div>
+<div class="wrap">
+<main id="main">
+<pre class="ascii" aria-hidden="true">   ___        __    ____        _       __     ___    ____    ____    _____
+  / _ |  ___ / /_  / __/__  ___| |__   / /_   / _ |  /  _/   / __/   / ___/
+ / __ | (_-</ __/ _\ \/ _ \/ _ \ / /  / __/  / __ | _/ /    / _/    / /__
+/_/ |_|/___/\__//___/\___/\___/_|_|| /_/    /_/ |_|/___|   /___/    \___/
+   a curated directory of PHP libraries for AI, ML &amp; NLP</pre>
+
+<div class="line"><span class="ps1">vampire@local</span> <span class="mut">~/awesome-php-ai</span> <span class="cmd">$</span> <span class="cmd">cat README.md | head -1</span></div>
+<div class="out line">A curated list of awesome PHP libraries and tools for AI, Machine Learning, and Natural Language Processing.</div>
+
+<div class="line"><span class="ps1">vampire@local</span> <span class="mut">~/awesome-php-ai</span> <span class="cmd">$</span> <span class="cmd">ls -1 --sort=stars ./catalogue</span><span class="cursor"></span></div>
+<div class="help">// top of a bounded subset — <strong style="color:var(--phosphor)">drwxr-xr-x</strong> entries link to GitHub</div>
+
+<div class="grp">// llm-frameworks</div>
+<table class="fs">
+<thead><tr><th>name</th><th>description</th><th class="s">★</th></tr></thead>
+<tbody>
+<tr><td class="n">drwx <a href="https://github.com/dtyq/magic">Magic/</a></td><td>All-in-one AI productivity platform — agents, workflows, collaboration</td><td class="s">4,484</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/prism-php/prism">Prism/</a></td><td>Unified interface for working with LLMs in Laravel applications</td><td class="s">2,322</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/neuron-core/neuron-ai">Neuron-AI/</a></td><td>Agentic framework — RAG, multi-agent workflows, MCP</td><td class="s">1,770</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/theodo-group/llphant">LLPhant/</a></td><td>Generative AI framework inspired by LangChain</td><td class="s">1,443</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/php-llm/llm-chain">LLM-Chain/</a></td><td>Library for LLM-based features and applications</td><td class="s">155</td></tr>
+</tbody>
+</table>
+
+<div class="grp">// clients &amp; adapters</div>
+<table class="fs">
+<thead><tr><th>name</th><th>description</th><th class="s">★</th></tr></thead>
+<tbody>
+<tr><td class="n">drwx <a href="https://github.com/openai-php/client">OpenAI-PHP/</a></td><td>Community PHP API client for OpenAI</td><td class="s">5,744</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/orhanerday/open-ai">OpenAI-SDK/</a></td><td>Most-downloaded PHP SDK for GPT, DALL·E &amp; ChatGPT</td><td class="s">2,368</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/deepseek-php/deepseek-php-client">DeepSeek-PHP/</a></td><td>Community client for the DeepSeek API</td><td class="s">471</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/google-gemini-php/client">Gemini-PHP/</a></td><td>Community client for Gemini AI</td><td class="s">396</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/anthropics/anthropic-sdk-php">Anthropic-SDK/</a></td><td>Official PHP SDK for the Anthropic Claude API</td><td class="s">158</td></tr>
+</tbody>
+</table>
+
+<div class="grp">// mcp &amp; tooling</div>
+<table class="fs">
+<thead><tr><th>name</th><th>description</th><th class="s">★</th></tr></thead>
+<tbody>
+<tr><td class="n">drwx <a href="https://github.com/laravel/boost">Laravel-Boost/</a></td><td>Laravel-focused MCP server for AI-powered local dev</td><td class="s">3,508</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/modelcontextprotocol/php-sdk">MCP-PHP-SDK/</a></td><td>Official Model Context Protocol SDK for PHP</td><td class="s">1,531</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/php-mcp/server">php-mcp-server/</a></td><td>SDK for building MCP servers — tools, resources, prompts</td><td class="s">846</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/laravel/mcp">Laravel-MCP/</a></td><td>Build MCP servers for Laravel applications</td><td class="s">765</td></tr>
+</tbody>
+</table>
+
+<div class="grp">// ml · nlp · vision · rag</div>
+<table class="fs">
+<thead><tr><th>name</th><th>description</th><th class="s">★</th></tr></thead>
+<tbody>
+<tr><td class="n">drwx <a href="https://github.com/RubixML/ML">Rubix-ML/</a></td><td>Machine learning library — algorithms and models</td><td class="s">2,190</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php/</a></td><td>Add Hugging Face ML easily, in PHP</td><td class="s">743</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/angeloskath/php-nlp-tools">NlpTools/</a></td><td>NLP tools and APIs for working with text</td><td class="s">763</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/CodeWithKyrian/whisper.php">whisper.php/</a></td><td>Local speech-to-text via Whisper.cpp</td><td class="s">406</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/hkulekci/qdrant-php">qdrant-php/</a></td><td>Client for the Qdrant vector similarity engine</td><td class="s">172</td></tr>
+<tr><td class="n">drwx <a href="https://github.com/php-opencv/php-opencv">opencv-php/</a></td><td>OpenCV bindings for image processing &amp; vision</td><td class="s">366</td></tr>
+</tbody>
+</table>
+
+<div class="line" style="margin-top:1.4rem"><span class="ps1">vampire@local</span> <span class="mut">~/awesome-php-ai</span> <span class="cmd">$</span> <span class="cmd">wc -l catalogue/* | tail -1</span></div>
+<div class="out line">≈100 entries · 14 categories · source: readme.json</div>
+
+<div class="btnrow">
+  <a class="btn" href="../../index.html">← cd ../gallery</a>
+  <a class="btn" href="https://github.com/garyblankenship/awesome-php-ai">open source repo ↗</a>
+</div>
+
+<aside class="src" aria-label="Source snapshot">
+  <p><strong>// source snapshot</strong> — read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. Bounded subset (≈30 of 100+ entries); ★ are a point-in-time snapshot — re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · generated by <code>prototype-skill</code>.</p>
+</aside>
+</main>
+</div>
+<div class="scan" aria-hidden="true"></div>
+</body>
+</html>

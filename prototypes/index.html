@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Static prototype gallery — ten homepage concepts for the Awesome PHP AI curated directory.">
+<title>Awesome PHP AI — Prototype Gallery</title>
+<style>
+  :root{
+    --bg:#0b0d10; --panel:#14181d; --panel-2:#1b2128; --ink:#e7e9ec; --mute:#9aa3ad;
+    --line:#262d35; --accent:#7dd3fc; --accent-2:#a78bfa;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#001019;padding:.75rem 1rem;border-radius:0 0 .5rem 0;z-index:10}
+  .skip:focus{left:0}
+  a{color:var(--accent)}
+  a:focus-visible,.card:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:14px}
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(1.25rem,4vw,3.5rem) clamp(1rem,4vw,2rem)}
+  header hero{display:block}
+  .eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);margin:0 0 .5rem}
+  h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;margin:.2rem 0 .6rem;letter-spacing:-.02em}
+  .lede{color:var(--mute);max-width:60ch;margin:0 0 .5rem}
+  .meta-row{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin:1.4rem 0 2rem;font-size:.85rem;color:var(--mute)}
+  .pill{border:1px solid var(--line);background:var(--panel);padding:.3rem .7rem;border-radius:999px}
+  main h2{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin:0 0 1rem}
+  .grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:1rem}
+  .card{
+    display:block;text-decoration:none;color:inherit;background:var(--panel);
+    border:1px solid var(--line);border-radius:16px;padding:1.25rem;min-height:44px;
+    transition:transform .18s ease, border-color .18s ease, background .18s ease;
+  }
+  .card:hover{transform:translateY(-3px);border-color:#3a444f;background:var(--panel-2)}
+  .num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--accent-2);font-size:.8rem;letter-spacing:.1em}
+  .vt{font-size:1.25rem;margin:.35rem 0 .5rem;letter-spacing:-.01em}
+  .vb{color:var(--mute);font-size:.92rem}
+  .tags{margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.35rem}
+  .tag{font-size:.7rem;color:var(--mute);border:1px solid var(--line);padding:.15rem .5rem;border-radius:6px}
+  .src{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--mute);font-size:.85rem;max-width:80ch}
+  .src strong{color:var(--ink)}
+  .src a{word-break:break-word}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .card{transition:none}
+    .card:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to gallery</a>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Prototype Gallery · :prototype</p>
+    <h1>Awesome PHP AI</h1>
+    <p class="lede">Ten static homepage concepts for a curated directory of PHP libraries and tools for AI, Machine Learning, and Natural Language Processing. Each variant is a self-contained, offline-capable HTML page with a bounded slice of the real catalog.</p>
+    <div class="meta-row" aria-label="Gallery summary">
+      <span class="pill">10 variants</span>
+      <span class="pill">~100 catalogue entries · 14 categories</span>
+      <span class="pill">Static HTML · no backend</span>
+      <span class="pill">Served at awesome-php-ai.test</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <h2>Choose a concept</h2>
+    <ol class="grid">
+      <li><a class="card" href="examples/variant-01/">
+        <span class="num">01 · Terminal</span>
+        <div class="vt">Command-line console</div>
+        <p class="vb">Monospace directory listing rendered on a dark terminal surface with a prompt cursor.</p>
+        <div class="tags"><span class="tag">mono</span><span class="tag">dark</span><span class="tag">cli metaphor</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-02/">
+        <span class="num">02 · Magazine</span>
+        <div class="vt">Editorial masthead</div>
+        <p class="vb">Serif long-form layout with a masthead, drop cap, and columned catalogue.</p>
+        <div class="tags"><span class="tag">serif</span><span class="tag">cream</span><span class="tag">editorial</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-03/">
+        <span class="num">03 · Bento</span>
+        <div class="vt">Bento card grid</div>
+        <p class="vb">Layered tiles of varying size with category blocks and star-count stat callouts.</p>
+        <div class="tags"><span class="tag">cards</span><span class="tag">soft shadow</span><span class="tag">neutral</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-04/">
+        <span class="num">04 · Brutalist</span>
+        <div class="vt">Raw bordered grid</div>
+        <p class="vb">High-contrast blocks with thick black borders and hard offset shadows.</p>
+        <div class="tags"><span class="tag">stark</span><span class="tag">primary colour</span><span class="tag">heavy type</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-05/">
+        <span class="num">05 · Dashboard</span>
+        <div class="vt">Analytics console</div>
+        <p class="vb">Sidebar console with KPI stat cards, CSS bar charts, and a sortable data table.</p>
+        <div class="tags"><span class="tag">kpi</span><span class="tag">charts</span><span class="tag">slate</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-06/">
+        <span class="num">06 · Card Catalog</span>
+        <div class="vt">Library index cards</div>
+        <p class="vb">Stacked catalogue cards with typewriter type, stamp marks, and A–Z tab dividers.</p>
+        <div class="tags"><span class="tag">kraft</span><span class="tag">typewriter</span><span class="tag">archival</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-07/">
+        <span class="num">07 · Neural</span>
+        <div class="vt">Cosmic node graph</div>
+        <p class="vb">Dark cosmic theme with a glowing node-graph hero and constellation navigation.</p>
+        <div class="tags"><span class="tag">dark</span><span class="tag">glow</span><span class="tag">node graph</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-08/">
+        <span class="num">08 · Docs</span>
+        <div class="vt">Reference sidebar</div>
+        <p class="vb">Clean developer-docs layout with a fixed category tree and on-page anchors.</p>
+        <div class="tags"><span class="tag">sidebar</span><span class="tag">anchors</span><span class="tag">clean</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-09/">
+        <span class="num">09 · App Store</span>
+        <div class="vt">Marketplace showcase</div>
+        <p class="vb">Featured app spotlights with rounded tiles, segmented category control, and star ratings.</p>
+        <div class="tags"><span class="tag">rounded</span><span class="tag">ratings</span><span class="tag">friendly</span></div>
+      </a></li>
+      <li><a class="card" href="examples/variant-10/">
+        <span class="num">10 · Portfolio</span>
+        <div class="vt">Kinetic typography</div>
+        <p class="vb">Oversized display type with a provider marquee and a bold project showcase grid.</p>
+        <div class="tags"><span class="tag">display</span><span class="tag">marquee</span><span class="tag">lime</span></div>
+      </a></li>
+    </ol>
+  </main>
+
+  <aside class="src" aria-label="Source snapshot">
+    <p>
+      <strong>Source snapshot.</strong> Generated from a read-only inspection of the
+      <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> source
+      (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>.
+      Embedded data is a <strong>bounded representative subset</strong> (≈30 of 100+ catalogued entries across 14 categories);
+      GitHub star counts are a point-in-time snapshot from <code>readme.json</code> and drift over time — re-sync the source with
+      <code>php generate-readme.php</code>. The full catalogue and live data live in the source repo. These pages are static design
+      prototypes: no backend, no live-data fetch, no runtime service. Generated by <code>prototype-skill</code>.
+    </p>
+  </aside>
+</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Analytics dashboard concept prototype.">
+<title>Awesome PHP AI — Console</title>
+<style>
+  :root{--bg:#0f172a;--panel:#1e293b;--panel-2:#273449;--ink:#e2e8f0;--mut:#94a3b8;--line:#334155;--accent:#6366f1;--accent-2:#22d3ee;--good:#34d399;--warn:#fbbf24}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:.6rem 1rem;z-index:30}
+  .skip:focus{left:0}
+  a{color:var(--accent-2)}
+  a:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
+  .layout{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+  .side{background:var(--panel);border-right:1px solid var(--line);padding:1.2rem 1rem;position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto}
+  .brand{font-weight:800;font-size:1.05rem;letter-spacing:-.01em;margin-bottom:1.4rem}
+  .brand small{display:block;color:var(--mut);font-weight:400;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+  .nav-sec{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:1rem .2rem .4rem}
+  .nav a{display:flex;align-items:center;gap:.6rem;min-height:44px;padding:.5rem .7rem;border-radius:8px;color:var(--ink);text-decoration:none;font-size:.9rem}
+  .nav a:hover{background:var(--panel-2)}
+  .nav a .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .nav a .ct{margin-left:auto;color:var(--mut);font-size:.78rem}
+  .main{padding:clamp(1rem,3vw,2rem);min-width:0}
+  .topbar{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-bottom:1.4rem}
+  .topbar h1{font-size:clamp(1.3rem,3vw,1.8rem);margin:0;font-weight:700}
+  .topbar .sub{color:var(--mut);font-size:.86rem}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.9rem;margin-bottom:1.6rem}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem}
+  .kpi .l{font-size:.74rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+  .kpi .v{font-size:1.8rem;font-weight:800;margin:.2rem 0}
+  .kpi .d{font-size:.8rem;color:var(--good)}
+  .panels{display:grid;grid-template-columns:1fr;gap:1rem}
+  @media(min-width:920px){.panels{grid-template-columns:1.4fr 1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+  .card h2{margin:0 0 .9rem;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:600}
+  .bars{display:flex;flex-direction:column;gap:.65rem}
+  .bar-row{display:grid;grid-template-columns:130px 1fr 56px;align-items:center;gap:.6rem;font-size:.86rem}
+  .bar-row .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar-row .nm a{color:var(--ink)}
+  .track{height:14px;background:var(--panel-2);border-radius:7px;overflow:hidden}
+  .fill{height:100%;border-radius:7px;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0;transition:width 1s cubic-bezier(.2,.7,.3,1)}
+  table{width:100%;border-collapse:collapse;font-size:.86rem}
+  table th{text-align:left;color:var(--mut);font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:.5rem .5rem;border-bottom:1px solid var(--line)}
+  table td{padding:.5rem;border-bottom:1px solid var(--line);vertical-align:top}
+  table td.s{text-align:right;color:var(--warn);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .tag{display:inline-block;background:var(--panel-2);border:1px solid var(--line);color:var(--mut);font-size:.68rem;padding:.1rem .4rem;border-radius:5px;margin:0 .15rem .15rem 0}
+  .tag.cat{color:var(--accent-2);border-color:#1e3a5f}
+  .donut{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+  .ring{--p:62;width:120px;height:120px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--panel-2) 0);display:grid;place-items:center}
+  .ring::after{content:"";width:78px;height:78px;border-radius:50%;background:var(--panel);grid-area:1/1}
+  .ring b{grid-area:1/1;z-index:1;font-size:1.3rem}
+  .legend{display:flex;flex-direction:column;gap:.4rem;font-size:.84rem}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.4rem;vertical-align:middle}
+  .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;margin-top:1rem}
+  .foot{margin-top:1.8rem;color:var(--mut);font-size:.8rem;max-width:80ch;border-top:1px solid var(--line);padding-top:.9rem}
+  @media(max-width:860px){.layout{grid-template-columns:1fr}.side{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--line)}}
+  @media(prefers-reduced-motion:reduce){.fill{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to console</a>
+<div class="layout">
+  <aside class="side">
+    <div class="brand">Awesome PHP AI<small>Catalogue console</small></div>
+    <nav class="nav" aria-label="Sections">
+      <div class="nav-sec">Browse</div>
+      <a href="#frameworks"><span class="dot"></span> Frameworks <span class="ct">11</span></a>
+      <a href="#clients"><span class="dot"></span> Clients <span class="ct">14</span></a>
+      <a href="#mcp"><span class="dot"></span> MCP <span class="ct">16</span></a>
+      <a href="#laravel"><span class="dot"></span> Laravel <span class="ct">14</span></a>
+      <a href="#ml"><span class="dot"></span> ML · NLP <span class="ct">14</span></a>
+      <div class="nav-sec">Links</div>
+      <a href="https://github.com/garyblankenship/awesome-php-ai">Source repo ↗</a>
+      <a href="../../index.html">← Gallery</a>
+    </nav>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="topbar">
+      <div>
+        <h1>Catalogue overview</h1>
+        <div class="sub">Bounded snapshot · 14 categories · static preview</div>
+      </div>
+    </div>
+
+    <section class="kpis" aria-label="Key figures">
+      <div class="kpi"><div class="l">Entries</div><div class="v">≈100</div><div class="d">across 14 categories</div></div>
+      <div class="kpi"><div class="l">Top client</div><div class="v">5,744★</div><div class="d">OpenAI PHP</div></div>
+      <div class="kpi"><div class="l">Providers spoken</div><div class="v">9</div><div class="d">OpenAI → Grok</div></div>
+      <div class="kpi"><div class="l">MCP entries</div><div class="v">16</div><div class="d">fastest-growing</div></div>
+    </section>
+
+    <section class="panels">
+      <div class="card">
+        <h2>Top repositories by stars</h2>
+        <div class="bars" role="img" aria-label="Bar chart of top repositories by star count">
+          <div class="bar-row"><span class="nm"><a href="https://github.com/openai-php/client">OpenAI PHP</a></span><span class="track"><span class="fill" style="--w:100%"></span></span><span style="text-align:right;color:var(--warn)">5,744</span></div>
+          <div class="bar-row"><span class="nm"><a href="https://github.com/dtyq/magic">Magic</a></span><span class="track"><span class="fill" style="--w:78%"></span></span><span style="text-align:right;color:var(--warn)">4,484</span></div>
+          <div class="bar-row"><span class="nm"><a href="https://github.com/openai-php/laravel">OpenAI PHP Laravel</a></span><span class="track"><span class="fill" style="--w:65%"></span></span><span style="text-align:right;color:var(--warn)">3,732</span></div>
+          <div class="bar-row"><span class="nm"><a href="https://github.com/laravel/boost">Laravel Boost</a></span><span class="track"><span class="fill" style="--w:61%"></span></span><span style="text-align:right;color:var(--warn)">3,508</span></div>
+          <div class="bar-row"><span class="nm"><a href="https://github.com/cocur/slugify">cocur/slugify</a></span><span class="track"><span class="fill" style="--w:51%"></span></span><span style="text-align:right;color:var(--warn)">2,904</span></div>
+          <div class="bar-row"><span class="nm"><a href="https://github.com/prism-php/prism">Prism</a></span><span class="track"><span class="fill" style="--w:40%"></span></span><span style="text-align:right;color:var(--warn)">2,322</span></div>
+          <div class="bar-row"><span class="nm"><a href="https://github.com/RubixML/ML">Rubix ML</a></span><span class="track"><span class="fill" style="--w:38%"></span></span><span style="text-align:right;color:var(--warn)">2,190</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Capability mix</h2>
+        <div class="donut">
+          <div class="ring" role="img" aria-label="62 percent of entries support streaming"><b>62%</b></div>
+          <div class="legend">
+            <div><i style="background:var(--accent)"></i>streaming support</div>
+            <div><i style="background:var(--panel-2)"></i>other capabilities</div>
+            <p style="margin:.6rem 0 0;color:var(--mut);font-size:.82rem">Across the catalogued set, streaming, tool-use, and structured output dominate capability tags.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="card" style="margin-top:1rem" id="frameworks">
+      <h2 id="clients">Selected catalogue entries</h2>
+      <div style="overflow:auto">
+      <table>
+        <thead><tr><th>Repository</th><th>Category</th><th>Tags</th><th class="s">Stars</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://github.com/dtyq/magic">Magic</a></td><td><span class="tag cat">framework</span></td><td><span class="tag">agents</span><span class="tag">chat</span></td><td class="s">4,484</td></tr>
+          <tr><td><a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a></td><td><span class="tag cat">framework</span></td><td><span class="tag">rag</span><span class="tag">agents</span><span class="tag">mcp</span></td><td class="s">1,770</td></tr>
+          <tr id="mcp"><td><a href="https://github.com/modelcontextprotocol/php-sdk">MCP PHP SDK</a></td><td><span class="tag cat">mcp</span></td><td><span class="tag">client</span><span class="tag">library</span></td><td class="s">1,531</td></tr>
+          <tr><td><a href="https://github.com/php-mcp/server">php-mcp/server</a></td><td><span class="tag cat">mcp</span></td><td><span class="tag">tool-use</span></td><td class="s">846</td></tr>
+          <tr id="laravel"><td><a href="https://github.com/laravel/ai">Laravel AI</a></td><td><span class="tag cat">laravel</span></td><td><span class="tag">agents</span><span class="tag">tool-use</span></td><td class="s">674</td></tr>
+          <tr><td><a href="https://github.com/MaestroError/LarAgent">LarAgent</a></td><td><span class="tag cat">laravel</span></td><td><span class="tag">agents</span><span class="tag">rag</span></td><td class="s">639</td></tr>
+          <tr id="ml"><td><a href="https://github.com/RubixML/ML">Rubix ML</a></td><td><span class="tag cat">ml</span></td><td><span class="tag">machine-learning</span></td><td class="s">2,190</td></tr>
+          <tr><td><a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php</a></td><td><span class="tag cat">nlp</span></td><td><span class="tag">huggingface</span><span class="tag">embeddings</span></td><td class="s">743</td></tr>
+          <tr><td><a href="https://github.com/cognesy/instructor-php">Instructor PHP</a></td><td><span class="tag cat">structured</span></td><td><span class="tag">structured-output</span><span class="tag">agents</span></td><td class="s">309</td></tr>
+          <tr><td><a href="https://github.com/hkulekci/qdrant-php">qdrant-php</a></td><td><span class="tag cat">vector</span></td><td><span class="tag">vector-store</span><span class="tag">search</span></td><td class="s">172</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="foot">
+      <a class="btn" href="../../index.html">← Back to gallery</a>
+      <p style="margin-top:1rem"><strong>Source snapshot.</strong> Bounded subset (≈30 of 100+) from read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. KPIs and bars derive from that snapshot; stars drift — re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · <code>prototype-skill</code>.</p>
+    </div>
+  </main>
+</div>
+<script>
+  // Static, declarative fill animation — no data fetched. Respects reduced-motion via CSS.
+  (function(){
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fill').forEach(function(f){f.style.width=f.style.getPropertyValue('--w')||'100%';});
+      return;
+    }
+    requestAnimationFrame(function(){
+      document.querySelectorAll('.fill').forEach(function(f){f.style.width=f.style.getPropertyValue('--w')||'100%';});
+    });
+  })();
+</script>
+</body>
+</html>

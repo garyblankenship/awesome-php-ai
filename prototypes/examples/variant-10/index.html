@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Portfolio / agency concept prototype.">
+<title>Awesome PHP AI — Studio</title>
+<style>
+  :root{--bg:#0a0a0a;--ink:#fafafa;--mut:#a1a1aa;--line:#27272a;--lime:#bef264;--lime-ink:#1a2e05}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.4;-webkit-font-smoothing:antialiased}
+  .skip{position:absolute;left:-999px;top:0;background:var(--lime);color:var(--lime-ink);padding:.6rem 1rem;z-index:50}
+  .skip:focus{left:0}
+  a{color:var(--lime);text-decoration:none}
+  a:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+  .nav{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:1rem;padding:.8rem clamp(1rem,4vw,2rem);background:rgba(10,10,10,.7);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav .brand{font-weight:800;letter-spacing:-.02em}
+  .nav .brand i{color:var(--lime);font-style:normal}
+  .nav .links{margin-left:auto;display:flex;gap:.3rem;flex-wrap:wrap}
+  .nav .links a{min-height:44px;display:inline-flex;align-items:center;padding:0 .8rem;color:var(--mut);font-size:.86rem}
+  .nav .links a:hover{color:var(--ink)}
+  .hero{padding:clamp(2.5rem,9vw,6rem) clamp(1rem,4vw,2rem) 1rem;max-width:1280px;margin:0 auto}
+  .hero .kicker{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-bottom:1rem}
+  .hero h1{font-size:clamp(2.8rem,13vw,9rem);line-height:.9;margin:0;letter-spacing:-.03em;font-weight:900;text-transform:uppercase}
+  .hero h1 .out{-webkit-text-stroke:2px var(--ink);color:transparent}
+  .hero h1 .lim{color:var(--lime)}
+  .hero .lede{max-width:46ch;color:var(--mut);margin:1.6rem 0 0;font-size:1.05rem}
+  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;background:#050505;margin-top:2.5rem}
+  .marquee .track{display:inline-flex;gap:2.5rem;padding:.9rem 0;animation:scroll 28s linear infinite;will-change:transform}
+  .marquee span{font-size:1.3rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em;color:var(--mut)}
+  .marquee span i{color:var(--lime);font-style:normal}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  .sec{max-width:1280px;margin:0 auto;padding:clamp(2rem,6vw,4rem) clamp(1rem,4vw,2rem)}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.6rem;flex-wrap:wrap}
+  .sec-head h2{margin:0;font-size:clamp(1.6rem,4vw,2.6rem);letter-spacing:-.02em}
+  .sec-head .n{color:var(--mut);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem}
+  .work{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+  .work a{background:var(--bg);padding:1.6rem 1.4rem;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;color:var(--ink);transition:background .2s ease}
+  .work a:hover{background:#121212}
+  .work a:hover .arr{color:var(--lime);transform:translate(4px,-4px)}
+  .work .top{display:flex;justify-content:space-between;align-items:flex-start}
+  .work .cat{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+  .work .arr{color:var(--mut);font-size:1.4rem;transition:color .2s,transform .2s}
+  .work h3{font-size:1.7rem;margin:.6rem 0 .3rem;letter-spacing:-.01em;font-weight:800}
+  .work p{color:var(--mut);font-size:.9rem;margin:0 0 .6rem}
+  .work .st{font-size:.8rem;color:var(--lime);font-weight:600}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-left:none;border-right:none}
+  .stats div{background:var(--bg);padding:1.6rem;text-align:center}
+  .stats .big{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;letter-spacing:-.02em}
+  .stats .big i{color:var(--lime);font-style:normal}
+  .stats .lbl{color:var(--mut);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+  .foot{max-width:1280px;margin:0 auto;padding:1rem clamp(1rem,4vw,2rem) 3rem;color:var(--mut);font-size:.84rem;border-top:1px solid var(--line);margin-top:2rem}
+  .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1.2rem;background:var(--lime);color:var(--lime-ink);font-weight:700;margin-top:1rem}
+  @media(prefers-reduced-motion:reduce){.marquee .track{animation:none;flex-wrap:wrap;white-space:normal}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to work</a>
+<nav class="nav" aria-label="Primary">
+  <div class="brand">awesome<i>·</i>php<i>·ai</i></div>
+  <div class="links">
+    <a href="#work">Work</a>
+    <a href="#stats">Stats</a>
+    <a href="https://github.com/garyblankenship/awesome-php-ai">Source</a>
+    <a href="../../index.html">Gallery</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="kicker">A curated studio of PHP × AI</div>
+  <h1><span class="out">PHP</span> <span class="lim">MEETS</span><br>INTELLIGENCE.</h1>
+  <p class="lede">A bold showcase of the libraries bringing agents, retrieval, and structured output to the language the web already speaks. One hundred entries, fourteen categories, one directory.</p>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>OPENAI <i>★</i></span><span>ANTHROPIC <i>★</i></span><span>GEMINI <i>★</i></span><span>OLLAMA <i>★</i></span><span>MISTRAL <i>★</i></span><span>DEEPSEEK <i>★</i></span><span>COHERE <i>★</i></span><span>GROK <i>★</i></span><span>OPENROUTER <i>★</i></span>
+    <span>OPENAI <i>★</i></span><span>ANTHROPIC <i>★</i></span><span>GEMINI <i>★</i></span><span>OLLAMA <i>★</i></span><span>MISTRAL <i>★</i></span><span>DEEPSEEK <i>★</i></span><span>COHERE <i>★</i></span><span>GROK <i>★</i></span><span>OPENROUTER <i>★</i></span>
+  </div>
+</div>
+
+<main id="main">
+<section class="sec" id="work" aria-label="Selected work">
+  <div class="sec-head"><h2>Selected work</h2><span class="n">001 — 012 / ~100</span></div>
+  <div class="work">
+    <a href="https://github.com/openai-php/client"><div class="top"><span class="cat">Client</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>OpenAI PHP</h3><p>The community client for OpenAI. The cornerstone of the ecosystem.</p><span class="st">5,744 ★</span></div></a>
+    <a href="https://github.com/dtyq/magic"><div class="top"><span class="cat">Framework</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Magic</h3><p>All-in-one AI productivity platform — agents, workflows, collaboration.</p><span class="st">4,484 ★</span></div></a>
+    <a href="https://github.com/laravel/boost"><div class="top"><span class="cat">MCP</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Laravel Boost</h3><p>Laravel-focused MCP server for AI-powered local development.</p><span class="st">3,508 ★</span></div></a>
+    <a href="https://github.com/openai-php/laravel"><div class="top"><span class="cat">Laravel</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>OpenAI PHP Laravel</h3><p>Laravel integration for the OpenAI PHP client.</p><span class="st">3,732 ★</span></div></a>
+    <a href="https://github.com/cocur/slugify"><div class="top"><span class="cat">Utility</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>cocur/slugify</h3><p>Converts strings into slugs. A quiet workhorse of the NLP stack.</p><span class="st">2,904 ★</span></div></a>
+    <a href="https://github.com/prism-php/prism"><div class="top"><span class="cat">Framework</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Prism</h3><p>Unified interface for working with LLMs in Laravel.</p><span class="st">2,322 ★</span></div></a>
+    <a href="https://github.com/RubixML/ML"><div class="top"><span class="cat">ML</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Rubix ML</h3><p>Machine learning library — algorithms and models, native PHP.</p><span class="st">2,190 ★</span></div></a>
+    <a href="https://github.com/neuron-core/neuron-ai"><div class="top"><span class="cat">Framework</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Neuron AI</h3><p>Agentic framework — RAG, multi-agent workflows, MCP.</p><span class="st">1,770 ★</span></div></a>
+    <a href="https://github.com/theodo-group/llphant"><div class="top"><span class="cat">Framework</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>LLPhant</h3><p>Generative AI framework, LangChain-inspired.</p><span class="st">1,443 ★</span></div></a>
+    <a href="https://github.com/googleapis/google-cloud-php"><div class="top"><span class="cat">API</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Google Cloud AI</h3><p>Google Cloud AI services in PHP.</p><span class="st">1,170 ★</span></div></a>
+    <a href="https://github.com/modelcontextprotocol/php-sdk"><div class="top"><span class="cat">MCP</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>MCP PHP SDK</h3><p>Official Model Context Protocol SDK for PHP.</p><span class="st">1,531 ★</span></div></a>
+    <a href="https://github.com/aschmelyun/subvert"><div class="top"><span class="cat">Video</span><span class="arr" aria-hidden="true">↗</span></div><div><h3>Subvert</h3><p>Subtitles, summaries, and chapters from videos in seconds.</p><span class="st">857 ★</span></div></a>
+  </div>
+</section>
+
+<section class="stats" id="stats" aria-label="Studio stats">
+  <div><div class="big">≈100<i>+</i></div><div class="lbl">entries</div></div>
+  <div><div class="big">14</div><div class="lbl">categories</div></div>
+  <div><div class="big">9</div><div class="lbl">providers</div></div>
+  <div><div class="big">5,744<i>★</i></div><div class="lbl">top client</div></div>
+</section>
+
+<footer class="foot">
+  <a class="btn" href="../../index.html">← Back to gallery</a>
+  <p style="margin-top:1.4rem;max-width:70ch"><strong>Source snapshot.</strong> Bounded subset (≈30 of 100+ entries) from read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. Star counts are a point-in-time snapshot — re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · <code>prototype-skill</code>.</p>
+</footer>
+</main>
+</body>
+</html>

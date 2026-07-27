@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — App marketplace concept prototype.">
+<title>Awesome PHP AI — Store</title>
+<style>
+  :root{--bg:#f2f4f8;--card:#ffffff;--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;
+    --blue:#2563eb;--blue-soft:#eff6ff;--amber:#f59e0b;--green:#16a34a;--shadow:0 6px 20px -10px rgba(15,23,42,.25)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .skip{position:absolute;left:-999px;top:0;background:var(--blue);color:#fff;padding:.6rem 1rem;z-index:40}
+  .skip:focus{left:0}
+  a{color:var(--blue);text-decoration:none}
+  a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .wrap{max-width:1140px;margin:0 auto;padding:clamp(1rem,4vw,2rem) clamp(1rem,4vw,1.5rem)}
+  .top{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem}
+  .brand{font-weight:800;font-size:1.2rem}
+  .brand span{color:var(--blue)}
+  .seg{margin-left:auto;display:flex;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.25rem}
+  .seg a{min-height:40px;display:inline-flex;align-items:center;padding:0 .9rem;border-radius:999px;color:var(--mut);font-size:.85rem}
+  .seg a.on{background:var(--blue);color:#fff}
+  .featured{display:grid;grid-template-columns:1fr;gap:1.2rem;background:linear-gradient(135deg,#1d4ed8,#2563eb 60%,#3b82f6);color:#fff;border-radius:24px;padding:clamp(1.2rem,4vw,2rem);box-shadow:var(--shadow)}
+  @media(min-width:820px){.featured{grid-template-columns:160px 1fr auto;align-items:center}}
+  .icon{width:150px;height:150px;border-radius:24px;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:3rem;margin:0 auto}
+  .featured h1{margin:0 0 .3rem;font-size:clamp(1.6rem,4vw,2.4rem)}
+  .featured .by{opacity:.9;font-size:.9rem;margin-bottom:.6rem}
+  .featured p{margin:0 0 .6rem;opacity:.95;max-width:50ch}
+  .stars{color:#fde68a;font-size:.95rem;letter-spacing:1px}
+  .stars .ct{color:rgba(255,255,255,.85);margin-left:.3rem}
+  .get{display:inline-flex;align-items:center;min-height:44px;padding:0 1.4rem;background:#fff;color:var(--blue);border-radius:999px;font-weight:700}
+  .sec-h{display:flex;align-items:baseline;justify-content:space-between;margin:1.8rem 0 .9rem}
+  .sec-h h2{margin:0;font-size:1.25rem}
+  .sec-h a{font-size:.85rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:1rem}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1rem;display:flex;gap:.9rem;min-height:44px;box-shadow:var(--shadow)}
+  .app .ic{width:60px;height:60px;border-radius:14px;flex:none;display:grid;place-items:center;color:#fff;font-weight:800;font-size:1.3rem}
+  .app .body{min-width:0}
+  .app h3{margin:0 0 .15rem;font-size:1.02rem}
+  .app h3 a{color:var(--ink)}
+  .app .d{color:var(--mut);font-size:.84rem;margin:0 0 .3rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .app .meta{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--mut)}
+  .app .meta .st{color:var(--amber)}
+  .b1{background:linear-gradient(135deg,#6366f1,#8b5cf6)}.b2{background:linear-gradient(135deg,#0ea5e9,#06b6d4)}
+  .b3{background:linear-gradient(135deg,#10b981,#22c55e)}.b4{background:linear-gradient(135deg,#f59e0b,#ef4444)}
+  .b5{background:linear-gradient(135deg,#ec4899,#8b5cf6)}.b6{background:linear-gradient(135deg,#64748b,#334155)}
+  .pill{display:inline-block;font-size:.7rem;padding:.1rem .45rem;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-weight:600}
+  .editorial{display:grid;grid-template-columns:1fr;gap:.9rem;margin-top:.4rem}
+  @media(min-width:760px){.editorial{grid-template-columns:1fr 1fr}}
+  .ed{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.2rem;box-shadow:var(--shadow)}
+  .ed .tag{font-size:.72rem;color:var(--green);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  .ed h3{margin:.2rem 0 .3rem;font-size:1.1rem}
+  .ed p{margin:0;color:var(--mut);font-size:.9rem}
+  .foot{margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem;color:var(--mut);font-size:.84rem;max-width:75ch}
+  .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;background:var(--ink);color:#fff;margin-top:1rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to store</a>
+<div class="wrap">
+<div class="top">
+  <div class="brand">Awesome<span>PHP·AI</span></div>
+  <nav class="seg" aria-label="Categories">
+    <a class="on" href="#featured">All</a>
+    <a href="#frameworks">Frameworks</a>
+    <a href="#clients">Clients</a>
+    <a href="#mcp">MCP</a>
+    <a href="#ml">ML</a>
+  </nav>
+  <a href="../../index.html" style="font-size:.85rem;color:var(--mut)">← Gallery</a>
+</div>
+
+<main id="main">
+
+<section class="featured" id="featured" aria-label="Featured app">
+  <div class="icon" aria-hidden="true">✦</div>
+  <div>
+    <h1>OpenAI PHP</h1>
+    <div class="by">by the openai-php community · LLM Clients &amp; Adapters</div>
+    <div class="stars" aria-label="5,744 stars">★★★★★ <span class="ct">5,744 ★</span></div>
+    <p>The supercharged, community-maintained PHP API client for OpenAI. The cornerstone client of the PHP AI ecosystem — streaming, tool use, embeddings, vision.</p>
+    <span class="pill">Editor's choice</span>
+  </div>
+  <a class="get" href="https://github.com/openai-php/client">View ↗</a>
+</section>
+
+<div class="sec-h" id="frameworks"><h2>Top LLM Frameworks</h2><a href="https://github.com/garyblankenship/awesome-php-ai">See all ↗</a></div>
+<div class="grid">
+  <article class="app"><div class="ic b1" aria-hidden="true">M</div><div class="body"><h3><a href="https://github.com/dtyq/magic">Magic</a></h3><p class="d">All-in-one AI productivity platform with agents, workflows, and collaboration.</p><div class="meta"><span class="st">★ 4,484</span><span>· framework</span></div></div></article>
+  <article class="app"><div class="ic b2" aria-hidden="true">P</div><div class="body"><h3><a href="https://github.com/prism-php/prism">Prism</a></h3><p class="d">Unified interface for working with LLMs in Laravel applications.</p><div class="meta"><span class="st">★ 2,322</span><span>· laravel</span></div></div></article>
+  <article class="app"><div class="ic b3" aria-hidden="true">N</div><div class="body"><h3><a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a></h3><p class="d">Agentic framework — RAG, multi-agent workflows, MCP support.</p><div class="meta"><span class="st">★ 1,770</span><span>· framework</span></div></div></article>
+  <article class="app"><div class="ic b4" aria-hidden="true">L</div><div class="body"><h3><a href="https://github.com/theodo-group/llphant">LLPhant</a></h3><p class="d">Comprehensive generative AI framework, LangChain-inspired.</p><div class="meta"><span class="st">★ 1,443</span><span>· framework</span></div></div></article>
+</div>
+
+<div class="sec-h" id="clients"><h2>Clients &amp; Adapters</h2><a href="https://github.com/garyblankenship/awesome-php-ai">See all ↗</a></div>
+<div class="grid">
+  <article class="app"><div class="ic b2" aria-hidden="true">O</div><div class="body"><h3><a href="https://github.com/orhanerday/open-ai">OpenAI PHP SDK</a></h3><p class="d">Most-downloaded PHP SDK for GPT-3, DALL·E, and ChatGPT.</p><div class="meta"><span class="st">★ 2,368</span><span>· client</span></div></div></article>
+  <article class="app"><div class="ic b5" aria-hidden="true">D</div><div class="body"><h3><a href="https://github.com/deepseek-php/deepseek-php-client">DeepSeek PHP</a></h3><p class="d">Community PHP client for the DeepSeek API.</p><div class="meta"><span class="st">★ 471</span><span>· client</span></div></div></article>
+  <article class="app"><div class="ic b3" aria-hidden="true">G</div><div class="body"><h3><a href="https://github.com/google-gemini-php/client">Gemini PHP</a></h3><p class="d">Community-maintained PHP API client for Gemini AI.</p><div class="meta"><span class="st">★ 396</span><span>· client</span></div></div></article>
+  <article class="app"><div class="ic b6" aria-hidden="true">A</div><div class="body"><h3><a href="https://github.com/anthropics/anthropic-sdk-php">Anthropic SDK</a></h3><p class="d">Official PHP SDK for the Anthropic Claude API.</p><div class="meta"><span class="st">★ 158</span><span>· client</span></div></div></article>
+</div>
+
+<div class="sec-h" id="mcp"><h2>MCP &amp; Tooling</h2><a href="https://github.com/garyblankenship/awesome-php-ai">See all ↗</a></div>
+<div class="grid">
+  <article class="app"><div class="ic b1" aria-hidden="true">B</div><div class="body"><h3><a href="https://github.com/laravel/boost">Laravel Boost</a></h3><p class="d">Laravel-focused MCP server for AI-powered local development.</p><div class="meta"><span class="st">★ 3,508</span><span>· mcp</span></div></div></article>
+  <article class="app"><div class="ic b2" aria-hidden="true">S</div><div class="body"><h3><a href="https://github.com/modelcontextprotocol/php-sdk">MCP PHP SDK</a></h3><p class="d">Official Model Context Protocol SDK for PHP.</p><div class="meta"><span class="st">★ 1,531</span><span>· mcp</span></div></div></article>
+  <article class="app"><div class="ic b5" aria-hidden="true">M</div><div class="body"><h3><a href="https://github.com/php-mcp/server">php-mcp/server</a></h3><p class="d">SDK for building MCP servers with tools, resources, prompts.</p><div class="meta"><span class="st">★ 846</span><span>· mcp</span></div></div></article>
+</div>
+
+<div class="sec-h" id="ml"><h2>Lists we love</h2></div>
+<div class="editorial">
+  <article class="ed"><span class="tag">ML · NLP · Vision</span><h3>Build intelligence natively</h3><p><a href="https://github.com/RubixML/ML">Rubix ML</a> (2,190★), <a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php</a> (743★), <a href="https://github.com/CodeWithKyrian/whisper.php">whisper.php</a> (406★), and <a href="https://github.com/php-opencv/php-opencv">opencv-php</a> (366★) bring classical ML, embeddings, speech, and vision to PHP.</p></article>
+  <article class="ed"><span class="tag">Vector · RAG</span><h3>Retrieval, wired in</h3><p><a href="https://github.com/hkulekci/qdrant-php">qdrant-php</a> (172★), <a href="https://github.com/CodeWithKyrian/chromadb-php">chromadb-php</a> (83★), and <a href="https://github.com/cognesy/instructor-php">Instructor PHP</a> (309★) for typed structured outputs and retrieval-augmented generation.</p></article>
+</div>
+
+<footer class="foot">
+  <a class="btn" href="../../index.html">← Back to gallery</a>
+  <p style="margin-top:1.2rem"><strong>Source snapshot.</strong> Bounded subset (≈30 of 100+ entries) from read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. Star counts and “ratings” are a point-in-time snapshot — re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · <code>prototype-skill</code>.</p>
+</footer>
+</main>
+</div>
+</body>
+</html>

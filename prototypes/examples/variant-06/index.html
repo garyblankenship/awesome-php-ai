@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Library card catalogue concept prototype.">
+<title>Awesome PHP AI — Card Catalogue</title>
+<style>
+  :root{--kraft:#d9c7a3;--kraft-2:#e7d9bb;--card:#f3e9cf;--ink:#3b2f1c;--stamp:#b23b2e;--line:#b9a373;--mut:#7a6743}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--kraft);color:var(--ink);
+    font-family:"Courier New",Courier,"Lucida Sans Typewriter",monospace;line-height:1.55}
+  .skip{position:absolute;left:-999px;top:0;background:var(--stamp);color:#fff;padding:.6rem 1rem;z-index:30}
+  .skip:focus{left:0}
+  a{color:var(--stamp)}
+  a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+  .drawer{max-width:1080px;margin:0 auto;padding:clamp(1rem,4vw,2.5rem)}
+  .label{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:.6rem;border-bottom:3px double var(--ink);padding-bottom:.7rem;margin-bottom:.4rem}
+  .label h1{margin:0;font-size:clamp(1.6rem,5vw,2.6rem);letter-spacing:.02em;text-transform:uppercase}
+  .label .sub{font-size:.82rem;color:var(--mut);letter-spacing:.08em;text-transform:uppercase}
+  .drawer-tag{background:var(--ink);color:var(--kraft);padding:.15rem .6rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+  .tabs{display:flex;flex-wrap:wrap;gap:.3rem;margin:1rem 0 1.4rem}
+  .tabs a{min-height:44px;display:inline-flex;align-items:center;padding:0 .8rem;background:var(--card);border:1px solid var(--line);border-bottom:none;color:var(--ink);text-decoration:none;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+  .tabs a:hover{background:var(--stamp);color:#fff}
+  .stack{display:grid;gap:1rem}
+  .cardx{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:1rem 1.2rem;box-shadow:0 2px 0 rgba(59,47,28,.12);position:relative;min-height:44px}
+  .cardx::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--stamp);opacity:.75}
+  .cardx .rid{position:absolute;top:.6rem;right:.8rem;font-size:.72rem;color:var(--mut);letter-spacing:.06em}
+  .cardx h2{margin:0 0 .2rem;font-size:1.2rem;text-transform:uppercase;letter-spacing:.02em}
+  .cardx h2 a{color:var(--ink)}
+  .row{display:grid;grid-template-columns:1fr;gap:.2rem;margin-top:.5rem}
+  @media(min-width:640px){.row{grid-template-columns:120px 1fr}}
+  .row .k{color:var(--mut);text-transform:uppercase;font-size:.72rem;letter-spacing:.08em;padding-top:.12rem}
+  .row .v{font-size:.95rem}
+  .stamp{position:absolute;bottom:.7rem;right:.9rem;border:2px solid var(--stamp);color:var(--stamp);padding:.1rem .5rem;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;transform:rotate(-6deg);opacity:.85}
+  .note{margin-top:1.6rem;font-size:.85rem;color:var(--mut);max-width:70ch}
+  .btn{display:inline-block;min-height:44px;line-height:44px;padding:0 1rem;background:var(--ink);color:var(--kraft);text-decoration:none;margin:.5rem .4rem 0 0;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+  .btn:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  .deck-edge{border-top:3px double var(--ink);margin-top:2rem;padding-top:.7rem;font-size:.78rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;text-align:center}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to catalogue</a>
+<div class="drawer">
+<header class="label">
+  <div>
+    <h1>Awesome PHP AI</h1>
+    <div class="sub">Card catalogue · drawer 1 of 14</div>
+  </div>
+  <span class="drawer-tag">A — Z · Subject</span>
+</header>
+
+<nav class="tabs" aria-label="Alphabetical tabs">
+  <a href="#a">A</a><a href="#c">C</a><a href="#d">D</a><a href="#g">G</a><a href="#i">I</a>
+  <a href="#l">L</a><a href="#m">M</a><a href="#n">N</a><a href="#o">O</a><a href="#p">P</a>
+  <a href="#r">R</a><a href="#t">T</a><a href="#w">W</a>
+</nav>
+
+<main id="main" class="stack">
+
+<article class="cardx" id="a"><span class="rid">CAT-001</span>
+  <h2><a href="https://github.com/anthropics/anthropic-sdk-php">Anthropic Official SDK</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Clients &amp; Adapters</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Official PHP SDK for the Anthropic Claude API. Streaming, tool use.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">anthropic · streaming · chat · tool-use</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">158</span></div>
+  <span class="stamp">Official</span>
+</article>
+
+<article class="cardx" id="c"><span class="rid">CAT-002</span>
+  <h2><a href="https://github.com/cognesy/instructor-php">Instructor PHP</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">Structured Output &amp; Validation</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Unified LLM API, typed structured data outputs, and an agent SDK.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">structured-output · agents · tool-use · vision</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">309</span></div>
+</article>
+
+<article class="cardx" id="d"><span class="rid">CAT-003</span>
+  <h2><a href="https://github.com/deepseek-php/deepseek-php-client">DeepSeek PHP</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Clients &amp; Adapters</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Community PHP client for the DeepSeek API.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">deepseek · chat</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">471</span></div>
+</article>
+
+<article class="cardx" id="g"><span class="rid">CAT-004</span>
+  <h2><a href="https://github.com/google-gemini-php/client">Gemini PHP</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Clients &amp; Adapters</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Community-maintained PHP API client for Gemini AI.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">google · streaming · vision · structured-output</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">396</span></div>
+</article>
+
+<article class="cardx" id="i" style="--none:1"><span class="rid">CAT-005</span>
+  <h2><a href="https://github.com/angeloskath/php-nlp-tools">NlpTools</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">Natural Language Processing</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Collection of NLP tools and APIs for working with text.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">nlp · machine-learning</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">763</span></div>
+</article>
+
+<article class="cardx" id="l"><span class="rid">CAT-006</span>
+  <h2><a href="https://github.com/laravel/boost">Laravel Boost</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">MCP &amp; Agent Tooling</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Laravel-focused MCP server for augmenting AI-powered local development.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">mcp · laravel</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">3,508</span></div>
+  <span class="stamp">High use</span>
+</article>
+
+<article class="cardx"><span class="rid">CAT-007</span>
+  <h2><a href="https://github.com/dtyq/magic">Magic</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Frameworks</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Open-source all-in-one AI productivity platform with agents, workflows, collaboration.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">agents · chat · framework</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">4,484</span></div>
+</article>
+
+<article class="cardx" id="n"><span class="rid">CAT-008</span>
+  <h2><a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Frameworks</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">PHP Agentic Framework — production-ready AI apps with RAG and multi-agent workflows.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">agents · rag · mcp · structured-output</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">1,770</span></div>
+</article>
+
+<article class="cardx" id="o"><span class="rid">CAT-009</span>
+  <h2><a href="https://github.com/openai-php/client">OpenAI PHP</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Clients &amp; Adapters</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Supercharged community-maintained PHP API client for OpenAI.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">openai · streaming · tool-use · embeddings</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">5,744</span></div>
+  <span class="stamp">Reference</span>
+</article>
+
+<article class="cardx"><span class="rid">CAT-010</span>
+  <h2><a href="https://github.com/php-opencv/php-opencv">opencv-php</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">Computer Vision</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">OpenCV bindings for PHP for image processing and computer vision.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">vision · machine-learning</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">366</span></div>
+</article>
+
+<article class="cardx" id="p"><span class="rid">CAT-011</span>
+  <h2><a href="https://github.com/prism-php/prism">Prism</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">LLM Frameworks</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Unified interface for working with LLMs in Laravel applications.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">laravel · structured-output · tool-use · embeddings</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">2,322</span></div>
+</article>
+
+<article class="cardx" id="r"><span class="rid">CAT-012</span>
+  <h2><a href="https://github.com/RubixML/ML">Rubix ML</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">Machine Learning</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Machine learning library for building algorithms and models.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">machine-learning</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">2,190</span></div>
+</article>
+
+<article class="cardx" id="t"><span class="rid">CAT-013</span>
+  <h2><a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">Utilities &amp; Tools</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Toolkit for PHP developers to add machine learning easily (Hugging Face).</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">huggingface · machine-learning · embeddings</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">743</span></div>
+</article>
+
+<article class="cardx" id="w"><span class="rid">CAT-014</span>
+  <h2><a href="https://github.com/CodeWithKyrian/whisper.php">whisper.php</a></h2>
+  <div class="row"><span class="k">Subject</span><span class="v">Utilities &amp; Tools</span></div>
+  <div class="row"><span class="k">Notes</span><span class="v">Local speech-to-text in PHP using Whisper.cpp.</span></div>
+  <div class="row"><span class="k">Tags</span><span class="v">transcription</span></div>
+  <div class="row"><span class="k">Stars</span><span class="v">406</span></div>
+</article>
+
+<p class="note"><strong>Source snapshot.</strong> Catalogue cards transcribed from a bounded subset (≈30 of 100+ entries) of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>), read-only on <time datetime="2026-07-26">2026-07-26</time>. Star counts are a point-in-time snapshot — re-file via <code>php generate-readme.php</code>. Static prototype · no backend · <code>prototype-skill</code>.</p>
+<a class="btn" href="../../index.html">← Return to gallery</a>
+
+<div class="deck-edge">— end of drawer — filed by subject —</div>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Editorial Magazine concept prototype.">
+<title>Awesome PHP AI — The Directory, Vol. I</title>
+<style>
+  :root{--paper:#f6f1e7;--ink:#1c1a17;--red:#9e2b25;--rule:#c9bfa9;--mut:#6b6354}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype","Times New Roman",serif;line-height:1.7}
+  .skip{position:absolute;left:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:20}
+  .skip:focus{left:0}
+  a{color:var(--red);text-decoration:underline;text-underline-offset:2px}
+  a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+  .sheet{max-width:1080px;margin:0 auto;padding:clamp(1rem,4vw,2.5rem);background:var(--paper)}
+  .masthead{text-align:center;border-bottom:3px double var(--ink);padding-bottom:1rem;margin-bottom:1.4rem}
+  .kicker{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mut)}
+  h1.title{font-size:clamp(2.6rem,9vw,5.4rem);margin:.1rem 0;letter-spacing:-.01em;line-height:.95;font-weight:700}
+  .subt{font-style:italic;color:var(--mut);font-size:1.05rem}
+  .dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:.9rem;border-top:1px solid var(--rule);padding-top:.6rem}
+  .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.4rem 1.5rem;margin:1.4rem 0 2rem;font-size:.95rem}
+  .toc a{display:flex;gap:.5rem}
+  .toc .n{color:var(--red);font-variant-small-caps;letter-spacing:.05em}
+  .lead{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:2rem}
+  @media(min-width:760px){.lead{grid-template-columns:2fr 1fr}}
+  .lead h2{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.08;margin:0 0 .5rem;font-weight:700}
+  .lede-p{font-size:1.15rem}
+  .lede-p::first-letter{float:left;font-size:3.6rem;line-height:.8;padding:.2rem .5rem 0 0;color:var(--red);font-weight:700}
+  .aside-box{border:1px solid var(--rule);padding:1rem 1.1rem;background:#efe7d4}
+  .aside-box h3{margin:0 0 .5rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+  .aside-box ul{margin:0;padding-left:1.1rem}
+  .aside-box li{margin:.25rem 0;font-size:.92rem}
+  .cols{column-count:1;column-gap:2rem;column-rule:1px solid var(--rule)}
+  @media(min-width:680px){.cols{column-count:2}}
+  @media(min-width:1000px){.cols{column-count:3}}
+  .entry{break-inside:avoid;margin:0 0 1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--rule)}
+  .entry h3{margin:0 0 .15rem;font-size:1.12rem}
+  .entry .meta{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+  .entry p{margin:.3rem 0 .2rem;font-size:.96rem}
+  .pull{font-style:italic;font-size:1.25rem;color:var(--red);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:.8rem 0;margin:1.5rem 0;text-align:center}
+  .sec-head{font-variant:small-caps;letter-spacing:.08em;font-size:1.5rem;border-bottom:2px solid var(--ink);margin:2rem 0 1rem;padding-bottom:.2rem}
+  .foot{margin-top:2.5rem;border-top:3px double var(--ink);padding-top:.8rem;font-size:.82rem;color:var(--mut);text-align:center}
+  .btn{display:inline-block;min-height:44px;line-height:44px;padding:0 1rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;margin:.3rem .3rem 0 0}
+  .btn:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to contents</a>
+<div class="sheet">
+<header class="masthead">
+  <p class="kicker">The PHP Intelligence Quarterly · Vol. I · No. 1</p>
+  <h1 class="title">Awesome PHP AI</h1>
+  <p class="subt">A field guide to the libraries bringing artificial intelligence to PHP</p>
+  <div class="dateline"><span>Issue · AI, ML &amp; NLP</span><span>Pages curated · 14 sections</span><span>≈100 entries</span></div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <a href="#frameworks"><span class="n">I.</span><span>LLM Frameworks</span></a>
+  <a href="#clients"><span class="n">II.</span><span>Clients &amp; Adapters</span></a>
+  <a href="#mcp"><span class="n">III.</span><span>MCP &amp; Tooling</span></a>
+  <a href="#ml"><span class="n">IV.</span><span>ML, NLP &amp; Vision</span></a>
+</nav>
+
+<main id="main">
+<section class="lead">
+  <div>
+    <h2>The province of PHP, newly animated.</h2>
+    <p class="lede-p">For two decades PHP powered the web's form handlers and template engines. Now it is quietly becoming a creditable surface for language models — agentic frameworks, provider clients, and retrieval stacks have arrived, and they are written in the language an enormous share of the internet already speaks.</p>
+    <p>This issue surveys the field: full frameworks that wrap a dozen providers behind one interface; thin clients that speak fluent OpenAI, Anthropic, Gemini and Ollama; and the Model Context Protocol tooling that lets PHP participate in the agent era. What follows is a bounded reading list — not exhaustive, but representative of where the work is sharpest.</p>
+  </div>
+  <aside class="aside-box">
+    <h3>By the numbers</h3>
+    <ul>
+      <li><strong>5,744 ★</strong> — OpenAI PHP, the most-starred client</li>
+      <li><strong>14</strong> categories surveyed</li>
+      <li><strong>≈100</strong> catalogued repositories</li>
+      <li><strong>9</strong> providers spoken: OpenAI, Anthropic, Google, Ollama, Mistral, DeepSeek, Cohere, Grok, OpenRouter</li>
+    </ul>
+  </aside>
+</section>
+
+<p class="pull">“Composability, not reinvention — the PHP way into the model layer.”</p>
+
+<h2 class="sec-head" id="frameworks">I · LLM Frameworks</h2>
+<div class="cols">
+  <article class="entry"><h3><a href="https://github.com/dtyq/magic">Magic</a></h3><p class="meta">Framework · 4,484 ★</p><p>Open-source all-in-one AI productivity platform with agents, workflows, and collaboration. The broadest surface in the list.</p></article>
+  <article class="entry"><h3><a href="https://github.com/prism-php/prism">Prism</a></h3><p class="meta">Framework · 2,322 ★</p><p>A unified interface for working with LLMs in Laravel applications — structured output, tool use, streaming.</p></article>
+  <article class="entry"><h3><a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a></h3><p class="meta">Framework · 1,770 ★</p><p>An agentic framework aimed at production: RAG, multi-agent workflows, and MCP support throughout.</p></article>
+  <article class="entry"><h3><a href="https://github.com/theodo-group/llphant">LLPhant</a></h3><p class="meta">Framework · 1,443 ★</p><p>A comprehensive generative-AI framework using OpenAI GPT-4, inspired by LangChain.</p></article>
+  <article class="entry"><h3><a href="https://github.com/php-llm/llm-chain">LLM Chain</a></h3><p class="meta">Library · 155 ★</p><p>A library for building LLM-based features, with a Symfony bundle and broad provider reach.</p></article>
+</div>
+
+<h2 class="sec-head" id="clients">II · Clients &amp; Adapters</h2>
+<div class="cols">
+  <article class="entry"><h3><a href="https://github.com/openai-php/client">OpenAI PHP</a></h3><p class="meta">Client · 5,744 ★</p><p>The supercharged community-maintained PHP client for OpenAI — the category's cornerstone.</p></article>
+  <article class="entry"><h3><a href="https://github.com/orhanerday/open-ai">OpenAI PHP SDK</a></h3><p class="meta">Client · 2,368 ★</p><p>The most-downloaded SDK for GPT-3, DALL·E, and ChatGPT, with streaming support.</p></article>
+  <article class="entry"><h3><a href="https://github.com/deepseek-php/deepseek-php-client">DeepSeek PHP</a></h3><p class="meta">Client · 471 ★</p><p>A community client for the DeepSeek API.</p></article>
+  <article class="entry"><h3><a href="https://github.com/google-gemini-php/client">Gemini PHP</a></h3><p class="meta">Client · 396 ★</p><p>A community client for Gemini, covering vision and structured output.</p></article>
+  <article class="entry"><h3><a href="https://github.com/anthropics/anthropic-sdk-php">Anthropic Official SDK</a></h3><p class="meta">Client · 158 ★</p><p>The official PHP SDK for the Anthropic Claude API.</p></article>
+</div>
+
+<h2 class="sec-head" id="mcp">III · MCP &amp; Tooling</h2>
+<div class="cols">
+  <article class="entry"><h3><a href="https://github.com/laravel/boost">Laravel Boost</a></h3><p class="meta">MCP · 3,508 ★</p><p>A Laravel-focused MCP server that augments AI-powered local development.</p></article>
+  <article class="entry"><h3><a href="https://github.com/modelcontextprotocol/php-sdk">MCP PHP SDK</a></h3><p class="meta">SDK · 1,531 ★</p><p>The official Model Context Protocol SDK for PHP clients and servers.</p></article>
+  <article class="entry"><h3><a href="https://github.com/php-mcp/server">php-mcp/server</a></h3><p class="meta">SDK · 846 ★</p><p>A PHP SDK for building MCP servers with tools, resources, and prompts.</p></article>
+  <article class="entry"><h3><a href="https://github.com/cognesy/instructor-php">Instructor PHP</a></h3><p class="meta">Structured output · 309 ★</p><p>Unified LLM API, typed structured outputs, and an agent SDK — in PHP.</p></article>
+</div>
+
+<h2 class="sec-head" id="ml">IV · ML, NLP &amp; Vision</h2>
+<div class="cols">
+  <article class="entry"><h3><a href="https://github.com/RubixML/ML">Rubix ML</a></h3><p class="meta">ML · 2,190 ★</p><p>A machine-learning library for building algorithms and models natively in PHP.</p></article>
+  <article class="entry"><h3><a href="https://github.com/angeloskath/php-nlp-tools">NlpTools</a></h3><p class="meta">NLP · 763 ★</p><p>A collection of NLP tools and APIs for working with text.</p></article>
+  <article class="entry"><h3><a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php</a></h3><p class="meta">ML · 743 ★</p><p>A toolkit to add Hugging Face models and embeddings easily.</p></article>
+  <article class="entry"><h3><a href="https://github.com/CodeWithKyrian/whisper.php">whisper.php</a></h3><p class="meta">Speech · 406 ★</p><p>Local speech-to-text in PHP using Whisper.cpp.</p></article>
+  <article class="entry"><h3><a href="https://github.com/php-opencv/php-opencv">opencv-php</a></h3><p class="meta">Vision · 366 ★</p><p>OpenCV bindings for image processing and computer vision.</p></article>
+</div>
+
+<div class="foot">
+  <a class="btn" href="../../index.html">← Back to the gallery</a>
+  <a class="btn" href="https://github.com/garyblankenship/awesome-php-ai">Read the source ↗</a>
+  <p style="margin-top:1.2rem;max-width:70ch;margin-left:auto;margin-right:auto"><strong>Source snapshot.</strong> Bounded subset (≈30 of 100+ entries) drawn from a read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. Star counts are a point-in-time snapshot; re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · generated by <code>prototype-skill</code>.</p>
+</div>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="prototype-skill">
+<meta name="description" content="Awesome PHP AI — Neural network / cosmic concept prototype.">
+<title>Awesome PHP AI — Constellation</title>
+<style>
+  :root{--bg:#070512;--bg-2:#0d0a24;--ink:#e9e6ff;--mut:#9a93c7;--line:#241d44;
+    --v:#a78bfa;--c:#22d3ee;--p:#f472b6;--glow:0 0 18px rgba(167,139,250,.55)}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 700px at 70% -10%,#1a1140 0%,var(--bg) 60%) fixed;color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .skip{position:absolute;left:-999px;top:0;background:var(--c);color:#001019;padding:.6rem 1rem;z-index:40}
+  .skip:focus{left:0}
+  a{color:var(--c);text-decoration:none}
+  a:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+  .nav{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:1rem;padding:.8rem clamp(1rem,4vw,2rem);
+    background:rgba(7,5,18,.6);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .brand{font-weight:800;letter-spacing:-.01em}
+  .nav .brand span{color:var(--v)}
+  .nav .links{margin-left:auto;display:flex;flex-wrap:wrap;gap:.3rem}
+  .nav .links a{min-height:44px;display:inline-flex;align-items:center;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;color:var(--mut);font-size:.84rem}
+  .nav .links a:hover{color:var(--c);border-color:var(--c);box-shadow:var(--glow)}
+  .hero{position:relative;max-width:1180px;margin:0 auto;padding:clamp(2rem,7vw,4.5rem) clamp(1rem,4vw,2rem) 2rem;display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+  @media(min-width:900px){.hero{grid-template-columns:1.1fr 1fr}}
+  .hero h1{font-size:clamp(2.2rem,7vw,4.2rem);line-height:1;margin:0 0 .8rem;letter-spacing:-.02em}
+  .hero h1 .g{background:linear-gradient(120deg,var(--c),var(--v) 60%,var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--mut);max-width:50ch;margin:0 0 1.2rem}
+  .cta{display:inline-flex;align-items:center;min-height:44px;padding:0 1.2rem;border-radius:999px;background:linear-gradient(120deg,var(--v),var(--p));color:#fff;font-weight:600;box-shadow:var(--glow)}
+  .cta.ghost{background:transparent;border:1px solid var(--line);color:var(--ink);box-shadow:none;margin-left:.5rem}
+  .graph{position:relative;aspect-ratio:1/1;max-width:460px;margin-inline:auto;width:100%}
+  .graph svg{width:100%;height:100%;overflow:visible}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+  .dash{stroke-dasharray:4 6;animation:flow 6s linear infinite}
+  @keyframes flow{to{stroke-dashoffset:-80}}
+  .sec{max-width:1180px;margin:0 auto;padding:1rem clamp(1rem,4vw,2rem) 2rem}
+  .sec h2{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin:2rem 0 1rem;display:flex;align-items:center;gap:.6rem}
+  .sec h2::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,var(--c),transparent)}
+  .nodes{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:1rem}
+  .node{position:relative;background:rgba(20,15,40,.55);border:1px solid var(--line);border-radius:16px;padding:1.1rem;min-height:44px;transition:transform .2s ease,border-color .2s ease}
+  .node:hover{transform:translateY(-4px);border-color:var(--v);box-shadow:var(--glow)}
+  .node .cap{display:inline-block;width:10px;height:10px;border-radius:50%;margin-bottom:.6rem}
+  .node h3{margin:0 0 .3rem;font-size:1.05rem}
+  .node p{margin:0 0 .6rem;color:var(--mut);font-size:.88rem}
+  .node .st{font-size:.78rem;color:var(--c);font-weight:600}
+  .providers{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem}
+  .providers .chip{min-height:44px;display:inline-flex;align-items:center;padding:0 .9rem;border-radius:999px;border:1px solid var(--line);color:var(--mut);font-size:.82rem;background:rgba(20,15,40,.4)}
+  .foot{max-width:1180px;margin:0 auto;padding:1rem clamp(1rem,4vw,2rem) 3rem;color:var(--mut);font-size:.82rem;border-top:1px solid var(--line);max-width:80ch}
+  @media(prefers-reduced-motion:reduce){.pulse,.dash{animation:none}.node:hover{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to constellation</a>
+<nav class="nav" aria-label="Primary">
+  <div class="brand">awesome<span>·php·ai</span></div>
+  <div class="links">
+    <a href="#nodes">Nodes</a>
+    <a href="#providers">Providers</a>
+    <a href="../../index.html">Gallery</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <h1>Map the <span class="g">neural surface</span> of PHP.</h1>
+    <p>A bounded constellation of the libraries connecting PHP to language models — frameworks, clients, retrieval, and the Model Context Protocol, drawn as a graph of nodes and edges.</p>
+    <a class="cta" href="#nodes">Explore nodes</a>
+    <a class="cta ghost" href="https://github.com/garyblankenship/awesome-php-ai">Source ↗</a>
+  </div>
+  <div class="graph" aria-hidden="true">
+    <svg viewBox="0 0 400 400" role="img" aria-label="Node graph connecting PHP to AI providers">
+      <defs>
+        <radialGradient id="core" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#a78bfa"/>
+        </radialGradient>
+      </defs>
+      <g stroke="#a78bfa" stroke-width="1.2" fill="none" opacity=".7" class="dash">
+        <line x1="200" y1="200" x2="80" y2="90"/>
+        <line x1="200" y1="200" x2="330" y2="110"/>
+        <line x1="200" y1="200" x2="60" y2="260"/>
+        <line x1="200" y1="200" x2="340" y2="280"/>
+        <line x1="200" y1="200" x2="200" y2="360"/>
+        <line x1="80" y1="90" x2="200" y2="40"/>
+        <line x1="330" y1="110" x2="340" y2="280"/>
+      </g>
+      <g>
+        <circle cx="200" cy="200" r="26" fill="url(#core)" class="pulse"/>
+        <text x="200" y="205" text-anchor="middle" font-size="13" fill="#070512" font-weight="700">PHP</text>
+      </g>
+      <g fill="#e9e6ff" font-size="12">
+        <circle cx="80" cy="90" r="8" fill="#22d3ee" class="pulse" style="animation-delay:.3s"/><text x="80" y="74" text-anchor="middle">OpenAI</text>
+        <circle cx="330" cy="110" r="8" fill="#f472b6" class="pulse" style="animation-delay:.6s"/><text x="330" y="94" text-anchor="middle">Anthropic</text>
+        <circle cx="60" cy="260" r="8" fill="#a78bfa" class="pulse" style="animation-delay:.9s"/><text x="60" y="284" text-anchor="middle">Gemini</text>
+        <circle cx="340" cy="280" r="8" fill="#22d3ee" class="pulse" style="animation-delay:1.2s"/><text x="340" y="304" text-anchor="middle">Ollama</text>
+        <circle cx="200" cy="360" r="8" fill="#f472b6" class="pulse" style="animation-delay:1.5s"/><text x="200" y="384" text-anchor="middle">MCP</text>
+        <circle cx="200" cy="40" r="6" fill="#9a93c7"/><text x="200" y="28" text-anchor="middle">RAG</text>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<main id="main" class="sec">
+  <h2 id="nodes">Nodes — selected repositories</h2>
+  <section class="nodes" aria-label="Selected repositories">
+    <article class="node"><span class="cap" style="background:#22d3ee"></span><h3><a href="https://github.com/openai-php/client">OpenAI PHP</a></h3><p>Community client for OpenAI — the most-connected edge.</p><span class="st">5,744 ★</span></article>
+    <article class="node"><span class="cap" style="background:#a78bfa"></span><h3><a href="https://github.com/dtyq/magic">Magic</a></h3><p>All-in-one platform — agents, workflows, collaboration.</p><span class="st">4,484 ★</span></article>
+    <article class="node"><span class="cap" style="background:#f472b6"></span><h3><a href="https://github.com/laravel/boost">Laravel Boost</a></h3><p>Laravel MCP server augmenting AI-powered local dev.</p><span class="st">3,508 ★</span></article>
+    <article class="node"><span class="cap" style="background:#22d3ee"></span><h3><a href="https://github.com/prism-php/prism">Prism</a></h3><p>Unified LLM interface for Laravel applications.</p><span class="st">2,322 ★</span></article>
+    <article class="node"><span class="cap" style="background:#a78bfa"></span><h3><a href="https://github.com/neuron-core/neuron-ai">Neuron AI</a></h3><p>Agentic framework — RAG, multi-agent, MCP wired in.</p><span class="st">1,770 ★</span></article>
+    <article class="node"><span class="cap" style="background:#f472b6"></span><h3><a href="https://github.com/modelcontextprotocol/php-sdk">MCP PHP SDK</a></h3><p>Official Model Context Protocol SDK for PHP.</p><span class="st">1,531 ★</span></article>
+    <article class="node"><span class="cap" style="background:#22d3ee"></span><h3><a href="https://github.com/RubixML/ML">Rubix ML</a></h3><p>Native ML library — algorithms and models in PHP.</p><span class="st">2,190 ★</span></article>
+    <article class="node"><span class="cap" style="background:#a78bfa"></span><h3><a href="https://github.com/CodeWithKyrian/transformers-php">transformers-php</a></h3><p>Hugging Face models and embeddings, easily.</p><span class="st">743 ★</span></article>
+    <article class="node"><span class="cap" style="background:#f472b6"></span><h3><a href="https://github.com/hkulekci/qdrant-php">qdrant-php</a></h3><p>Client for the Qdrant vector similarity engine.</p><span class="st">172 ★</span></article>
+  </section>
+
+  <h2 id="providers">Edges — providers spoken</h2>
+  <div class="providers" aria-label="Providers">
+    <span class="chip">OpenAI</span><span class="chip">Anthropic</span><span class="chip">Google</span>
+    <span class="chip">Ollama</span><span class="chip">Mistral</span><span class="chip">DeepSeek</span>
+    <span class="chip">Cohere</span><span class="chip">Grok</span><span class="chip">OpenRouter</span>
+  </div>
+
+  <footer class="foot">
+    <a class="cta ghost" href="../../index.html" style="margin-top:1.4rem">← Back to gallery</a>
+    <p style="margin-top:1.4rem"><strong>Source snapshot.</strong> Bounded subset (≈30 of 100+ entries) from read-only inspection of <a href="https://github.com/garyblankenship/awesome-php-ai">awesome-php-ai</a> (<code>README.md</code> + <code>readme.json</code>) on <time datetime="2026-07-26">2026-07-26</time>. Star counts are a point-in-time snapshot — re-sync with <code>php generate-readme.php</code>. Static prototype · no backend · <code>prototype-skill</code>.</p>
+  </footer>
+</main>
+</body>
+</html>
