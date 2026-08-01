@@ -176,6 +176,13 @@
       "description": "Drop-in replacement wrapper for popular LLMs in Laravel.",
       "stars": 2,
       "tags": ["openai", "anthropic", "google", "laravel", "streaming", "chat", "library"]
+    },
+    {
+      "name": "RunAPI PHP SDK",
+      "url": "https://github.com/runapi-ai/core-php",
+      "description": "Core Composer package for using RunAPI in PHP applications.",
+      "stars": 0,
+      "tags": ["runapi", "php", "composer", "client"]
     }
   ],
   "structured_output": [

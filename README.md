@@ -61,6 +61,7 @@ Client libraries and provider integrations.
 | [aipi-php](https://github.com/skito/aipi-php) | Universal API client for common AI models. |
 | [Sidekick](https://github.com/PapaRascal2020/sidekick) | Laravel package with common syntax for Claude, Mistral, Cohere and OpenAI APIs. |
 | [LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel) | Drop-in replacement wrapper for popular LLMs in Laravel. |
+| [RunAPI PHP SDK](https://github.com/runapi-ai/core-php) | Core Composer package for using RunAPI in PHP applications. |
 
 ---
 
