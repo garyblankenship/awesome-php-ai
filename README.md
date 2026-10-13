@@ -62,6 +62,7 @@ Client libraries and provider integrations.
 | [Sidekick](https://github.com/PapaRascal2020/sidekick) | Laravel package with common syntax for Claude, Mistral, Cohere and OpenAI APIs. |
 | [LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel) | Drop-in replacement wrapper for popular LLMs in Laravel. |
 | [RunAPI PHP SDK](https://github.com/runapi-ai/core-php) | Core Composer package for using RunAPI in PHP applications. |
+| [Jev-PHP](https://github.com/f-lombardo/jev-php) | A tiny PHP library to provide typed access to Jev and Laya decision and classification APIs. |
 
 ---
 
