@@ -33,9 +33,6 @@ Full-featured frameworks for building LLM-powered applications.
 | [LLPhant](https://github.com/LLPhant/LLPhant) | Comprehensive PHP Generative AI Framework using OpenAI GPT-4. Inspired by Langchain. |
 | [langchain-php](https://github.com/kambo-1st/langchain-php) | Building applications with LLMs through composability in PHP. |
 | [Vizra ADK](https://github.com/vizra-ai/vizra-adk) | Build, test, and deploy intelligent AI agents the Laravel way. |
-| [Resonance](https://github.com/distantmagic/resonance) | High-performance PHP framework optimized for IO-intensive LLM applications. |
-| [LLM Chain](https://github.com/php-llm/llm-chain) | PHP library for building LLM-based and AI-based features and applications. |
-| [Lugha](https://github.com/ngandu-dev/lugha) | PHP Generative AI Framework to build chatbots, RAG systems and AI-powered applications. |
 | [EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) | Simplifies AI entry for PHP developers (LangChain-style). Based on PHP 8.1+. |
 | [EleLLM](https://github.com/wpai-inc/EleLLM) | A PHP framework that makes working with LLMs more pleasurable and accessible. |
 
@@ -100,7 +97,6 @@ Client libraries and provider integrations.
 | [Xdebug MCP](https://github.com/koriym/xdebug-mcp) | PHP Xdebug MCP server with AI-optimized debugging support. |
 | [php-mcp/client](https://github.com/php-mcp/client) | PHP client for the Model Context Protocol. |
 | [Symfony MCP Bundle](https://github.com/symfony/mcp-bundle) | Official Symfony integration bundle for Model Context Protocol. |
-| [Symfony MCP SDK](https://github.com/symfony/mcp-sdk) | Model Context Protocol SDK for Client and Server applications in PHP. |
 | [mcp-php](https://github.com/garyblankenship/mcp-php) | Setting up a Model Context Protocol (MCP) Server in Laravel. |
 | [MCP Client Laravel](https://github.com/RedberryProducts/mcp-client-laravel) | Laravel-native client for MCP servers. |
 
@@ -117,7 +113,6 @@ Client libraries and provider integrations.
 | [ai-translations-for-laravel](https://github.com/Capevace/ai-translations-for-laravel) | Automatically translate Laravel language files using LLMs. |
 | [laravel-prompt-manager](https://github.com/thefirstjt/laravel-prompt-manager) | Simplify prompt management for AI engineers using Laravel. |
 | [laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt) | Laravel LLM prompt manager. |
-| [laravel-prompt-alchemist](https://github.com/moe-mizrak/laravel-prompt-alchemist) | Versatile LLM Tool Use (Function Calling) for Laravel, compatible with all LLMs. |
 | [llm-magic](https://github.com/Capevace/llm-magic) | LLM-agnostic AI toolkit for Laravel. |
 | [LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext) | Artisan command to generate LLM context for a Laravel project. |
 | [llm](https://github.com/artisan-build/llm) | Laravel integrations for various LLM providers. |
@@ -127,7 +122,6 @@ Client libraries and provider integrations.
 | Repo | Description |
 |---------|-------------|
 | [Symfony AI Platform](https://github.com/symfony/ai-platform) | PHP library for interacting with AI platform providers. |
-| [LLM Chain Bundle](https://github.com/php-llm/llm-chain-bundle) | Symfony bundle for seamless integration of the LLM Chain library. |
 | [Symfony AI Agent](https://github.com/symfony/ai-agent) | PHP library for building agentic applications. |
 | [Symfony AI Bundle](https://github.com/symfony/ai-bundle) | Integration bundle for Symfony AI components. |
 
@@ -165,7 +159,6 @@ Client libraries and provider integrations.
 
 | Repo | Description |
 |---------|-------------|
-| [opencv/opencv-php](https://github.com/php-opencv/php-opencv) | OpenCV bindings for PHP for image processing and computer vision. |
 
 ---
 
