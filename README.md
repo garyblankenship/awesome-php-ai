@@ -116,6 +116,7 @@ Client libraries and provider integrations.
 | [llm-magic](https://github.com/Capevace/llm-magic) | LLM-agnostic AI toolkit for Laravel. |
 | [LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext) | Artisan command to generate LLM context for a Laravel project. |
 | [llm](https://github.com/artisan-build/llm) | Laravel integrations for various LLM providers. |
+| [hindsight-php](https://github.com/skybleak333/hindsight-php) | Long-term memory for Laravel AI SDK agents and Laravel MCP servers, on the open-source Hindsight memory server. |
 
 ### Symfony Integrations
 
